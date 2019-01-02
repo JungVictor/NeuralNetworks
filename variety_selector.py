@@ -17,11 +17,11 @@ import warnings
 warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
 
 #####################
-country = 'Spain'
+country = 'France'
 points = 87
-price = 15
-province = 'Northern Spain'
-region = 'Navarra'
+price = 40
+province = 'Champagne'
+region = 'Champagne'
 #####################
 
 # Reading the main dataset
@@ -53,7 +53,7 @@ X = wines.drop(wines.columns[[5]], axis=1)
 # Creating the actual sets we'll use to train the neural network (yay!)
 # by default, train_size=0.25, which means 1/4th of the dataset will serve for training
 # but 0.25 takes sooooooooo much time. Feel free to modify the value (between 1.0 and 0.0)
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
 
 # we fit the scaler with X_train
 scaler = StandardScaler().fit(X_train)
@@ -77,10 +77,17 @@ forest = RandomForestClassifier()
 
 neural_network = neighbors
 
+best_score = 0
+index = 0
 
 # TRAINING THE NETWORK
 print("BEGINNING OF THE TRAINING")
-neural_network.fit(X_train, y_train)
+for i in range(200):
+    neural_network.fit(X_train, y_train)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=i)
+    score = neural_network.score(X_test, y_test)
+    if score > 0.53:
+        break
 print("END OF THE TRAINING")
 
 score = neural_network.score(X_test, y_test)

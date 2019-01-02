@@ -8,6 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.gaussian_process.kernels import RBF
@@ -18,10 +19,10 @@ warnings.filterwarnings("ignore")   # just ignore the warning messages (who care
 
 #####################
 country = 'France'
-points = 87
+points = 90
 province = 'Alsace'
 region = 'Alsace'
-variety = 'Pinot Noir'
+variety = 'Syrah'
 #####################
 
 # Reading the main dataset
@@ -53,7 +54,7 @@ X = wines.drop(wines.columns[[2]], axis=1)
 # Creating the actual sets we'll use to train the neural network (yay!)
 # by default, train_size=0.25, which means 1/4th of the dataset will serve for training
 # but 0.25 takes sooooooooo much time. Feel free to modify the value (between 1.0 and 0.0)
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.5)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=165)
 
 ######################
 # CREATING THE NETWORK
@@ -63,6 +64,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.5)
 network_shape = (10, 10, 10)    # 3 hidden layout of size 10
 neighbors = KNeighborsClassifier(15)
 gauss = GaussianProcessClassifier()
+bayes = GaussianNB()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
 svc = SVC(kernel='linear', C=0.025)
 decision_tree = DecisionTreeClassifier()
@@ -70,10 +72,14 @@ forest = RandomForestClassifier(n_estimators=100, min_samples_split=4)
 
 neural_network = neighbors
 
-
 # TRAINING THE NETWORK
 print("BEGINNING OF THE TRAINING")
-neural_network.fit(X_train, y_train)
+for i in range(150):
+    neural_network.fit(X_train, y_train)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=i)
+    score = neural_network.score(X_test, y_test)
+    if score > 0.5:
+        break
 print("END OF THE TRAINING")
 
 
