@@ -1,0 +1,1575 @@
+id;value
+0;Douro
+1;Willamette Valley
+2;Lake Michigan Shore
+3;Navarra
+4;Vittoria
+5;Alsace
+6;Rheinhessen
+7;Napa Valley
+8;Alexander Valley
+9;Central Coast
+10;Mosel
+11;Cafayate
+12;Mendoza
+13;Ribera del Duero
+14;Virginia
+15;Oregon
+16;Sicilia
+17;Paso Robles
+18;Sonoma Coast
+19;Terre Siciliane
+20;Cerasuolo di Vittoria
+21;Clarksburg
+22;Dry Creek Valley
+23;Sonoma Valley
+24;McMinnville
+25;Colchagua Valley
+26;Puglia
+27;Beaujolais
+28;Maule Valley
+29;Lake County
+30;Monticello
+31;Brouilly
+32;Monica di Sardegna
+33;Bordeaux Blanc
+34;North Coast
+35;Maipo Valley
+36;Columbia Valley (WA)
+37;Romagna
+38;Champagne
+39;Santa Ynez Valley
+40;Chablis
+41;Mâcon-Milly Lamartine
+42;California
+43;Aglianico del Vulture
+44;Howell Mountain
+45;Calistoga
+46;South Australia
+47;Eola-Amity Hills
+48;Rapel Valley
+49;Rías Baixas
+50;Vin de France
+51;McLaren Vale
+52;Ancient Lakes
+53;Knights Valley
+54;Vernaccia di San Gimignano
+55;Toscana
+56;Sonoma County
+57;Burgenland
+58;Juliénas
+59;Régnié
+60;Finger Lakes
+61;Morellino di Scansano
+62;Leyda Valley
+63;Santa Clara Valley
+64;Yountville
+65;Barolo
+66;Rockpile
+67;Padthaway
+68;Stellenbosch
+69;Simonsberg-Stellenbosch
+70;Saint-Émilion
+71;Barbera d'Alba
+72;Santa Lucia Highlands
+73;Spring Mountain District
+74;Monterey
+75;Alentejano
+76;Carmel Valley
+77;Dominio de Valdepusa
+78;Santa Cruz Mountains
+79;Chianti Classico
+80;Cahors
+81;Edna Valley
+82;Aconcagua Valley
+83;Madiran
+84;Russian River Valley
+85;Loncomilla Valley
+86;Marlborough
+87;Alto Adige
+88;Arroyo Seco
+89;Salta
+90;Anderson Valley
+91;Casablanca Valley
+92;Campania
+93;Rosso del Veronese
+94;St.-Romain
+95;Vino Nobile di Montepulciano
+96;Western Cape
+97;Nevada County
+98;Judean Hills
+99;Alentejo
+100;Coastal Region
+101;Côtes du Rhône
+102;Vacqueyras
+103;Rueda
+104;Galilee
+105;Brunello di Montalcino
+106;Beira Atlantico
+107;Tokaj
+108;Luján de Cuyo
+109;Cayuga Lake
+110;Montepulciano d'Abruzzo
+111;Santa Barbara County
+112;Diamond Mountain District
+113;San Marino
+114;Mendocino
+115;Vin de Pays des Côtes de Gascogne
+116;Vino de la Tierra de Castilla y León
+117;San Juan
+118;Adelaide Hills
+119;Sonoma Mountain
+120;Amador County
+121;St. Helena
+122;Cole Ranch
+123;Mendoza Province
+124;Santa Maria Valley
+125;Torgiano
+126;Veneto
+127;Leithaberg
+128;Colli Orientali del Friuli
+129;Santorini
+130;Uco Valley
+131;Monferrato
+132;Kremstal
+133;Dundee Hills
+134;Perdriel
+135;Arroyo Grande Valley
+136;Montsant
+137;Arbois
+138;Barossa Valley
+139;Tupungato
+140;Mendocino County
+141;Recas
+142;Côte de Nuits-Villages
+143;Langhe
+144;Hawke's Bay
+145;Prosecco di Valdobbiadene
+146;Curicó Valley
+147;Prosecco di Conegliano
+148;Limarí Valley
+149;Colchagua Costa
+150;Languedoc
+151;Coteaux Varois en Provence
+152;Cava
+153;Rutherglen
+154;Rheingau
+155;Barossa
+156;Tokaji
+157;Montrachet
+158;Heathcote
+159;Clos de Vougeot
+160;Chassagne-Montrachet
+161;Criots-Bâtard-Montrachet
+162;Clare Valley
+163;Bianco di Custoza
+164;Friuli
+165;Soave
+166;Collio
+167;Valle de Guadalupe
+168;Trentino
+169;Valdadige
+170;Rutherford
+171;Central Valley
+172;Lontué Valley
+173;Italy
+174;Prosecco del Veneto
+175;Prosecco di Conegliano e Valdobbiadene
+176;Graves
+177;Walla Walla Valley (WA)
+178;Weinviertel
+179;New York
+180;Rioja
+181;North Fork of Long Island
+182;Wahluke Slope
+183;Templeton Gap District
+184;Snipes Mountain
+185;Gavi
+186;Bierzo
+187;Niederösterreich
+188;Long Island
+189;Wagram
+190;Etna
+191;Muscadet Sèvre et Maine
+192;Franciacorta
+193;Niagara-On-The-Lake
+194;Carneros
+195;Ribbon Ridge
+196;Meursault
+197;Amarone della Valpolicella
+198;Chambolle-Musigny
+199;Pomerol
+200;Cannonau di Sardegna
+201;Red Mountain
+202;Isola dei Nuraghi
+203;Sta. Rita Hills
+204;Côtes du Rhône Villages
+205;Friuli Grave
+206;El Dorado
+207;Suisun Valley
+208;Côtes de Provence
+209;Lodi
+210;Österreichischer Sekt
+211;Venezia Giulia
+212;Yakima Valley
+213;Monterey County
+214;Chiles Valley
+215;Mercurey
+216;Calaveras County
+217;Chehalem Mountains
+218;Horse Heaven Hills
+219;Umpqua Valley
+220;Alto Adige Valle Isarco
+221;Ballard Canyon
+222;Green Valley
+223;Coteaux d'Aix-en-Provence
+224;Côtes de Provence Sainte-Victoire
+225;Sierra Foothills
+226;Yolo County
+227;Dolcetto d'Alba
+228;Bordeaux Supérieur
+229;Costières de Nîmes
+230;Bordeaux
+231;Washington
+232;Columbia Gorge (WA)
+233;Kamptal
+234;Steiermark
+235;Südsteiermark
+236;Rhône Valley
+237;Crete
+238;Oak Knoll District
+239;Rogue Valley
+240;Northern Sonoma
+241;Vinho Verde
+242;Soave Classico
+243;Conegliano Valdobbiadene Prosecco Superiore
+244;Piedmont
+245;Idaho
+246;Gambellara Classico
+247;Yarra Valley
+248;Tejo
+249;Great Southern
+250;Mokelumne River
+251;Los Carneros
+252;Mount Veeder
+253;Dogliani Superiore
+254;Valencia
+255;Cortona
+256;Piemonte
+257;Colli della Toscana Centrale
+258;Livermore Valley
+259;Martinborough
+260;Central Otago
+261;Valle de Uco
+262;Lisboa
+263;Mâcon-Villages
+264;Texas
+265;Côte Chalonnaise
+266;Chorey-lès-Beaune
+267;Calchaquí Valley
+268;Península de Setúbal
+269;Coteaux Bourguignons
+270;Saint-Véran
+271;Barbaresco
+272;South Eastern Australia
+273;Temecula Valley
+274;Tasmania
+275;Cariñena
+276;Vin Santo del Chianti Classico
+277;Trento
+278;Médoc
+279;Haut-Médoc
+280;Fronsac
+281;Margaux
+282;Mornington Peninsula
+283;Verdicchio dei Castelli di Jesi Classico
+284;Vino de la Tierra de Castilla
+285;Franken
+286;Mendocino Ridge
+287;Beaujolais-Villages
+288;Côtes de Gascogne
+289;Rosso di Montalcino
+290;Côtes du Lot
+291;Moulin-à-Vent
+292;Nebbiolo d'Alba
+293;Gevrey-Chambertin
+294;Beaune
+295;Sannio
+296;Ahr
+297;Priorat
+298;Saint-Estèphe
+299;Minervois
+300;Texas High Plains
+301;Nahe
+302;Vista Flores
+303;Shenandoah Valley (CA)
+304;Blaye Côtes de Bordeaux
+305;Jumilla
+306;Coste della Sesia
+307;Yorkville Highlands
+308;Penedès
+309;Greco di Tufo
+310;Lugana
+311;Primitivo di Manduria
+312;Amarone della Valpolicella Classico
+313;Piave
+314;Dealu Mare
+315;Gaillac
+316;Sancerre
+317;Montravel
+318;Quincy
+319;Pouilly-Fumé
+320;Coonawarra
+321;Happy Canyon of Santa Barbara
+322;Valdeorras
+323;Bizkaiko Txakolina
+324;Walla Walla Valley (OR)
+325;Isonzo del Friuli
+326;Vin de Pays d'Oc
+327;Monbazillac
+328;Patrimonio
+329;Darling
+330;Port
+331;Saumur-Champigny
+332;Rosso di Montepulciano
+333;Gers
+334;Crémant de Jura
+335;Seneca Lake
+336;Naches Heights
+337;Chile
+338;Basilicata
+339;Hudson River Region
+340;Südoststeiermark
+341;Corinth
+342;Halkidiki
+343;Napa-Sonoma
+344;Crémant de Bourgogne
+345;Thrace
+346;Pouilly-Fuissé
+347;Goulburn Valley
+348;Pfalz
+349;Bennett Valley
+350;Paso Robles Willow Creek District
+351;Montagne-Saint-Émilion
+352;Robertson
+353;La Mancha
+354;Contra Costa County
+355;Dan
+356;Michigan
+357;Uclés
+358;Stags Leap District
+359;Valle d'Aosta
+360;Fair Play
+361;Menetou-Salon
+362;Jerez
+363;Awatere Valley
+364;Wiener Gemischter Satz
+365;Fronton
+366;Bergerac
+367;Wachau
+368;Salento
+369;Bordeaux Rosé
+370;Pennsylvania
+371;Les Baux de Provence
+372;Southern Oregon
+373;Swartland
+374;Old Mission Peninsula
+375;Dão
+376;Alto Adige Terlano
+377;Dunnigan Hills
+378;Coombsville
+379;Bandol
+380;Châteauneuf-du-Pape
+381;Nuits-St.-Georges
+382;Vigneti delle Dolomiti
+383;Montefalco Rosso
+384;Rio Claro
+385;Villány
+386;Sagrantino di Montefalco
+387;Umbria
+388;Cachapoal Valley
+389;Faro
+390;Chénas
+391;Jurançon
+392;Saumur
+393;Jidvei
+394;Alella
+395;Bardolino Chiaretto
+396;Murgia
+397;Bolgheri Superiore
+398;Bolgheri Sassicaia
+399;Pessac-Léognan
+400;Saint-Julien
+401;Pauillac
+402;Oakville
+403;Lalande de Pomerol
+404;Delia Nivolelli
+405;Cadillac Côtes de Bordeaux
+406;Maipú
+407;Touraine
+408;America
+409;Middleburg
+410;Australia
+411;Reuilly
+412;Gattinara
+413;Margaret River
+414;Patagonia
+415;Entre-Deux-Mers
+416;Applegate Valley
+417;Hermitage
+418;Traisental
+419;Maremma
+420;Bairrada
+421;Negev Hills
+422;San Benito County
+423;Ribatejano
+424;Catalunya
+425;Ribeiro
+426;San Luis Obispo County
+427;Bolgheri
+428;Alicante
+429;Vin de Savoie
+430;Almansa
+431;Mediterranée
+432;Duriense
+433;Chiroubles
+434;Saint-Amour
+435;Ribeira Sacra
+436;Leelanau Peninsula
+437;Getariako Txakolina
+438;Calatayud
+439;Outer Coastal Plain
+440;Coteaux du Languedoc
+441;Sonoma-Napa
+442;Beiras
+443;Langhorne Creek
+444;Falerno del Massico
+445;Fiano di Avellino
+446;Vi de la Terra Illes Balears
+447;Santa Barbara
+448;Côtes de Bourg
+449;Barbera d'Asti Superiore
+450;Upper Galilee
+451;Saint-Georges-Saint-Émilion
+452;Vermentino di Sardegna
+453;Bergerac Sec
+454;Morgon
+455;Virginia's Eastern Shore
+456;Vinho Espumante
+457;Delle Venezie
+458;Columbia Valley (OR)
+459;Listrac-Médoc
+460;Epanomi
+461;Roero
+462;Barbera d'Asti
+463;Nemea
+464;Tavel
+465;Peloponnese
+466;Barbera d'Alba Superiore
+467;Aconcagua Costa
+468;Recioto di Soave
+469;Puligny-Montrachet
+470;Ruché di Castagnole Monferrato
+471;Valtellina Superiore
+472;Oltrepò Pavese
+473;Red Hills Lake County
+474;Moravia
+475;Toro
+476;Slovenia
+477;Pemberton
+478;Rosé de Loire
+479;Côtes de Bordeaux
+480;Vin Mousseux
+481;South Coast
+482;Yecla
+483;Lake Erie
+484;Potter Valley
+485;Sonoma County-Napa County
+486;Givry
+487;Buzet
+488;Valpolicella Classico Superiore Ripasso
+489;Terras do Dão
+490;Muscadet Côtes de Grandlieu
+491;Beira Interior
+492;Terra degli Osci
+493;Beaujolais Rosé
+494;Lambrusco di Modena
+495;Montefalco Sagrantino
+496;Lazio
+497;Chalk Hill
+498;Panciu
+499;Marche
+500;Cerasuolo di Vittoria Classico
+501;Frankland River
+502;Geographe
+503;Western Australia
+504;Niagara Peninsula
+505;Molise
+506;New Jersey
+507;Maury Sec
+508;Côtes du Roussillon Villages Caramany
+509;Redwood Valley
+510;Friuli Aquileia
+511;Ile de Beauté
+512;Cucamonga Valley
+513;Pays d'Oc
+514;Bío Bío Valley
+515;Romania
+516;Gard
+517;Chianti Montespertoli
+518;Chianti Colli Senesi
+519;Fleurie
+520;Anjou Villages Brissac
+521;Fiddletown
+522;Bonnezeaux
+523;Bourgogne Hautes Côtes de Nuits
+524;Minho
+525;Crémant d'Alsace
+526;Mâcon-Péronne
+527;Augusta
+528;Saint-Bris
+529;New Mexico
+530;Nevada
+531;Adelaide Plains
+532;Castillon Côtes de Bordeaux
+533;Lessona
+534;Vino Spumante
+535;Boca
+536;Rivesaltes
+537;Bucelas
+538;Charmes-Chambertin
+539;Peumo
+540;Alto Valle del Río Negro
+541;Prosecco
+542;Paicines
+543;Condrieu
+544;Thermenregion
+545;Colline Pescaresi
+546;Sangiovese di Romagna Superiore
+547;Empordà
+548;Chianti
+549;Placer County
+550;Chianti Rufina
+551;Carnuntum
+552;Estremadura
+553;Salice Salentino
+554;Canterbury
+555;Mâcon-Chardonnay
+556;Ladoix
+557;Campo de Borja
+558;Santenay
+559;Viré-Clessé
+560;Eden Valley
+561;Spain
+562;La Consulta
+563;Napa County-Sonoma County
+564;Solano County
+565;Colline Novaresi
+566;Adelaide
+567;Agrelo
+568;Drama
+569;Veneto Orientale
+570;Vin de Pays des Cévennes
+571;Luberon
+572;Ella Valley
+573;Adelaida District
+574;Taurasi
+575;Eloro
+576;Moselle Luxembourgeoise
+577;Faugères
+578;Crémant de Limoux
+579;Walker Bay
+580;Valdobbiadene Prosecco Superiore
+581;Irpinia
+582;Württemberg
+583;Baden
+584;Picpoul de Pinet
+585;Pangeon
+586;Elqui Valley
+587;Wairau Valley
+588;Côtes du Marmandais
+589;Cornas
+590;Chalone
+591;Ventoux
+592;Taburno
+593;Vouvray
+594;Columbia Gorge (OR)
+595;Trebbiano d'Abruzzo
+596;Crémant de Loire
+597;Terra Alta
+598;Victoria
+599;Valdepeñas
+600;Friuli Colli Orientali
+601;Portuguese Table Wine
+602;Vosne-Romanée
+603;Recioto della Valpolicella Classico
+604;Gavi di Gavi
+605;Roero Arneis
+606;Dolcetto di Dogliani
+607;Neuquén
+608;Moscato d'Asti
+609;Istria
+610;Peljesac
+611;Saint-Nicolas-de-Bourgueil
+612;Lake Chelan
+613;Kakheti
+614;Canelones
+615;Roussette de Savoie
+616;Maremma Toscana
+617;England
+618;Rattlesnake Hills
+619;Alta Langa
+620;El Dorado County
+621;Napa County
+622;Côtes de Nuits Villages
+623;Marchigue
+624;Bourgogne Hautes Côtes de Beaune
+625;Paarl
+626;Saint-Aubin
+627;Marin County
+628;Conero
+629;Menfi
+630;Montilla-Moriles
+631;Río Negro Valley
+632;Pernand-Vergelesses
+633;Marsannay
+634;Málaga
+635;Andalucia
+636;Auxey-Duresses
+637;Savigny-lès-Beaune
+638;Mâcon-Verze
+639;Saint-Joseph
+640;Frascati Superiore
+641;Volnay
+642;Fort Ross-Seaview
+643;Mt. Harlan
+644;Quarts de Chaume
+645;Lambrusco dell'Emilia
+646;Colli Aprutini
+647;Montepulciano d'Abruzzo Colline Teramane
+648;Valpolicella Superiore Ripasso
+649;Valpolicella Classico Superiore
+650;Valpolicella Ripasso
+651;Cheverny
+652;Weinland Österreich
+653;Moulis-en-Médoc
+654;Mantinia
+655;Forlì
+656;Colli Martani
+657;Cienega Valley
+658;Temecula
+659;Chalkidiki
+660;Lebanon
+661;Ghemme
+662;Carignano del Sulcis
+663;Alghero
+664;Setubal
+665;Anjou
+666;Minervois La Liviniere
+667;Corbières
+668;Marsala
+669;Mosel-Saar-Ruwer
+670;Sauternes
+671;Grand Valley
+672;Colorado
+673;Chinon
+674;Pocerina
+675;Okanagan Valley
+676;Puente Alto
+677;Clarendon
+678;Kumeu
+679;Côtes du Jura
+680;Trás-os-Montes
+681;Shomron
+682;Corton Les Renardes
+683;Coteaux du Giennois
+684;Aloxe-Corton
+685;Rapsani
+686;Rosso Conero
+687;Falerio
+688;Verdicchio dei Castelli di Jesi
+689;Rosso Piceno
+690;Hunter Valley
+691;La Rioja
+692;Central Ranges
+693;Nelson
+694;Waipara Valley
+695;Constantia
+696;Val di Cornia Suvereto
+697;Orvieto Classico Superiore
+698;Vin de Pays du Val de Loire
+699;Cochise County
+700;Pine Mountain-Cloverdale Peak
+701;Costers del Segre
+702;Verdicchio dei Castelli di Jesi Classico Superiore
+703;Custoza Superiore
+704;Veronese
+705;San Antonio
+706;Valpolicella Superiore
+707;Val di Neto
+708;Big Valley District-Lake County
+709;San Antonio Valley
+710;Petit Chablis
+711;Bourgogne
+712;Sierra Pelona Valley
+713;Valpolicella
+714;Pinto Bandeira
+715;Vin de Liqueur
+716;Francs Côtes de Bordeaux
+717;San Luis Obispo
+718;Famatina Valley
+719;Bâtard-Montrachet
+720;Chevalier-Montrachet
+721;Atlas Peak
+722;Puisseguin Saint-Émilion
+723;Orvieto Classico
+724;Primorska
+725;Moldova
+726;Bardolino
+727;Uruguay
+728;Zenata
+729;Limestone Coast
+730;Mâcon-Azé
+731;Pyrenees
+732;Prosecco Superiore di Cartizze
+733;High Valley
+734;Lambrusco Grasparossa di Castelvetro
+735;Central Italy
+736;San Bernabe
+737;Vermentino di Gallura
+738;Ben Lomond Mountain
+739;South Africa
+740;Argentina
+741;Valdobbiadene Superiore di Cartizze
+742;Morey-Saint-Denis
+743;Missouri
+744;Southeastern New England
+745;Grand River Valley
+746;Sonoita
+747;Ica
+748;Corton-Charlemagne
+749;Maranges
+750;San Vicente
+751;King Valley
+752;Pommard
+753;Nashik
+754;Costa Toscana
+755;Grands-Echezeaux
+756;Moscadello di Montalcino
+757;The Hamptons, Long Island
+758;Franschhoek
+759;Vin de Pays du Comté Tolosan
+760;Somontano
+761;Tierra del Viños de Zamora
+762;Niagara Escarpment
+763;South Island
+764;Central Victoria
+765;Bordeaux Côtes de Francs 
+766;Shenandoah Valley
+767;Atlantida
+768;Thracian Valley
+769;Bardolino Classico
+770;Tarnave
+771;Savoie
+772;Vipavska Dolina
+773;Var
+774;Val de Loire
+775;Coteaux du Languedoc Pic Saint Loup
+776;Bekaa Valley
+777;Tarragona
+778;Loire Valley
+779;Corse
+780;Valpolicella Classico
+781;Elgin
+782;Mâcon-Fuissé
+783;Hautes Côtes de Nuits
+784;Itata Valley
+785;La Clape
+786;Northeastern Italy
+787;Table wine
+788;Samson
+789;Vin Santo di Montepulciano
+790;Wagram-Donauland
+791;Santa Barbara-Monterey
+792;Gigondas
+793;Conca de Barberà
+794;Beamsville Bench
+795;Lessini Durello
+796;Bourgueil
+797;Saint-Croix-du-Mont
+798;Cyprus
+799;Pageon
+800;Lake Erie North Shore
+801;Prosecco Treviso
+802;Mâcon-Pierreclos
+803;Naoussa
+804;Salina
+805;Wellington
+806;Sainte-Foy Bordeaux
+807;Saint-Chinian
+808;Crozes-Hermitage
+809;Southern Flinders Ranges
+810;Napa-Carneros
+811;Catalonia
+812;Pouilly-Vinzelles
+813;Danube River Plains
+814;Lago di Corbara
+815;Macon-Bussières
+816;Gisborne
+817;Coteaux Varois
+818;Côte de Brouilly
+819;Wairarapa
+820;Armenia
+821;Santa Cruz
+822;Offida Pecorino
+823;Korčula
+824;Passito di Pantelleria
+825;Viile Timisului
+826;Illinois
+827;Sant'Antimo
+828;Vin Santo del Chianti Rufina
+829;Corse Porto Vecchio
+830;Côtes du Roussillon Villages Tautavel
+831;Côtes du Roussillon Villages
+832;Aglianico del Taburno
+833;Castel del Monte
+834;Albana di Romagna
+835;Colli di Faenza
+836;Sangiovese di Romagna
+837;Aegean
+838;Fixin
+839;Sforzato di Valtellina
+840;Corton
+841;Latricières-Chambertin
+842;Premieres Côtes de Blaye
+843;Montagny
+844;Simonsberg-Paarl
+845;Juanico
+846;Black Sea Coastal
+847;Santa Catarina
+848;Vin de Pays des Côtes Catalanes
+849;Malibu-Newton Canyon
+850;Vino de la Tierra Contraviesa Alpujarra
+851;Mount Harlan
+852;Côtes du Tarn
+853;Terrazze Retiche di Sondrio
+854;Pla de Bages
+855;Overberg
+856;Côtes de Provence La Londe
+857;Coteaux du Layon Chaume
+858;Sonoma-Napa-Mendocino
+859;Atalanti Valley
+860;Dolcetto d'Acqui
+861;San Francisco Bay
+862;Sebes
+863;Nagambie Lakes
+864;Côtes de Bergerac
+865;Moscatel de Setúbal
+866;Macedonia
+867;Chelan County
+868;Riverina
+869;Ribatejo
+870;California Other
+871;Saddle Rock-Malibu
+872;Clos de la Roche
+873;Vougeot
+874;Wrattonbully
+875;Mâcon-Vergisson
+876;Lambrusco di Sorbara
+877;Mâcon-Cruzille
+878;Moon Mountain District Sonoma County
+879;Collines Rhôdaniennes
+880;Germany
+881;Loazzolo
+882;Humboldt County
+883;Palmela
+884;Galil
+885;Clairette de Die Méthode Dioise Ancestrale
+886;Jurançon Sec
+887;Curtefranca
+888;Kras
+889;Croatia
+890;Waipara
+891;Monteregio di Massa Marittima
+892;Napa-Sonoma-Marin
+893;Maury
+894;Muscat de Rivesaltes
+895;Montecucco
+896;Vin de Table Francais
+897;Olifants River
+898;Montevideo
+899;Santa Clara County
+900;Atlantique
+901;Lussac Saint-Émilion
+902;Vienna
+903;Muscadet
+904;Sierra de Salamanca
+905;Chignin-Bergeron
+906;Beaujolais Blanc
+907;Mâcon La Roche Vineuse
+908;Côtes du Roussillon Les Aspres
+909;Côtes du Roussillon
+910;Beaujolais-Leynes
+911;Hungary
+912;Côtes de Duras
+913;Fitou
+914;France Other
+915;Irrouléguy
+916;Puget Sound
+917;Chambertin Clos de Bèze
+918;Corton-Rognet
+919;Corton Vergennes
+920;Chapelle-Chambertin
+921;Dogliani
+922;Anjou Villages
+923;Cadillac
+924;Sable de Camargue
+925;Pago de Arínzano
+926;Beneventano
+927;McLaren Vale-Adelaide Hills
+928;Colli Piacentini
+929;Emilia
+930;Lolol Valley
+931;Cauquenes Valley
+932;Martina
+933;Lacryma Christi del Vesuvio
+934;Côtes Catalanes
+935;Vin de Pays Cité de Carcassonne
+936;Neusiedlersee
+937;Solano County Green Valley
+938;Friuli Isonzo
+939;California-Oregon
+940;Clear Lake
+941;Groenekloof
+942;Guenoc Valley
+943;Terre del Volturno
+944;Coteaux d'Ancenis
+945;Cabernet de Saumur
+946;Utiel-Requena
+947;Alenquer
+948;Soave Colli Scaligeri
+949;Goriska Brda
+950;Murfatlar
+951;Napa County-Sonoma County-San Joaquin County
+952;Southwest France
+953;Washington-Oregon
+954;New Zealand
+955;Bourgogne Gamay
+956;Terre di Franciacorta
+957;Serra Gaúcha
+958;San Jose
+959;Falanghina del Sannio
+960;Rosso di Toscana
+961;Carneros-Napa Valley
+962;Lenswood
+963;Côte de Beaune
+964;Rosé d'Anjou
+965;St. David's Bench
+966;Coteaux du Vendômois
+967;Valpolicella Ripasso Classico
+968;Vale dos Vinhedos
+969;Chianti Colli Fiorentini
+970;Mittelburgenland
+971;Lutzville Valley
+972;Swan Creek
+973;Tierra de León
+974;Apalta
+975;Mudgee
+976;Orange
+977;New South Wales
+978;Calabria
+979;Rosso Piceno Superiore
+980;Offida Passerina
+981;Colli Trevigiani
+982;Recioto di Soave Classico
+983;Vin de Pays du Lot
+984;Malleco
+985;Venezie
+986;Riviera Ligure di Ponente
+987;Tulum Valley
+988;Pompeiano
+989;Epomeo
+990;Roccamonfina
+991;Israel
+992;Tierra de Castilla
+993;El Pomar District
+994;Bourgogne Epineuil
+995;Colli di Salerno
+996;Guerrouane
+997;Valais
+998;Tuolumne County
+999;Côtes-du-Ventoux
+1000;Choapa Valley
+1001;Tarantino
+1002;Santa Margarita Ranch
+1003;Brachetto d'Acqui
+1004;Saint-Mont
+1005;Crémant de Bordeaux
+1006;Bordeaux Clairet
+1007;Mâcon-Lugny
+1008;Georgia
+1009;Ankara
+1010;Malibu Coast
+1011;Rully
+1012;Samos
+1013;Pavia
+1014;Asti
+1015;Carmignano
+1016;Mittelrhein
+1017;Bullas
+1018;Durbanville
+1019;Bonnes-Mares
+1020;Eisenberg
+1021;McDowell Valley
+1022;Sagrada Familia
+1023;Rasteau
+1024;Obidos
+1025;Cilento
+1026;Vin de Pays des Maures
+1027;Yadkin Valley
+1028;Costa d'Amalfi
+1029;Austria
+1030;Mostar
+1031;Iowa
+1032;Premieres Côtes de Bordeaux
+1033;Chianti Montalbano
+1034;Elkton Oregon
+1035;Bourgogne Aligoté
+1036;Saint-Romain
+1037;Lugana Superiore
+1038;Napa-Mendocino-Sonoma-Marin
+1039;Cesanese del Piglio
+1040;Muscat de Saint-Jean de Minervois
+1041;Banyuls
+1042;Friuli Venezia Giulia
+1043;Patras
+1044;Monterey-Santa Barbara
+1045;Sonoma County-Monterey County-Napa County
+1046;Rubicone
+1047;Cévennes
+1048;Vittoria Frappato
+1049;Muscat de Beaumes de Venise
+1050;Korinthia
+1051;Echézeaux
+1052;Ribera del Júcar
+1053;Sonoma-Mendocino
+1054;Greece
+1055;Mâcon-Uchizy
+1056;Colli di Luni
+1057;Soave Classico Superiore
+1058;San Clemente
+1059;Corton Grèves
+1060;Barbera del Monferrato
+1061;Copertino
+1062;Alta Mesa
+1063;Coteaux de Verdon
+1064;Podunavlje
+1065;Mâcon
+1066;Lirac
+1067;Coteaux du Layon
+1068;Pacherenc du Vic Bilh
+1069;Kelsey Bench-Lake County
+1070;Florina
+1071;San Lucas
+1072;Buin
+1073;British Columbia
+1074;Manchuela
+1075;Biferno Rosso
+1076;Sonoma County-Lake County
+1077;Languedoc-Roussillon
+1078;France
+1079;Colli Perugini
+1080;Aleatico dell'Elba
+1081;Corbières-Boutenac
+1082;Haut-Judeé
+1083;Ukraine
+1084;Ohio
+1085;Vin de Pays du Val de Cesse
+1086;Pécharmant
+1087;Saussignac
+1088;Limoux
+1089;Paso Robles Highlands District
+1090;Madrid
+1091;Colli Tortonesi
+1092;Barco Reale di Carmignano
+1093;Vino de Mesa
+1094;Sonoma County-Monterey County
+1095;Pouilly-Loché
+1096;Maipo Valley-Colchagua Valley
+1097;Noto
+1098;Campi Flegrei
+1099;Bendigo
+1100;Vin de Pays de L'Aude
+1101;Terre di Chieti
+1102;Buenos Aires
+1103;Breedekloof
+1104;Marcillac
+1105;Vin de Pays du Gard
+1106;Leyda Valley-Maipo Valley
+1107;Colline Teatine
+1108;Cerasuolo d'Abruzzo
+1109;Barbera d'Asti Superiore Nizza
+1110;Cederberg
+1111;Côte Rôtie
+1112;Vermont
+1113;Garda Classico
+1114;Montenetto di Brescia
+1115;Lombardy
+1116;Benaco Bresciano
+1117;Musigny
+1118;Chambertin
+1119;Clos Saint-Denis
+1120;Malvasia delle Lipari
+1121;Switzerland
+1122;Côtes de Thongue
+1123;Waitaki Valley
+1124;Eger
+1125;Burgundy
+1126;Golan Heights
+1127;Côtes du Frontonnais
+1128;Ventura County
+1129;Fruška Gora
+1130;Philadelphia
+1131;Muzla
+1132;Marca Trevigiana
+1133;Colli di Conegliano
+1134;Chianti Colli Aretini
+1135;Monterrei
+1136;Mendocino-Lake
+1137;Mátra
+1138;Monterey-Santa Cruz
+1139;Pirque
+1140;Pomino
+1141;Teroldego Rotaliano
+1142;Vinho Espumante de Qualidade
+1143;North Carolina
+1144;Cortese di Gavi
+1145;York Mountain
+1146;Negev
+1147;Colli Bolognesi
+1148;Lambrusco Reggiano
+1149;Emilia-Romagna
+1150;Château-Chalon
+1151;Irancy
+1152;Pitsilia Mountains
+1153;Cigales
+1154;East Coast
+1155;Mavrodaphne of Patras
+1156;Attica
+1157;Vin de Pays Var
+1158;Savennières-Roche-Aux-Moines
+1159;Jujuy
+1160;Galatina
+1161;Vin de Pays des Portes de Méditerranée
+1162;Alcamo
+1163;Soave Superiore
+1164;Brazil
+1165;Progreso
+1166;Elazığ-Diyarbakir
+1167;Brulhois
+1168;Jonkershoek Valley
+1169;Tikves
+1170;Vale Trentino
+1171;Mâcon-Loché
+1172;Mâcon-Vinzelles
+1173;Chianti Superiore
+1174;Rosazzo
+1175;Orvieto
+1176;Verdicchio di Matelica
+1177;Columbia Valley-Walla Walla Valley
+1178;Turkey
+1179;Gutturnio Colli Piacentini
+1180;Waiheke Island
+1181;Valtènesi
+1182;Bramaterra
+1183;Madera
+1184;Ardèche
+1185;Molina
+1186;Serra do Sudeste
+1187;Mâcon-Charnay
+1188;Sonoma
+1189;Dalmatian Coast
+1190;Eilandia
+1191;Mount Barker
+1192;Corton-Pougets
+1193;Dealurile Munteniei
+1194;Cérons
+1195;Thraki
+1196;Curicó and Maipo Valleys
+1197;Štajerska
+1198;Middle and South Dalmatia
+1199;Gioia del Colle
+1200;Vin Santo del Chianti
+1201;Kentucky
+1202;Prince Edward County
+1203;Extremadura
+1204;Župa
+1205;Vino da Tavola
+1206;Southern Fleurieu
+1207;Clements Hills
+1208;Vinos de Madrid
+1209;Pouilly-sur-Loire
+1210;Barbera del Monferrato Superiore
+1211;Custoza
+1212;Contea di Sclafani
+1213;Dolcetto di Diano d'Alba
+1214;Vin de Pays de la Méditerranée
+1215;Vin de Pays de l'Ile de Beauté
+1216;Nuragus di Cagliari
+1217;Blanquette de Limoux
+1218;Pafos
+1219;Asolo Prosecco Superiore
+1220;Venezia
+1221;Monemvasia
+1222;Szekszárd
+1223;Sonoma County-San Joaquin County
+1224;Tulbagh
+1225;Montescudaio
+1226;Madeira
+1227;Elazığ
+1228;Cappadocia
+1229;San Francisco Bay-Livermore Valley
+1230;Clairette de Bellegarde
+1231;Barsac
+1232;Provincia di Pavia
+1233;Montepulciano d'Abruzzo Cerasuolo
+1234;Colline Lucchesi
+1235;Emporadà-Costa Brava
+1236;Kutjevo
+1237;Fara
+1238;Ismarikos
+1239;Côtes du Luberon
+1240;Lambrusco Salamino di Santa Croce
+1241;Canon-Fronsac
+1242;Côtes de Castillon
+1243;Primitivo del Salento
+1244;Western Connecticut Highlands
+1245;Sithonia
+1246;River Junction
+1247;Passito di Noto
+1248;Curicó and Leyda Valleys
+1249;Vin de Pays des Alpilles
+1250;Provence
+1251;Grampians
+1252;Currency Creek
+1253;Agioritikos
+1254;Casablanca-Curicó Valley
+1255;Cour-Cheverny
+1256;Muscadet Sèvre et Maine Clisson
+1257;Amarone della Valpolicella Valpantena
+1258;Aude Hauterive
+1259;Ribera del Guadiana
+1260;Toledo
+1261;Beotia
+1262;Algarve
+1263;Monterey-Santa Barbara-Sonoma
+1264;Hemel en Aarde
+1265;Valtellina
+1266;Retsina
+1267;Vi de la Terra Mallorca
+1268;Abruzzo
+1269;Columbia Valley
+1270;Amindeo
+1271;Terras do Sado
+1272;Piccadilly Valley
+1273;Coelemu
+1274;Lake County-Mendocino County
+1275;Côte de Beaune-Villages
+1276;Oregon Other
+1277;Meursault-Blagny
+1278;Cape South Coast
+1279;Sonoma County-Monterey County-Santa Barbara County
+1280;Orcia
+1281;Yamhill County
+1282;Mendocino-Lake County-Napa
+1283;Sopron
+1284;Beechworth
+1285;Vin de Pays de Vaucluse
+1286;Montecarlo
+1287;Monterey-San Luis Obispo-Santa Barbara
+1288;Bulgaria
+1289;Recioto della Valpolicella
+1290;Colli Euganei
+1291;Contessa Entellina
+1292;Moscato di Noto
+1293;North Dalmatia
+1294;Diano d'Alba
+1295;Vino de la Tierra del Bajo Aragón
+1296;Chignin
+1297;Controguerra
+1298;Northern Cape
+1299;San Carlos
+1300;Manzanilla-Sanlúcar de Barrameda
+1301;Valli di Porto Pino
+1302;Vinho da Mesa
+1303;Hvar
+1304;Cephalonia
+1305;Falanghina del Beneventano
+1306;Swan Hill
+1307;Falerio dei Colli Ascolani
+1308;Erbaluce di Caluso
+1309;Mamertino
+1310;Mâcon Solutré
+1311;Civitella d'Agliano
+1312;Lemesos
+1313;Landes
+1314;Mâcon-Davayé
+1315;Pedernal Valley
+1316;Breganze
+1317;Tehama County
+1318;Siracusa
+1319;Vin de Pays du Jardin de la France
+1320;Ischia
+1321;Murray-Darling
+1322;Saint-Péray
+1323;Castilla La Mancha
+1324;Muscadet Coteaux de la Loire
+1325;Pays de Loire
+1326;Carema
+1327;Cahul
+1328;Valpolicella Valpantena
+1329;Cyclades
+1330;Ramona Valley
+1331;Savennières
+1332;Cirò
+1333;Napa County-Lake County
+1334;Prosecco di Valdobbiadene Superiore
+1335;Colli Etruria Centrale
+1336;Côtes de Forez
+1337;Monthélie
+1338;Clos de Tart
+1339;Breede River Valley
+1340;Arizona
+1341;Elim
+1342;Short Hills Bench
+1343;Vin Doux Naturel Rasteau
+1344;Aglianico del Beneventano
+1345;Vin de Pays de la Haute Vallée du Gassac
+1346;Ticino
+1347;Zonda Valley
+1348;Moscatel do Douro
+1349;Vlootenburg
+1350;Barbera di Piemonte
+1351;Brda
+1352;Dingač
+1353;Lanzarote
+1354;Châteaumeillant
+1355;Morocco
+1356;Napa
+1357;Achaia
+1358;Polkadraai Hills
+1359;Erice
+1360;Bot River
+1361;Similkameen Valley
+1362;Bourgogne Côtes d’Auxerre
+1363;Cabardes
+1364;Dolcetto di Dogliani Superiore
+1365;Galluccio
+1366;Bergerac Rosé
+1367;Lamezia
+1368;Trentino Superiore
+1369;Amyndeon
+1370;Vânju Mare
+1371;Hrvatsko Primorje
+1372;Lison-Pramaggiore
+1373;Grave del Friuli
+1374;Hautes Cotes de Beaune
+1375;Vino de la Tierra de Cádiz
+1376;Vin Santo di Carmignano
+1377;Central Greece
+1378;Clos de Lambrays
+1379;Bienvenues Bâtard-Montrachet
+1380;Ramandolo
+1381;Vino de la Tierra de Zamora
+1382;Romanée-St.-Vivant
+1383;Lot
+1384;Garda
+1385;Dolenjska
+1386;Napa-Monterey-Mendocino
+1387;Brindisi
+1388;Western Plains
+1389;Mazis-Chambertin
+1390;Österreichischer Perlwein
+1391;Requinoa
+1392;Vino de la Tierra de Castelló
+1393;Kangaroo Island
+1394;Penisola Sorrentina
+1395;Mavrodaphne de Cephalonie
+1396;Casorzo
+1397;Rosso di Cerignola
+1398;Goumenissa
+1399;Sant' Agata dei Goti
+1400;Portugal
+1401;Messinia
+1402;Lakonia
+1403;Markopoulo
+1404;McLaren Vale-Langhorne Creek
+1405;Mentrida
+1406;Monreale
+1407;Monferrato Bianco
+1408;Béarn
+1409;Vinho Licoroso
+1410;Torgiano Rosso Riserva
+1411;Arribes del Duero
+1412;Finca Élez
+1413;Moulis
+1414;Campanha
+1415;Lime Kiln Valley
+1416;Mâcon Chaintré
+1417;Vino da Mesa de Toledo
+1418;Amador-Napa
+1419;Hilltops
+1420;Paardeberg
+1421;Polk County
+1422;Tuscany
+1423;Barossa-Langhorne Creek
+1424;Currency Creek-McLaren Vale
+1425;Coteaux du Lyonnais
+1426;Sardinia
+1427;Gippsland
+1428;Strathbogie Ranges
+1429;Colline Teramane
+1430;San Antonio de las Minas Valley
+1431;Vino de la Tierra Ribera del Gállego-Cinco Villas
+1432;Monterey County-Napa County-Sonoma County
+1433;Côte Roannaise
+1434;Côtes de Thau
+1435;Antelope Valley of the California High Desert
+1436;Northern Spain
+1437;Napa Valley-Paso Robles
+1438;Clare Valley-Coonawarra
+1439;Krania Olympus
+1440;Falanghina del Molise
+1441;Corinthia
+1442;Slovenska Istra
+1443;Corton-Bressandes
+1444;Commandaria
+1445;Gladstone
+1446;Medrano
+1447;Lake County-Sonoma County
+1448;Valpolicella Ripasso Valpantena
+1449;Jerusalem Hills
+1450;Circeo
+1451;Gundagai
+1452;Vin de Pays des Coteaux de Bessilles
+1453;Mount Barker & Margaret River
+1454;Mazoyeres-Chambertin
+1455;Altos de Mendoza
+1456;Vino de la Tierra Altiplano de Sierra Nevada
+1457;Cirò Classico
+1458;Bardolino Classico Superiore
+1459;Vino de Calidad de Tierras de León
+1460;Mount Athos
+1461;Valpolicella Ripasso Valpantena Superiore
+1462;Sebino
+1463;Colares
+1464;McLaren Vale-Padthaway
+1465;Gaillac Doux
+1466;Helderberg
+1467;Mendocino-Amador
+1468;Casablanca & Leyda Valleys
+1469;Dealurile Hușilor
+1470;Vallée du Paradis
+1471;Urla-Thrace
+1472;San Rafael
+1473;Sovana
+1474;Vesuvio
+1475;Dolcetto d'Alba Superiore
+1476;Tumbarumba
+1477;Südburgenland
+1478;Henty
+1479;Côtes de Saint-Mont
+1480;Laudun
+1481;Italy Other
+1482;Saint-Chinian-Roquebrun
+1483;Cape Peninsula
+1484;San Martino della Battaglia
+1485;Geelong
+1486;Corton Perrières
+1487;Alpine Valleys
+1488;Codru Region
+1489;Sterea Ellada
+1490;Muscat of Patras
+1491;Chianti Colli Pisani
+1492;Coteaux du Layon Beaulieu
+1493;Imathia
+1494;Alenteo
+1495;Napa-Amador
+1496;Napa County-Sonoma County-Lake County
+1497;Vin de Pays de L'Herault
+1498;Montello e Colli Asolani
+1499;Nasco di Cagliari
+1500;Charentais
+1501;Montefalco
+1502;Santa Cruz County
+1503;Sonoma-Santa Barbara-Mendocino
+1504;Napa-Mendocino-Sonoma
+1505;Vin de Pays de France
+1506;Massachusetts
+1507;Canada
+1508;Frascati
+1509;Alta Valle della Greve
+1510;Southern Highlands
+1511;La Romanée
+1512;Aglianico d'Irpinia
+1513;Lake-Sonoma-Napa
+1514;Vin de Pays de Montferrand
+1515;Isle St. George
+1516;Clairette de Die
+1517;Clare Valley-Eden Valley
+1518;Spanish Islands
+1519;Strevi
+1520;Australia-New Zealand
+1521;Riverland
+1522;Sardon de Duero
+1523;Texoma
+1524;Capay Valley
+1525;Alpilles
+1526;Malgas
+1527;Fleurieu Peninsula
+1528;Cacc’e Mmitte di Lucera
+1529;Letrinon
+1530;Muscat of Kefallonian
+1531;Sonoma-Napa-Monterey
+1532;Thessalikos
+1533;Collioure
+1534;Saint Guilhem le Désert
+1535;Catalanesca del Monte Somma
+1536;Périgord
+1537;Hawaii
+1538;San Gimignano
+1539;Bourgogne Vézelay
+1540;Vino de Calidad de Valtiendas
+1541;Mitterberg
+1542;China
+1543;Limnos
+1544;Viile Timis
+1545;Rivesaltes Rosé
+1546;Offida Rosso
+1547;Côtes de Montravel
+1548;Devon Valley
+1549;Krk
+1550;Arcadia
+1551;Cape Agulhas
+1552;Colli del Limbara
+1553;Catamarca
+1554;Kathikas
+1555;Vin de Pays de Velvendo
+1556;Langhorne Creek-Limestone Coast
+1557;Coda di Volpe d'Irpinia
+1558;Squinzano
+1559;Landwein Rhein
+1560;Monterey County-Napa County
+1561;Est! Est!! Est!!! di Montefiascone
+1562;Terrasses du Larzac
+1563;Lesbos
+1564;Távora-Varosa
+1565;San Diego County
+1566;Cabernet d'Anjou
+1567;Dolcetto d'Asti
+1568;Sonoma-Napa-Lake
+1569;Sonoma County-Santa Barbara County
+1570;Neuchâtel
+1571;Del Veneto
+1572;Bardolino Superiore
+1573;Paestum

@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import string
+import pandas as pd
+from config import csv_separator
+
 
 def string_hash(array):
     """
@@ -25,7 +28,6 @@ def string_hash(array):
             countries_counter[element] = 1
             countries[element] = counter
             counter += 1
-
     return column, countries
 
 
@@ -76,7 +78,7 @@ def from_price_to_range(array, steps):
 
         :Exemple:
         >>> from_price_to_range([1,10,12,50,6,80], [10, 20, 40, 60, 80, 100])
-        [0, 1, 1, 3, 0, 5]
+        ([0, 1, 1, 3, 0, 5], {0: 1, 1: 1, 3: 0, 5: 0})
     """
     range_number = {}
     steps.append(1000000)  # append infinity
@@ -94,6 +96,26 @@ def from_price_to_range(array, steps):
             else:
                 i += 1
     return column, range_number
+
+
+def index_to_range(index, array):
+    """
+        Associate an index with a range (tuple)
+
+        :Exemple:
+        >>> index_to_range(0, [10, 20, 30, 40])
+        (0, 10)
+
+        >>> index_to_range(2, [10, 20, 30, 40])
+        (20, 30)
+    """
+    if index == 0:
+        return 0, array[0]
+    if index == len(array):
+        return array[index-1], 10000
+    else:
+        return array[index-1], array[index]
+
 
 def count_words(array):
     """
@@ -133,3 +155,19 @@ def from_int_to_list(n, table):
             n -= value
             res.append(table[value])
     return res
+
+
+def dict_to_csv(dictionary, dir, filename):
+    """
+        Translate a dictionary into a csv file
+    """
+    res = []
+    for e in dictionary:
+        tuple_array = [dictionary[e], e]
+        res.append(tuple_array)
+    data = pd.DataFrame(res, columns=['id', 'value'])
+    data.to_csv(dir+filename, sep=csv_separator, encoding='utf-8', index=False)
+
+
+def df_to_dict(df):
+    return dict(zip(df.id, df.value)), dict(zip(df.value, df.id))

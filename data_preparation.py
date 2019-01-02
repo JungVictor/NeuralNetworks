@@ -1,20 +1,8 @@
 import pandas as pd
 import warnings
 from refiner import *
+from config import *
 warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
-
-#####################
-#       INIT        #
-#####################
-# Name of the output dataset
-filename = 'output.csv'
-
-# Drop the description column ?
-drop_description = True
-
-# Price range
-price_range = [10, 15, 20, 25, 30, 40, 55, 100]
-#####################
 
 # Reading the file
 wines = pd.read_csv("winemag-data-130k-v2.csv")
@@ -58,6 +46,12 @@ print("Number of regions : {}".format(len(region_table)))
 print("Number of province : {}".format(len(province_table)))
 print("Number of variety : {}".format(len(variety_table)))
 
+# SAVING HASH TABLES
+dict_to_csv(country_table, output_dir, country_filename)
+dict_to_csv(region_table, output_dir, region_filename)
+dict_to_csv(province_table, output_dir, province_filename)
+dict_to_csv(variety_table, output_dir, variety_filename)
+
 # Renaming columns and saving to csv
 wines.rename(index=str, columns={"region_1": "region", "price": "price_range"}, inplace=True)
-wines.to_csv(filename, sep=';', encoding='utf-8', index=False)
+wines.to_csv(output_dir+data_filename, sep=csv_separator, encoding='utf-8', index=False)
