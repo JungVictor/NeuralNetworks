@@ -2,7 +2,6 @@ import pandas as pd
 from config import *
 from refiner import *
 import matplotlib.pyplot as plt
-from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
@@ -10,22 +9,21 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.gaussian_process.kernels import RBF
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.svm import SVC
 import warnings
 warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
 
 #####################
-country = 'France'
-points = 87
-price = 40
-province = 'Champagne'
-region = 'Champagne'
+country = 'US'
+points = 98
+price = 220
+province = 'California'
+region = 'Napa'
 #####################
 
 # Reading the main dataset
 wines = pd.read_csv(output_dir+data_filename, sep=csv_separator)
+# wines.drop(wines.columns[[6]], axis=1, inplace=True)
 
 # Reading the hash table
 country_table = pd.read_csv(output_dir+country_filename, sep=csv_separator)
@@ -86,11 +84,10 @@ for i in range(200):
     neural_network.fit(X_train, y_train)
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=i)
     score = neural_network.score(X_test, y_test)
-    if score > 0.53:
+    if score > 0.57:
         break
 print("END OF THE TRAINING")
 
-score = neural_network.score(X_test, y_test)
 print("Score of the classifier : {}".format(score))
 
 difference = 0
@@ -101,8 +98,30 @@ for i in range(len(actual)):
 
 print(difference / len(actual))
 
-# Asking the network to answer the problem
-X = [country, points, price, province, region]
-answer = neural_network.predict([X])[0]
-print(variety_table[answer])
+vintages = [2000+i for i in range(0, 18)]
 
+# Asking the network to answer the problem
+answers = []
+X = pd.read_csv('test/review.csv', sep=csv_separator)
+X.dropna(inplace=True)
+X.reset_index(inplace=True, drop=True)
+correct = 0
+for i in range(len(X)):
+    if X['country'][i] in country_table_r and X['province'][i] in province_table_r and X['region_1'][i] in region_table_r and X['variety'][i] in variety_table_r:
+        ctr = country_table_r[X['country'][i]]
+        pts = X['points'][i]
+        prv = province_table_r[X['province'][i]]
+        rgn = region_table_r[X['region_1'][i]]
+        prc = from_price_to_range([X['price'][i]], price_range)[0][0]
+        vnt = X['vintage'][i]
+        wine = [[ctr, pts, prc, prv, rgn, vnt]]
+        answer = neural_network.predict(wine)[0]
+        expected = variety_table_r[X['variety'][i]]
+        if answer == expected:
+            answers.append(True)
+            correct += 1
+        else:
+            answers.append(False)
+
+
+print(correct, '/', len(X), correct/len(X)*100)

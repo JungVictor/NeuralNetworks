@@ -18,11 +18,11 @@ import warnings
 warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
 
 #####################
-country = 'France'
-points = 90
-province = 'Alsace'
-region = 'Alsace'
-variety = 'Syrah'
+country = 'US'
+points = 87
+province = 'California'
+region = 'Napa'
+variety = 'Pinot Gris'
 #####################
 
 # Reading the main dataset
@@ -61,8 +61,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 ######################
 
 # Multi-layer Perceptron, not My Little Pony
-network_shape = (10, 10, 10)    # 3 hidden layout of size 10
-neighbors = KNeighborsClassifier(15)
+network_shape = (100, 100, 100)    # 3 hidden layout of size 10
+neighbors = KNeighborsClassifier(1)
 gauss = GaussianProcessClassifier()
 bayes = GaussianNB()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
@@ -99,7 +99,28 @@ print("Score of the classifier : {}%".format(score*100))
 print("Average difference between expected and actual : {}%".format(difference))
 
 # Asking the network to answer the problem
-X = [country, points, province, region, variety]
-answer = neural_network.predict([X])[0]
-print(index_to_range(answer, price_range))
+answers = []
 
+X = pd.read_csv('test/review.csv', sep=csv_separator)
+X.dropna(inplace=True)
+X.reset_index(inplace=True, drop=True)
+correct = 0
+for i in range(len(X)):
+    if X['country'][i] in country_table_r and X['province'][i] in province_table_r and X['region_1'][i] in region_table_r and X['variety'][i] in variety_table_r:
+        ctr = country_table_r[X['country'][i]]
+        pts = X['points'][i]
+        prv = province_table_r[X['province'][i]]
+        rgn = region_table_r[X['region_1'][i]]
+        vrt = variety_table_r[X['variety'][i]]
+        vnt = X['vintage'][i]
+        wine = [[ctr, pts, prv, rgn, vrt, vnt]]
+        answer = index_to_range(neural_network.predict(wine)[0], price_range)
+        expected = X['price'][i]
+        if answer[0] <= expected < answer[1]:
+            answers.append(True)
+            correct += 1
+        else:
+            answers.append(False)
+
+
+print(correct, '/', len(X), correct/len(X)*100)

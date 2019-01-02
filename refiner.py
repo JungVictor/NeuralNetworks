@@ -3,6 +3,7 @@
 
 import string
 import pandas as pd
+import numpy as np
 from config import csv_separator
 
 
@@ -171,3 +172,20 @@ def dict_to_csv(dictionary, dir, filename):
 
 def df_to_dict(df):
     return dict(zip(df.id, df.value)), dict(zip(df.value, df.id))
+
+
+def title_to_vintage(array):
+    vintage = []
+    for e in array:
+        year = ''.join(c for c in e if c.isdigit())
+        if len(year) > 4:
+            while year[0] > '2':
+                year = year[1:]
+            while len(year) > 4:
+                year = year[:-1]
+        if len(year) == 4:
+            vintage.append(int(year))
+        else:
+            vintage.append(np.nan)
+    return vintage
+

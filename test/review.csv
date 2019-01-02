@@ -1,0 +1,1941 @@
+country;points;price;province;region_1;variety;vintage
+Italy;99;485.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;98;485.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Australia;98;350.0;Victoria;Rutherglen;Muscat;
+US;98;210.0;California;Diamond Mountain District;Cabernet Sauvignon;2014.0
+US;98;220.0;California;Rutherford;Cabernet Sauvignon;2015.0
+US;98;55.0;California;Russian River Valley;Chardonnay;2016.0
+Australia;97;375.0;Victoria;Rutherglen;Muscadelle;
+Spain;97;88.0;Northern Spain;Rioja;Tempranillo;2011.0
+Australia;97;825.0;South Australia;Eden Valley;Shiraz;2013.0
+US;97;60.0;California;Russian River Valley;Chardonnay;2016.0
+US;97;70.0;California;Russian River Valley;Chardonnay;2016.0
+US;97;70.0;California;Russian River Valley;Chardonnay;2016.0
+Australia;97;50.0;Western Australia;Margaret River;Chardonnay;2016.0
+Italy;96;195.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Portugal;96;60.0;Alentejo;Alentejo;Portuguese Red;2013.0
+Italy;96;60.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;96;280.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+Germany;96;345.0;Rheinhessen;Rheinhessen;Riesling;2017.0
+US;96;325.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+Italy;96;90.0;Piedmont;Gattinara;Nebbiolo;2013.0
+US;90;24.0;California;Red Hills;Cabernet Sauvignon;2016.0
+US;90;13.0;Washington;Columbia Valley (WA);Riesling;
+US;90;90.0;California;Stags Leap District;Cabernet Sauvignon;2014.0
+US;90;40.0;Washington;Red Mountain;Cabernet Sauvignon;2015.0
+US;90;36.0;California;Fountaingrove District;Zinfandel;2015.0
+US;90;39.0;California;Anderson Valley;Rosato;2017.0
+Italy;90;17.0;Veneto;Custoza;White Blend;2017.0
+France;90;25.0;Rhône Valley;Côtes du Rhône;Rhône-style White Blend;2017.0
+France;90;23.0;Provence;Coteaux Varois en Provence;Rosé;2017.0
+France;90;20.0;Bordeaux;Cadillac;Sémillon;2016.0
+France;90;15.0;Bordeaux;Montagne-Saint-Émilion;Bordeaux-style Red Blend;2015.0
+France;90;35.0;Bordeaux;Saint-Estèphe;Bordeaux-style Red Blend;2015.0
+Italy;90;25.0;Northeastern Italy;Collio;Sauvignon;2016.0
+France;90;20.0;Rhône Valley;Côtes du Rhône Villages;Rhône-style Red Blend;2016.0
+France;90;20.0;Loire Valley;Muscadet Sèvre et Maine;Melon de Bourgogne;2017.0
+France;90;20.0;Loire Valley;Anjou Villages;Cabernet Franc-Cabernet Sauvignon;2016.0
+France;90;30.0;Loire Valley;Sancerre;Rosé;2017.0
+France;90;29.0;Loire Valley;Muscadet Sèvre et Maine;Melon de Bourgogne;2017.0
+US;90;75.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+Italy;90;20.0;Sicily & Sardinia;Sicilia;Perricone;2016.0
+US;92;42.0;California;Contra Costa County;Mourvèdre;2014.0
+US;92;25.0;California;Russian River Valley;Chardonnay;2015.0
+Italy;92;120.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+New Zealand;92;50.0;Central Otago;Central Otago;Chardonnay;2014.0
+US;92;25.0;California;Yountville;Sauvignon Blanc;2016.0
+Italy;92;90.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;92;32.0;California;Sierra Foothills;Rhône-style Red Blend;2015.0
+Italy;92;80.0;Piedmont;Barolo;Nebbiolo;2013.0
+New Zealand;92;22.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+US;92;63.0;California;Russian River Valley;Pinot Noir;2015.0
+Spain;92;40.0;Catalonia;Cava;Sparkling Blend;2010.0
+US;92;80.0;California;Napa Valley;Petite Sirah;2014.0
+Italy;92;60.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+New Zealand;92;90.0;Central Otago;Central Otago;Pinot Noir;2015.0
+Argentina;92;37.0;Mendoza Province;Uco Valley;Malbec;2014.0
+US;92;69.0;California;Sonoma Coast;Chardonnay;2016.0
+Argentina;92;32.0;Mendoza Province;Mendoza;Malbec-Cabernet Sauvignon;2014.0
+US;92;55.0;California;Adelaida District;Rhône-style Red Blend;2015.0
+US;92;70.0;Washington;Columbia Valley (WA);G-S-M;2015.0
+Italy;92;46.0;Tuscany;Toscana;Red Blend;2013.0
+US;87;15.0;California;Santa Ynez Valley;Sauvignon Blanc;2016.0
+US;87;25.0;Oregon;Willamette Valley;Pinot Noir;2014.0
+Italy;87;30.0;Veneto;Valpolicella Superiore Ripasso;Red Blend;2010.0
+Spain;87;16.0;Catalonia;Cava;Sparkling Blend;2015.0
+Spain;87;13.0;Northern Spain;Ribera del Duero;Tempranillo;2015.0
+Australia;87;30.0;Western Australia;Porongurup;Riesling;2014.0
+Argentina;87;13.0;Mendoza Province;Uco Valley;Malbec-Cabernet Franc;2016.0
+US;87;25.0;California;Carneros;Chardonnay;2015.0
+US;87;25.0;Oregon;Willamette Valley;Chardonnay;2015.0
+US;87;45.0;Oregon;Dundee Hills;Pinot Noir;2015.0
+US;87;35.0;California;Carneros;Pinot Noir;2015.0
+US;87;39.0;Oregon;Eola-Amity Hills;Pinot Noir;2015.0
+US;87;28.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;87;20.0;Oregon;Willamette Valley;Chardonnay;2015.0
+Australia;87;20.0;Western Australia;Margaret River;Chardonnay;2016.0
+US;87;22.0;Washington;Horse Heaven Hills;Pinot Gris;1420.0
+Spain;87;33.0;Catalonia;Alella;Mataro;2016.0
+Spain;87;20.0;Galicia;Rías Baixas;Albariño;2016.0
+Argentina;87;13.0;Mendoza Province;Mendoza;Bordeaux-style Red Blend;2015.0
+US;87;28.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2013.0
+Austria;90;30.0;Burgenland;Burgenland;Chardonnay;2017.0
+US;90;40.0;California;Dry Creek Valley;Cabernet Franc;2015.0
+US;90;25.0;New York;Cayuga Lake;Pinot Noir;2016.0
+US;90;85.0;California;Howell Mountain;Cabernet Franc;2014.0
+US;90;29.0;California;Santa Barbara County;Syrah;2016.0
+US;90;18.0;California;California;Cabernet Sauvignon;2015.0
+US;90;34.0;California;Sonoma Coast;Chardonnay;2015.0
+New Zealand;90;20.0;Marlborough;Marlborough;Sauvignon Blanc;2015.0
+US;90;40.0;Washington;Yakima Valley;Chardonnay;2016.0
+US;90;32.0;California;Santa Clara Valley;Zinfandel;2015.0
+US;90;99.0;California;Oakville;Cabernet Sauvignon;2014.0
+US;90;32.0;California;Lake County;Cabernet Sauvignon;2014.0
+New Zealand;90;17.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+US;90;30.0;California;Borden Ranch;Zinfandel;2016.0
+France;90;14.0;Rhône Valley;Côtes du Rhône;Rhône-style White Blend;2017.0
+US;90;25.0;New York;North Fork of Long Island;Sauvignon Blanc;2017.0
+Italy;90;;Tuscany;Chianti;Red Blend;2013.0
+US;90;20.0;California;Alexander Valley;Cabernet Sauvignon;2014.0
+Italy;90;20.0;Central Italy;Orvieto;White Blend;2016.0
+US;90;18.0;New York;Finger Lakes;Rosé;2017.0
+France;88;11.0;France Other;Vin de France;Carignan;2016.0
+Italy;88;15.0;Central Italy;Montepulciano d'Abruzzo;Montepulciano;2016.0
+US;88;23.0;California;Happy Canyon of Santa Barbara;Sauvignon Blanc;2016.0
+Portugal;88;13.0;Lisboa;Lisboa;Alvarinho;2017.0
+France;88;16.0;Southwest France;Saint-Mont;Red Blend;2016.0
+France;88;20.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+Spain;88;23.0;Catalonia;Cava;Sparkling Blend;2016.0
+Argentina;88;17.0;Mendoza Province;La Consulta;Cabernet Sauvignon;2017.0
+Portugal;88;9.0;Vinho Verde;Vinho Verde;Portuguese White;2017.0
+US;88;50.0;California;Santa Clara Valley;Syrah;2014.0
+France;88;14.0;France Other;Vin de France;Chardonnay;2017.0
+US;88;;California;Paso Robles;Rhône-style Red Blend;2013.0
+US;88;40.0;California;Russian River Valley;Pinot Noir;2015.0
+US;88;40.0;California;Santa Maria Valley;Chardonnay;2015.0
+US;88;34.0;California;Contra Costa County;Mourvèdre;2016.0
+Portugal;88;14.0;Lisboa;Lisboa;Arinto;2017.0
+Portugal;88;20.0;Lisboa;Lisboa;Portuguese White;2017.0
+France;88;15.0;Southwest France;Côtes du Marmandais;Red Blend;2017.0
+France;88;12.0;Southwest France;Gaillac;White Blend;2017.0
+France;88;20.0;Southwest France;Bergerac;Bordeaux-style Red Blend;2016.0
+Italy;87;15.0;Veneto;Prosecco Treviso;Glera;
+US;87;13.0;California;Russian River Valley;Chardonnay;2015.0
+Italy;87;14.0;Veneto;Prosecco Treviso;Glera;
+US;87;55.0;Oregon;Eola-Amity Hills;Pinot Noir;2015.0
+Argentina;87;20.0;Mendoza Province;Uco Valley;Chardonnay;2016.0
+US;87;40.0;Oregon;Eola-Amity Hills;Chardonnay;2015.0
+US;87;18.0;Oregon;Willamette Valley;Pinot Gris;2016.0
+Canada;87;33.0;British Columbia;Okanagan Valley;Bordeaux-style Red Blend;2014.0
+US;87;45.0;California;Sonoma County;Red Blend;2015.0
+New Zealand;87;14.0;Marlborough;Marlborough;Sauvignon Blanc;2016.0
+Italy;87;24.0;Veneto;Conegliano Valdobbiadene Prosecco Superiore;Glera;2016.0
+US;87;18.0;Washington;Wahluke Slope;Merlot;2015.0
+Italy;87;17.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;2016.0
+US;87;65.0;Oregon;Chehalem Mountains;Pinot Noir;2014.0
+US;87;15.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2015.0
+Italy;87;14.0;Veneto;Prosecco Treviso;Glera;
+France;87;15.0;Loire Valley;Muscadet Côtes de Grandlieu;Melon;2016.0
+Argentina;87;18.0;Mendoza Province;Tupungato;Chardonnay;2016.0
+New Zealand;87;15.0;Martinborough;Martinborough;Sauvignon Blanc;2015.0
+Canada;87;16.0;Ontario;Lake Erie North Shore;Riesling;2201.0
+New Zealand;86;19.0;Wairarapa;Wairarapa;Sauvignon Blanc;2017.0
+US;86;;California;Napa Valley;Zinfandel;2016.0
+Chile;86;12.0;Leyda Valley;Leyda Valley;Pinot Noir;2017.0
+Italy;86;25.0;Sicily & Sardinia;Etna;Nerello Mascalese;2016.0
+France;86;12.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2015.0
+France;86;8.0;Bordeaux;Bordeaux Blanc;Bordeaux-style White Blend;2017.0
+Italy;86;35.0;Sicily & Sardinia;Etna;Red Blend;2015.0
+US;86;25.0;Washington;Red Mountain;Bordeaux-style Red Blend;2016.0
+US;86;25.0;California;Sierra Foothills;Barbera;2016.0
+Chile;86;24.0;Malleco;Malleco;Chardonnay;2016.0
+US;86;15.0;California;Clarksburg;Cabernet Sauvignon;2016.0
+Italy;86;12.0;Central Italy;Rosso Piceno;Red Blend;2015.0
+Chile;86;15.0;Maule Valley;Maule Valley;Carmenère;2017.0
+France;86;12.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;86;15.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2016.0
+France;86;40.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2011.0
+France;86;14.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;86;22.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2016.0
+Chile;86;10.0;Maule Valley;Maule Valley;Carmenère;2017.0
+France;86;24.0;Burgundy;Mâcon-Villages;Chardonnay;2015.0
+Italy;85;24.0;Tuscany;Maremma Toscana;Red Blend;2015.0
+US;85;26.0;Oregon;Applegate Valley;Viognier;2016.0
+US;85;15.0;America;America;Riesling;2016.0
+US;85;20.0;Oregon;Willamette Valley;Chardonnay;2014.0
+Italy;85;15.0;Southern Italy;Puglia;Red Blend;2015.0
+Spain;85;10.0;Northern Spain;Campo de Borja;Viura;2016.0
+Italy;85;15.0;Southern Italy;Salento;Primitivo;2015.0
+Spain;85;15.0;Levante;Valencia;Cabernet Sauvignon;2016.0
+France;85;25.0;Bordeaux;Haut-Médoc;Bordeaux-style Red Blend;2015.0
+Spain;85;12.0;Catalonia;Montsant;Red Blend;2014.0
+US;85;30.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;85;20.0;Michigan;Lake Michigan Shore;Riesling;2016.0
+Italy;85;23.0;Tuscany;Vino Nobile di Montepulciano;Red Blend;2014.0
+Italy;85;19.0;Tuscany;Maremma Toscana;Rosato;2016.0
+US;85;10.0;California;California;Chardonnay;2016.0
+Spain;85;26.0;Galicia;Rías Baixas;Albariño;2012.0
+US;85;55.0;Oregon;Eola-Amity Hills;Pinot Noir;2014.0
+US;85;50.0;Oregon;Willamette Valley;Red Blend;2016.0
+Spain;85;16.0;Levante;Jumilla;Red Blend;2016.0
+US;85;20.0;Washington;Columbia Valley (WA);Red Blend;
+Argentina;87;16.0;Mendoza Province;Mendoza;Malbec;2016.0
+France;87;;Corse;Corse;Rosé;2016.0
+France;87;28.0;Loire Valley;Sancerre;Pinot Noir;2015.0
+France;87;20.0;Loire Valley;Sancerre;Sauvignon Blanc;2016.0
+Portugal;87;7.0;Alentejano;Alentejano;Portuguese White;2016.0
+Bulgaria;87;16.0;Thracian Valley;Thracian Valley;Sauvignon Blanc;2016.0
+US;87;60.0;California;California;Roussanne;2015.0
+France;87;13.0;France Other;Vin de Savoie;Rosé;2016.0
+Portugal;87;13.0;Tejo;Tejo;Portuguese Red;2015.0
+Portugal;87;15.0;Douro;Douro;Portuguese Red;2015.0
+Portugal;87;80.0;Port;Port;Port;2015.0
+Portugal;87;30.0;Douro;Douro;Rosé;2016.0
+US;87;27.0;Oregon;Eola-Amity Hills;Pinot Noir;2013.0
+Portugal;87;12.0;Beira Interior;Beira Interior;Portuguese Red;2015.0
+Portugal;87;12.0;Douro;Douro;Portuguese White;2016.0
+Portugal;87;10.0;Douro;Douro;Rosé;2016.0
+New Zealand;87;20.0;Marlborough;Marlborough;Pinot Noir;2015.0
+US;87;30.0;California;Russian River Valley;Chardonnay;2014.0
+Bulgaria;87;15.0;Thracian Valley;Thracian Valley;Sparkling Blend;2015.0
+France;87;12.0;France Other;Vin de France;Chardonnay;2016.0
+US;96;85.0;California;Rutherford;Bordeaux-style Red Blend;2015.0
+US;96;220.0;California;St. Helena;Cabernet Sauvignon;2015.0
+US;96;50.0;California;Santa Barbara County;Pinot Noir;2014.0
+Italy;96;100.0;Piedmont;Barbaresco;Nebbiolo;2013.0
+US;95;220.0;California;Oakville;Cabernet Sauvignon;2015.0
+US;95;80.0;California;Sta. Rita Hills;Pinot Noir;2017.0
+US;95;110.0;California;Stags Leap District;Cabernet Sauvignon;2015.0
+US;95;40.0;California;Santa Barbara County;Rhône-style Red Blend;2016.0
+Italy;95;85.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;95;70.0;California;Santa Maria Valley;Pinot Noir;2016.0
+Italy;95;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;95;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Germany;95;50.0;Württemberg;Württemberg;Riesling;2016.0
+US;95;220.0;California;Oak Knoll District;Cabernet Sauvignon;2015.0
+Italy;95;74.0;Piedmont;Gattinara;Nebbiolo;2013.0
+US;95;40.0;California;Santa Maria Valley;Chardonnay;2015.0
+US;95;60.0;California;Santa Cruz Mountains;Pinot Noir;2016.0
+US;95;65.0;California;Sta. Rita Hills;Chardonnay;2016.0
+Italy;95;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Australia;95;225.0;South Australia;Eden Valley;Shiraz;2013.0
+Italy;90;24.0;Northeastern Italy;Collio;Chardonnay;2016.0
+Italy;90;24.0;Northeastern Italy;Collio;Ribolla Gialla;2016.0
+France;90;50.0;Rhône Valley;Châteauneuf-du-Pape;Rhône-style Red Blend;2015.0
+Austria;90;17.0;Burgenland;Burgenland;Weissburgunder;2017.0
+Italy;90;27.0;Northeastern Italy;Trentino;Pinot Grigio;1939.0
+US;90;95.0;California;Oakville;Cabernet Sauvignon;2013.0
+US;90;24.0;California;Sonoma County;Cabernet Sauvignon;2015.0
+US;90;24.0;California;Red Hills;Cabernet Sauvignon;2016.0
+US;90;13.0;Washington;Columbia Valley (WA);Riesling;
+France;90;39.0;Bordeaux;Sauternes;Sémillon;2015.0
+US;90;52.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2014.0
+Italy;90;17.0;Veneto;Custoza;White Blend;2017.0
+Italy;90;15.0;Northeastern Italy;Alto Adige;Chardonnay;2017.0
+Italy;90;40.0;Northeastern Italy;Collio;Picolit;2012.0
+Austria;90;22.0;Wagram;Wagram;Grüner Veltliner;2017.0
+US;90;8.0;California;Central Coast;Sparkling Blend;2017.0
+Italy;90;65.0;Lombardy;Provincia di Pavia;Nebbiolo;2012.0
+US;90;26.0;California;El Dorado;Zinfandel;2015.0
+France;90;38.0;Rhône Valley;Côtes du Rhône Villages;Rhône-style Red Blend;2016.0
+Greece;90;25.0;Santorini;Santorini;Assyrtiko;2017.0
+France;88;17.0;Provence;Côtes de Provence;Rosé;2017.0
+US;88;20.0;California;Central Coast;Riesling;2017.0
+US;88;28.0;California;California;Rhône-style Red Blend;2015.0
+US;88;18.0;California;Sonoma Coast;Pinot Noir;2017.0
+France;88;24.0;Southwest France;Gaillac;Mauzac;2017.0
+France;88;22.0;Alsace;Crémant d'Alsace;Chardonnay;2016.0
+France;88;25.0;Corse;Corse;Vermentino;2017.0
+France;88;19.0;Corse;Corse;Rosé;2017.0
+France;88;19.0;Corse;Corse;Vermentino;2017.0
+France;88;25.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+US;88;;California;Ballard Canyon;Viognier;2017.0
+US;88;30.0;California;Temecula Valley;Viognier;2017.0
+US;88;30.0;California;Sta. Rita Hills;Pinot Noir;2016.0
+US;88;35.0;California;California;Red Blend;2014.0
+US;88;23.0;Washington;Columbia Valley (WA);Sparkling Blend;
+France;88;25.0;France Other;Savoie;Mondeuse;2016.0
+US;88;22.0;California;Sonoma County;Sparkling Blend;
+Spain;88;24.0;Northern Spain;Rioja;Tempranillo;2016.0
+Spain;88;21.0;Northern Spain;Getariako Txakolina;Rosé;2017.0
+Italy;88;14.0;Central Italy;Montepulciano d'Abruzzo;Montepulciano;2016.0
+US;92;40.0;California;Ballard Canyon;Grenache;2013.0
+US;92;45.0;California;Santa Barbara County;Chardonnay;2015.0
+US;92;55.0;California;Sonoma Coast;Chardonnay;2015.0
+Argentina;92;33.0;Mendoza Province;Mendoza;Malbec;2014.0
+US;92;65.0;California;Edna Valley;Pinot Noir;2016.0
+US;92;26.0;California;Alexander Valley;Chardonnay;2015.0
+US;92;45.0;California;Santa Barbara County;Grenache;2015.0
+Italy;92;50.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;92;32.0;California;Napa Valley;Syrah;2014.0
+Italy;92;70.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Italy;92;50.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;92;38.0;California;Russian River Valley;Zinfandel;2015.0
+France;92;50.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2015.0
+France;92;50.0;Bordeaux;Lalande de Pomerol;Bordeaux-style Red Blend;2015.0
+France;92;37.0;Bordeaux;Haut-Médoc;Bordeaux-style Red Blend;2015.0
+France;92;45.0;Bordeaux;Pessac-Léognan;Bordeaux-style Red Blend;2015.0
+US;92;52.0;California;Sta. Rita Hills;Pinot Noir;2014.0
+US;92;45.0;California;Paicines;Malbec;2014.0
+US;92;85.0;California;Russian River Valley;Pinot Noir;2015.0
+US;92;50.0;California;Paso Robles Willow Creek District;Rhône-style Red Blend;2014.0
+Spain;87;75.0;Northern Spain;Rioja;Garnacha;2014.0
+Italy;87;16.0;Veneto;Prosecco;Glera;
+US;87;19.0;California;Paso Robles;Red Blend;2013.0
+Italy;87;15.0;Veneto;Prosecco Treviso;Glera;
+Spain;87;13.0;Catalonia;Cava;Sparkling Blend;
+US;87;15.0;California;California;Sauvignon Blanc;2016.0
+US;87;55.0;California;Santa Maria Valley;Syrah;2014.0
+France;87;46.0;Champagne;Champagne;Champagne Blend;
+US;87;16.0;California;Napa Valley;Sauvignon Blanc;2016.0
+Argentina;87;13.0;Mendoza Province;Uco Valley;Malbec;2014.0
+US;87;25.0;Washington;Walla Walla Valley (WA);Pinot Gris;2016.0
+US;87;42.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2014.0
+Argentina;87;25.0;Mendoza Province;Mendoza;Malbec;2015.0
+Italy;87;17.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+New Zealand;87;23.0;Marlborough;Marlborough;Sauvignon Blanc;2016.0
+Italy;87;18.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;2016.0
+Italy;87;22.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;2016.0
+US;87;18.0;Oregon;Willamette Valley;Pinot Gris;2016.0
+Italy;87;22.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+US;87;16.0;Washington;Horse Heaven Hills;Merlot;2015.0
+US;87;28.0;Oregon;Rogue Valley;Rhône-style White Blend;2013.0
+US;87;35.0;Colorado;Colorado;Cabernet Sauvignon;2012.0
+Italy;87;14.0;Sicily & Sardinia;Sicilia;Nero d'Avola;2016.0
+US;87;18.0;California;Sonoma County;Chardonnay;2015.0
+US;87;29.0;California;Napa Valley;Cabernet Sauvignon;2013.0
+Portugal;86;10.0;Lisboa;Lisboa;Portuguese Red;2016.0
+New Zealand;86;20.0;Marlborough;Marlborough;Pinot Noir;2013.0
+US;86;58.0;California;St. Helena;Aglianico;2014.0
+US;86;30.0;Oregon;Chehalem Mountains;Pinot Noir;2015.0
+US;86;23.0;Oregon;Willamette Valley;Rosé;2016.0
+US;86;24.0;California;California;Rosé;2016.0
+Portugal;86;10.0;Lisboa;Lisboa;Portuguese Red;2014.0
+France;86;10.0;France Other;Vin de France;Chardonnay-Viognier;2016.0
+France;86;13.0;Loire Valley;Val de Loire;Pinot Noir;2016.0
+Portugal;86;30.0;Alentejano;Alentejano;Touriga Nacional;2014.0
+Portugal;86;12.0;Alentejano;Alentejano;Portuguese White;2016.0
+US;86;32.0;Virginia;Virginia;Red Blend;2014.0
+US;86;30.0;California;Napa Valley;Sauvignon Blanc;2016.0
+US;86;28.0;California;Sta. Rita Hills;Syrah-Grenache;2014.0
+Portugal;86;12.0;Tejo;Tejo;Alicante Bouschet;2015.0
+Portugal;85;10.0;Douro;Douro;Portuguese Red;2015.0
+Spain;85;13.0;Catalonia;Cava;Sparkling Blend;
+Portugal;85;10.0;Dão;Dão;Portuguese White;2016.0
+Italy;85;29.0;Tuscany;Vino Nobile di Montepulciano;Red Blend;2013.0
+Italy;85;;Lombardy;Lugana;Turbiana;2015.0
+Italy;85;14.0;Southern Italy;Puglia;Pinot Nero;2015.0
+US;85;24.0;Minnesota;Minnesota;Marquette;2015.0
+France;85;;Bordeaux;Médoc;Bordeaux-style Red Blend;2015.0
+France;85;;Bordeaux;Médoc;Bordeaux-style Red Blend;2015.0
+Germany;85;9.0;Rheinhessen;Rheinhessen;Dornfelder;2016.0
+Italy;85;33.0;Lombardy;Franciacorta;Sparkling Blend;
+Italy;85;;Lombardy;Franciacorta;Sparkling Blend;
+US;85;15.0;California;California;Moscato;2015.0
+US;85;16.0;Washington;Columbia Valley (WA);White Blend;2016.0
+Portugal;85;10.0;Douro;Douro;Portuguese Red;2016.0
+US;85;36.0;Oregon;Oregon Other;Tempranillo;2014.0
+US;85;21.0;Oregon;Umpqua Valley;Viognier;2016.0
+US;85;28.0;Oregon;Willamette Valley;Pinot Noir;2014.0
+Spain;85;25.0;Northern Spain;Rioja;Tempranillo;2009.0
+US;85;5.0;California;California;Red Blend;2015.0
+Spain;87;17.0;Galicia;Rías Baixas;Albariño;2015.0
+Italy;87;35.0;Veneto;Valpolicella;Red Blend;2015.0
+Italy;87;21.0;Southern Italy;Campi Flegrei;Falanghina;2014.0
+US;87;36.0;California;Rockpile;Zinfandel;2014.0
+France;87;13.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2015.0
+US;87;28.0;Washington;Yakima Valley;Cabernet Franc;2014.0
+Argentina;87;22.0;Mendoza Province;Mendoza;Chardonnay;2017.0
+Spain;87;13.0;Northern Spain;Ribera del Duero;Tempranillo;2016.0
+US;87;18.0;California;Monterey;Chardonnay;2015.0
+France;87;25.0;Burgundy;Bourgogne;Pinot Noir;2015.0
+France;87;17.0;Burgundy;Mâcon-Fuissé;Chardonnay;2016.0
+France;87;60.0;Burgundy;Pommard;Pinot Noir;2013.0
+US;87;15.0;Oregon;Willamette Valley;Riesling;2014.0
+US;87;40.0;Washington;Columbia Valley (WA);Bordeaux-style Red Blend;2012.0
+Australia;87;42.0;Victoria;Yarra Valley;Pinot Noir;2015.0
+US;87;24.0;Oregon;Willamette Valley;Chardonnay;2015.0
+US;87;13.0;California;Monterey County;Chardonnay;2016.0
+US;87;28.0;California;San Diego County;Chardonnay;2016.0
+France;87;;Burgundy;Petit Chablis;Chardonnay;2016.0
+US;87;38.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;90;25.0;California;Central Coast;Cabernet Sauvignon;2016.0
+Italy;90;21.0;Northeastern Italy;Alto Adige;Pinot Grigio;2016.0
+Italy;90;23.0;Northeastern Italy;Friuli Colli Orientali;Pinot Grigio;2016.0
+US;90;45.0;California;Paso Robles;Red Blend;2015.0
+Austria;90;22.0;Burgenland;Burgenland;Rosé;2017.0
+US;90;30.0;Washington;Red Mountain;Red Blend;2015.0
+France;90;18.0;Provence;Coteaux d'Aix-en-Provence;Rosé;
+South Africa;90;17.0;Western Cape;Western Cape;Sauvignon Blanc;
+US;90;55.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2015.0
+US;90;20.0;Washington;Yakima Valley;Chenin Blanc;2016.0
+US;90;11.0;California;California;Petite Sirah;2015.0
+US;90;22.0;California;Sonoma Coast;Rosé;2017.0
+Italy;90;21.0;Central Italy;Verdicchio dei Castelli di Jesi Classico Superiore;Verdicchio;2016.0
+Argentina;90;27.0;Mendoza Province;Uco Valley;Cabernet Sauvignon;2015.0
+France;90;15.0;Bordeaux;Bordeaux Blanc;Bordeaux-style White Blend;2017.0
+France;90;16.0;Rhône Valley;Costières de Nîmes;Rhône-style White Blend;2016.0
+France;90;22.0;Provence;Côtes de Provence;Rosé;2017.0
+France;90;14.0;Rhône Valley;Costières de Nîmes;Rhône-style White Blend;
+France;90;23.0;Provence;Côtes de Provence;Rosé;2017.0
+US;90;50.0;California;Alexander Valley;Chardonnay;2015.0
+France;86;25.0;Burgundy;Mâcon-Chardonnay;Chardonnay;2016.0
+France;86;30.0;Burgundy;Givry;Pinot Noir;2016.0
+US;86;13.0;California;Monterey County;Merlot;2016.0
+US;86;11.0;California;Monterey County;Sauvignon Blanc;2017.0
+Chile;86;20.0;Marchigue;Marchigue;White Blend;2017.0
+Slovenia;86;11.0;Goriska Brda;Goriska Brda;Pinot Grigio;2017.0
+US;86;35.0;Texas;Texas High Plains;Touriga Nacional;2016.0
+France;86;19.0;Burgundy;Mâcon-Villages;Chardonnay;2017.0
+US;86;30.0;Virginia;Virginia;Viognier;2017.0
+US;86;25.0;California;Lodi;Carignane;2015.0
+US;86;26.0;California;Alexander Valley;Zinfandel;2016.0
+US;86;15.0;California;Clarksburg;Moscato;2017.0
+US;86;25.0;Washington;Wahluke Slope;Merlot;2016.0
+US;86;;California;Santa Cruz Mountains;Cabernet Sauvignon;2015.0
+US;86;;Texas;Texas;Tempranillo;2015.0
+US;86;19.0;Texas;Texas High Plains;Sémillon;2017.0
+Spain;86;16.0;Northern Spain;Rueda;Verdejo;2017.0
+Chile;86;14.0;Marchigue;Marchigue;Syrah;2015.0
+Italy;86;;Central Italy;Verdicchio dei Castelli di Jesi;Verdicchio;2016.0
+Spain;86;25.0;Catalonia;Cava;Sparkling Blend;2014.0
+US;90;125.0;California;Rutherford;Cabernet Sauvignon;2014.0
+Italy;90;26.0;Northeastern Italy;Alto Adige;Kerner;2016.0
+US;90;18.0;California;Santa Ynez Valley;Grenache;2017.0
+Italy;90;22.0;Northeastern Italy;Alto Adige;Sauvignon;2017.0
+France;90;38.0;Rhône Valley;Côtes du Rhône Villages;Rhône-style Red Blend;2016.0
+Greece;90;25.0;Santorini;Santorini;Assyrtiko;2017.0
+US;90;52.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2014.0
+Italy;90;17.0;Veneto;Custoza;White Blend;2017.0
+Italy;90;15.0;Northeastern Italy;Alto Adige;Chardonnay;2017.0
+Italy;90;40.0;Northeastern Italy;Collio;Picolit;2012.0
+Austria;90;22.0;Wagram;Wagram;Grüner Veltliner;2017.0
+US;90;8.0;California;Central Coast;Sparkling Blend;2017.0
+Italy;90;65.0;Lombardy;Provincia di Pavia;Nebbiolo;2012.0
+US;90;26.0;California;El Dorado;Zinfandel;2015.0
+US;90;100.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+France;90;20.0;Bordeaux;Puisseguin Saint-Émilion;Merlot-Cabernet Franc;2016.0
+France;90;35.0;Bordeaux;Pessac-Léognan;Bordeaux-style Red Blend;2015.0
+US;90;48.0;California;Paso Robles;Sangiovese;2015.0
+Austria;90;18.0;Wagram;Wagram;Zweigelt;2017.0
+Greece;90;22.0;Drama;Drama;Rosé;2016.0
+US;95;130.0;California;Napa Valley;Bordeaux-style Red Blend;2015.0
+US;95;80.0;California;Russian River Valley;Pinot Noir;2016.0
+Italy;95;;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;95;48.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Australia;95;79.0;Western Australia;Margaret River;Chardonnay;2016.0
+US;95;95.0;Oregon;Eola-Amity Hills;Chardonnay;2015.0
+US;95;70.0;California;Mt. Harlan;Pinot Noir;2015.0
+US;95;52.0;California;Santa Cruz Mountains;Pinot Noir;2016.0
+Italy;95;56.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+Italy;95;60.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+US;95;55.0;California;Santa Cruz Mountains;Pinot Noir;2016.0
+Australia;95;109.0;Western Australia;Margaret River;Chardonnay;2016.0
+Italy;95;485.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;95;280.0;California;Napa Valley;Bordeaux-style Red Blend;2015.0
+US;95;60.0;California;Sonoma Coast;Chardonnay;2016.0
+Italy;95;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Germany;95;70.0;Württemberg;Württemberg;Riesling;2015.0
+Italy;95;55.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;95;250.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;95;55.0;California;Russian River Valley;Chardonnay;2016.0
+US;90;25.0;Washington;Columbia Valley (WA);Syrah;1201.0
+France;90;21.0;Provence;Bandol;Rosé;2017.0
+Italy;90;28.0;Northeastern Italy;Friuli Isonzo;Chardonnay;2013.0
+Italy;90;43.0;Northeastern Italy;Venezia Giulia;White Blend;2013.0
+US;90;42.0;California;Russian River Valley;Pinot Noir;2016.0
+France;90;14.0;Rhône Valley;Costières de Nîmes;Rhône-style White Blend;
+France;90;23.0;Provence;Côtes de Provence;Rosé;2017.0
+US;90;50.0;California;Alexander Valley;Chardonnay;2015.0
+France;90;16.0;Provence;Côtes de Provence;Rosé;2017.0
+Italy;90;24.0;Northeastern Italy;Alto Adige;Pinot Grigio;2016.0
+Italy;90;28.0;Central Italy;Orvieto Classico Superiore;White Blend;2016.0
+France;90;40.0;Provence;Bandol;Rosé;2017.0
+France;90;30.0;Provence;Côtes de Provence Sainte-Victoire;Rosé;2017.0
+France;90;;Rhône Valley;Luberon;Rhône-style White Blend;2016.0
+Austria;90;18.0;Wachau;Wachau;Riesling;2017.0
+US;90;44.0;California;Russian River Valley;Pinot Noir;2016.0
+US;90;80.0;California;Napa Valley;Bordeaux-style Red Blend;2015.0
+US;90;20.0;California;Lodi;Cabernet Sauvignon;2015.0
+Austria;90;20.0;Thermenregion;Thermenregion;Austrian white blend;2017.0
+New Zealand;90;29.0;Marlborough;Marlborough;Sauvignon Blanc;2015.0
+Italy;88;22.0;Central Italy;Controguerra;Pecorino;2017.0
+Portugal;88;10.0;Vinho Verde;Vinho Verde;Loureiro;2017.0
+US;88;52.0;California;Santa Ynez Valley;Red Blend;2014.0
+Italy;88;24.0;Central Italy;Central Italy;Chardonnay;2017.0
+France;88;18.0;Rhône Valley;Côtes du Rhône;Rhône-style White Blend;2016.0
+US;88;25.0;Washington;Walla Walla Valley (WA);Chardonnay;2017.0
+Italy;88;93.0;Piedmont;Barolo;Nebbiolo;2014.0
+France;88;12.0;Rhône Valley;Côtes du Rhône;Rosé;2017.0
+France;88;18.0;Southwest France;Cahors;Malbec;2016.0
+France;88;10.0;France Other;Vin de France;White Blend;2017.0
+US;88;45.0;California;Temecula Valley;Red Blend;2016.0
+Italy;88;35.0;Northwestern Italy;Colli di Luni;Vermentino;2017.0
+France;88;;Rhône Valley;Clairette de Bellegarde;Rhône-style White Blend;2017.0
+US;88;20.0;California;Contra Costa County;Verdelho;2017.0
+France;88;17.0;Rhône Valley;Costières de Nîmes;Syrah;2016.0
+Spain;88;17.0;Galicia;Rías Baixas;Albariño;2017.0
+Portugal;88;18.0;Douro;Douro;Portuguese White;2017.0
+Portugal;88;10.0;Vinho Verde;Vinho Verde;Portuguese White;2017.0
+Portugal;88;22.0;Minho;Minho;Alvarinho;2017.0
+Spain;88;;Northern Spain;Rueda;Verdejo;2017.0
+Italy;92;60.0;Piedmont;Barolo;Nebbiolo;2011.0
+US;92;45.0;California;Sonoma Coast;Pinot Noir;2015.0
+US;92;65.0;California;Napa Valley;Rhône-style White Blend;2016.0
+Italy;92;50.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Italy;92;65.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+France;92;24.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2015.0
+Italy;92;65.0;Piedmont;Barolo;Nebbiolo;2012.0
+US;92;48.0;California;Santa Barbara County;Syrah;2013.0
+Italy;92;66.0;Piedmont;Barolo;Nebbiolo;2013.0
+US;92;45.0;California;Sonoma Coast;Chardonnay;2016.0
+US;92;30.0;California;Adelaida District;Rhône-style White Blend;2016.0
+US;92;50.0;California;Sonoma Mountain;Chardonnay;2016.0
+US;92;30.0;Washington;Walla Walla Valley (WA);Red Blend;2015.0
+Italy;92;;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Italy;92;85.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Argentina;92;60.0;Mendoza Province;Mendoza;Malbec Blend;2014.0
+Italy;92;95.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+France;92;23.0;Bordeaux;Graves;Bordeaux-style Red Blend;2015.0
+France;92;35.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2015.0
+France;92;45.0;Bordeaux;Canon-Fronsac;Bordeaux-style Red Blend;2015.0
+Portugal;86;9.0;Alentejano;Alentejano;Portuguese Red;2016.0
+US;86;20.0;California;Napa Valley;Red Blend;2015.0
+US;86;27.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+France;86;13.0;Ile de Beauté;Ile de Beauté;White Blend;2016.0
+Argentina;86;13.0;Mendoza Province;Mendoza;Malbec;2016.0
+US;86;20.0;California;Monterey County-Napa County-Sonoma County;Pinot Noir;2015.0
+France;86;12.0;Loire Valley;Val de Loire;Sauvignon Blanc;2016.0
+France;86;11.0;France Other;Vin de France;Rosé;2016.0
+Germany;86;13.0;Rheinhessen;Rheinhessen;White Blend;2016.0
+France;86;13.0;France Other;Vin de France;Cabernet Sauvignon;2016.0
+Italy;86;13.0;Piedmont;Dolcetto d'Alba;Dolcetto;2016.0
+Italy;86;33.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+US;86;14.0;Oregon;Oregon;Pinot Gris;2016.0
+Portugal;86;14.0;Douro;Douro;Rosé;2016.0
+Portugal;86;20.0;Tejo;Tejo;Portuguese Red;2016.0
+US;86;32.0;California;Russian River Valley;Chardonnay;2015.0
+US;86;39.0;Virginia;Virginia;Norton;2015.0
+US;86;12.0;California;River Junction;Viognier;2016.0
+New Zealand;86;20.0;Marlborough;Marlborough;Pinot Noir;2015.0
+Italy;86;15.0;Piedmont;Dolcetto d'Alba;Dolcetto;2016.0
+US;86;17.0;California;California;Rosé;2017.0
+US;86;85.0;California;Yountville;Cabernet Sauvignon;2014.0
+Spain;86;16.0;Catalonia;Cava;Sparkling Blend;
+Chile;86;17.0;Colchagua Valley;Colchagua Valley;Cabernet Sauvignon;2014.0
+Chile;86;17.0;San Antonio;San Antonio;Chardonnay;2017.0
+Spain;86;18.0;Catalonia;Cava;Sparkling Blend;2015.0
+Chile;86;25.0;Chile;Chile;Sauvignon Blanc;2017.0
+US;86;42.0;California;Suisun Valley;Barbera;2016.0
+Italy;86;33.0;Italy Other;Vino Spumante;Sparkling Blend;2013.0
+US;86;15.0;California;California;Zinfandel;2016.0
+Chile;86;20.0;Colchagua Valley;Colchagua Valley;Sauvignon Gris;2018.0
+France;86;19.0;Bordeaux;Bordeaux Blanc;Bordeaux-style White Blend;2017.0
+France;86;28.0;Bordeaux;Graves;Bordeaux-style White Blend;2017.0
+France;86;25.0;Bordeaux;Entre-Deux-Mers;Bordeaux-style White Blend;2017.0
+France;86;20.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;86;17.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;86;18.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+US;86;10.0;California;Lodi;Zinfandel;2016.0
+Chile;86;25.0;Maule Valley;Maule Valley;Merlot;2016.0
+Spain;86;10.0;Northern Spain;Campo de Borja;Rosado;2017.0
+France;87;20.0;Burgundy;Bourgogne;Pinot Noir;2015.0
+US;87;38.0;Washington;Columbia Valley (WA);Syrah;2014.0
+Italy;87;35.0;Veneto;Valpolicella Classico Superiore Ripasso;Red Blend;2015.0
+Argentina;87;15.0;Mendoza Province;Mendoza;Bordeaux-style Red Blend;2014.0
+US;87;18.0;Oregon;Willamette Valley;Pinot Noir;2016.0
+Spain;87;20.0;Northern Spain;Navarra;Red Blend;2009.0
+Spain;87;13.0;Northern Spain;Pago de Otazu;Chardonnay;2014.0
+Australia;87;20.0;Victoria;Yarra Valley;Pinot Noir;2015.0
+Argentina;87;11.0;Mendoza Province;Uco Valley;Malbec-Bonarda;2016.0
+Italy;87;35.0;Veneto;Valpolicella Classico Superiore Ripasso;Red Blend;2014.0
+US;87;18.0;Washington;Wahluke Slope;Red Blend;2015.0
+US;87;19.0;California;Monterey County;Sparkling Blend;2016.0
+US;87;28.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;87;35.0;California;San Luis Obispo County;Red Blend;2013.0
+Argentina;87;11.0;Mendoza Province;Mendoza;Cabernet Sauvignon;
+US;87;25.0;Oregon;Rogue Valley;G-S-M;2015.0
+Argentina;86;31.0;Other;Argentina;Pinot Noir;2014.0
+Italy;86;28.0;Veneto;Valpolicella Ripasso;Red Blend;2015.0
+Italy;86;16.0;Veneto;Bardolino;Red Blend;2016.0
+Argentina;86;21.0;Mendoza Province;Mendoza;Red Blend;2013.0
+France;87;19.0;Loire Valley;Muscadet Sèvre et Maine;Melon;2016.0
+France;87;32.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+France;87;18.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+France;87;15.0;Loire Valley;Muscadet Sèvre et Maine;Melon;2016.0
+Italy;87;20.0;Veneto;Conegliano Valdobbiadene Prosecco Superiore;Glera;2016.0
+Italy;87;20.0;Veneto;Conegliano Valdobbiadene Prosecco Superiore;Glera;
+US;87;10.0;California;California;Sauvignon Blanc;2016.0
+New Zealand;87;20.0;Martinborough;Martinborough;Pinot Noir;2015.0
+Canada;87;16.0;Ontario;Lake Erie North Shore;Riesling;2201.0
+France;87;46.0;Champagne;Champagne;Champagne Blend;
+France;87;47.0;Champagne;Champagne;Champagne Blend;
+US;87;13.0;California;Clarksburg;Chardonnay;2016.0
+Argentina;87;14.0;Other;Patagonia;Cabernet Franc;2015.0
+South Africa;87;12.0;Western Cape;Western Cape;Red Blend;2016.0
+US;87;30.0;California;Shenandoah Valley (CA);Barbera;2014.0
+US;87;22.0;Oregon;McMinnville;Pinot Noir;2014.0
+Canada;87;28.0;British Columbia;Okanagan Valley;Cabernet Franc;2014.0
+Italy;87;22.0;Veneto;Prosecco;Glera;2016.0
+US;87;15.0;California;Lake County;Cabernet Sauvignon;2014.0
+US;87;16.0;Washington;Horse Heaven Hills;Merlot;2015.0
+France;85;30.0;Bordeaux;Médoc;Bordeaux-style Red Blend;2015.0
+Italy;85;15.0;Southern Italy;Puglia;Primitivo;2016.0
+Italy;85;16.0;Southern Italy;Puglia;Primitivo;2015.0
+Italy;85;13.0;Southern Italy;Salice Salentino;Negroamaro;2016.0
+US;85;15.0;California;California;Red Blend;2016.0
+US;85;15.0;California;Mendocino;Chardonnay;2016.0
+Germany;85;12.0;Rheinhessen;Rheinhessen;White Blend;2016.0
+Italy;85;8.0;Southern Italy;Salento;White Blend;2016.0
+US;85;24.0;Oregon;Applegate Valley;Albariño;2016.0
+US;85;22.0;Oregon;Southern Oregon;Riesling;2016.0
+US;85;30.0;Oregon;Columbia Gorge (OR);Pinot Noir;1852.0
+South Africa;85;20.0;Piekenierskloof;Piekenierskloof;Chenin Blanc;2015.0
+Spain;84;9.0;Spain Other;Spain;Verdejo;2016.0
+Spain;84;30.0;Central Spain;La Mancha;Airen;2014.0
+Spain;84;13.0;Levante;Valencia;Meseguera;2016.0
+Spain;84;20.0;Northern Spain;Toro;Tinta de Toro;2016.0
+US;84;24.0;Oregon;Southern Oregon;Pinot Gris;2016.0
+Spain;84;14.0;Northern Spain;Calatayud;Garnacha;2014.0
+US;84;17.0;California;California;Bordeaux-style Red Blend;2015.0
+Spain;84;14.0;Northern Spain;Rioja;Tempranillo;2013.0
+Austria;90;21.0;Burgenland;Burgenland;Blaufränkisch;2016.0
+Austria;90;21.0;Burgenland;Burgenland;Zweigelt;2016.0
+Austria;90;35.0;Niederösterreich;Niederösterreich;Riesling;2017.0
+Italy;90;19.0;Northeastern Italy;Alto Adige;Pinot Grigio;2017.0
+Israel;90;28.0;Galilee;Galilee;Syrah;2014.0
+Austria;90;18.0;Niederösterreich;Niederösterreich;Austrian white blend;2017.0
+US;90;17.0;California;Paso Robles;Cabernet Sauvignon;2016.0
+US;90;36.0;California;Santa Clara Valley;Red Blend;2014.0
+Israel;90;25.0;Judean Hills;Judean Hills;Cabernet Sauvignon;2016.0
+Austria;90;22.0;Thermenregion;Thermenregion;Rotgipfler;2017.0
+US;90;125.0;California;Rutherford;Cabernet Sauvignon;2014.0
+Italy;90;26.0;Northeastern Italy;Alto Adige;Kerner;2016.0
+US;90;18.0;California;Santa Ynez Valley;Grenache;2017.0
+Italy;90;22.0;Northeastern Italy;Alto Adige;Sauvignon;2017.0
+Austria;90;;Kremstal;Kremstal;Grüner Veltliner;2017.0
+Italy;90;26.0;Lombardy;Lugana;Turbiana;2016.0
+Austria;90;26.0;Carnuntum;Carnuntum;Red Blend;2016.0
+Italy;90;20.0;Northeastern Italy;Alto Adige;Pinot Bianco;2016.0
+France;90;15.0;Rhône Valley;Lirac;Rhône-style Red Blend;2015.0
+France;90;25.0;Rhône Valley;Tavel;Rosé;2017.0
+Italy;95;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;95;60.0;California;Santa Maria Valley;Pinot Noir;2016.0
+Italy;95;72.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;94;160.0;California;Napa Valley;Cabernet Sauvignon;2016.0
+US;94;55.0;California;Spring Mountain District;Pinot Noir;2016.0
+Australia;94;;Victoria;Rutherglen;Muscat;
+Spain;94;65.0;Northern Spain;Rioja;Tempranillo;2011.0
+US;94;95.0;California;Howell Mountain;Cabernet Sauvignon;2015.0
+Italy;94;64.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Germany;94;50.0;Rheingau;Rheingau;Riesling;2015.0
+US;94;29.0;California;Santa Barbara County;Syrah;2016.0
+US;94;64.0;California;Edna Valley;Pinot Noir;2015.0
+US;94;57.0;California;Anderson Valley;Pinot Noir;2015.0
+Italy;94;60.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Portugal;94;70.0;Port;Port;Port;2020.0
+US;94;65.0;California;Santa Lucia Highlands;Pinot Noir;2016.0
+Italy;94;55.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;94;60.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;94;39.0;Piedmont;Gattinara;Red Blend;2011.0
+US;94;26.0;California;Red Hills;Petite Sirah;2016.0
+France;90;21.0;Provence;Bandol;Rosé;2017.0
+Italy;90;28.0;Northeastern Italy;Friuli Isonzo;Chardonnay;2013.0
+Italy;90;43.0;Northeastern Italy;Venezia Giulia;White Blend;2013.0
+US;90;42.0;California;Russian River Valley;Pinot Noir;2016.0
+US;90;42.0;California;Los Carneros;Chardonnay;2015.0
+Italy;90;38.0;Central Italy;Verdicchio dei Castelli di Jesi Classico;Verdicchio;2014.0
+US;90;125.0;California;Napa Valley;Bordeaux-style Red Blend;2015.0
+US;90;18.0;California;Paso Robles;Mission;2017.0
+France;90;13.0;Provence;Coteaux Varois en Provence;Rosé;2017.0
+Austria;90;20.0;Weinviertel;Weinviertel;Grüner Veltliner;2017.0
+Austria;90;17.0;Niederösterreich;Niederösterreich;Rosé;2017.0
+US;90;44.0;California;Paso Robles;Mourvèdre;2015.0
+US;90;34.0;California;Santa Lucia Highlands;Pinot Noir;2016.0
+Austria;90;;Burgenland;Burgenland;Blaufränkisch;2016.0
+South Africa;90;19.0;Walker Bay;Walker Bay;Sauvignon Blanc;2017.0
+US;90;65.0;Washington;Red Mountain;Cabernet Sauvignon;2014.0
+US;90;22.0;California;Carneros;Chardonnay;2015.0
+Italy;90;;Central Italy;Verdicchio dei Castelli di Jesi Classico;Verdicchio;2015.0
+Italy;90;16.0;Central Italy;Verdicchio dei Castelli di Jesi Classico Superiore;Verdicchio;2016.0
+Italy;90;25.0;Tuscany;Chianti;Red Blend;2014.0
+Portugal;88;15.0;Douro;Douro;Portuguese Red;2015.0
+Portugal;88;12.0;Douro;Douro;Portuguese Red;2016.0
+US;88;62.0;California;Green Valley;Pinot Noir;2016.0
+US;88;28.0;California;Russian River Valley;Pinot Noir;2016.0
+US;88;47.0;California;Napa Valley;Petite Sirah;2015.0
+US;88;22.0;California;Sierra Foothills;Rhône-style Red Blend;2015.0
+US;88;29.0;California;Santa Barbara County;Red Blend;2015.0
+US;88;29.0;California;Anderson Valley;Riesling;2017.0
+Italy;88;42.0;Central Italy;Trebbiano d'Abruzzo;Trebbiano;2013.0
+US;88;25.0;California;Mendocino Ridge;Sauvignon Blanc;2017.0
+US;88;55.0;California;Madera County;Red Blend;2011.0
+France;88;16.0;Southwest France;Saint-Mont;White Blend;2016.0
+France;88;20.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+Spain;88;20.0;Catalonia;Terra Alta;Red Blend;2014.0
+Italy;88;50.0;Piedmont;Barolo;Nebbiolo;2014.0
+Italy;88;50.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;50.0;California;Santa Barbara County;Syrah;2015.0
+US;88;50.0;California;Santa Barbara County;Syrah;2016.0
+US;88;38.0;Washington;Columbia Valley (WA);Bordeaux-style Red Blend;2016.0
+US;88;47.0;Washington;Columbia Valley (WA);Sparkling Blend;
+US;86;39.0;Virginia;Virginia;Norton;2015.0
+US;86;12.0;California;River Junction;Viognier;2016.0
+US;86;40.0;Colorado;Colorado;Bordeaux-style Red Blend;2014.0
+France;86;16.0;Loire Valley;Coteaux du Giennois;Sauvignon Blanc;2015.0
+US;86;25.0;Oregon;Willamette Valley;Rosé;2016.0
+US;86;27.0;Oregon;Oregon;Syrah;2013.0
+US;86;20.0;California;Paso Robles;Zinfandel;2014.0
+France;86;;Ile de Beauté;Ile de Beauté;Vermentino;2016.0
+Italy;86;13.0;Piedmont;Dolcetto d'Alba;Dolcetto;2015.0
+US;86;36.0;Virginia;Virginia;Bordeaux-style Red Blend;2014.0
+US;86;38.0;California;Sierra Foothills;Red Blend;
+US;86;52.0;Oregon;Eola-Amity Hills;Pinot Noir;2015.0
+Portugal;86;10.0;Lisboa;Lisboa;Portuguese Red;2014.0
+France;86;20.0;Loire Valley;Menetou-Salon;Pinot Noir;2015.0
+Germany;86;10.0;Rheinhessen;Rheinhessen;White Blend;2015.0
+US;86;48.0;California;Napa Valley;Red Blend;2014.0
+France;86;13.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+Portugal;86;9.0;Alentejano;Alentejano;Portuguese White;2016.0
+France;86;13.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+Portugal;86;14.0;Douro;Douro;Portuguese Red;2015.0
+France;92;25.0;Bordeaux;Listrac-Médoc;Bordeaux-style Red Blend;2015.0
+France;92;50.0;Bordeaux;Pomerol;Bordeaux-style Red Blend;2015.0
+US;92;56.0;California;Paso Robles;Cabernet Sauvignon;2015.0
+US;92;40.0;California;Sonoma Valley;Red Blend;2015.0
+Italy;92;50.0;Piedmont;Barolo;Nebbiolo;2013.0
+France;92;97.0;Rhône Valley;Côte Rôtie;Syrah;2013.0
+US;92;60.0;California;Sta. Rita Hills;Chardonnay;2015.0
+US;92;65.0;California;Sta. Rita Hills;Pinot Noir;2015.0
+Italy;92;113.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Italy;92;46.0;Piedmont;Barolo;Nebbiolo;2012.0
+France;92;60.0;Loire Valley;Sancerre;Sauvignon Blanc;2015.0
+US;92;24.0;California;El Dorado;Syrah;2014.0
+US;92;28.0;California;Sierra Foothills;Syrah;2015.0
+US;92;46.0;California;Sonoma Coast;Chardonnay;2015.0
+Italy;92;750.0;Tuscany;Toscana;Merlot;2014.0
+Italy;92;45.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Italy;92;;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+US;92;40.0;California;Santa Ynez Valley;Grenache;2014.0
+US;92;42.0;California;Sonoma County;Viognier;2016.0
+Italy;92;69.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Spain;86;12.0;Northern Spain;Rioja;Viura;2016.0
+US;86;35.0;Washington;Red Mountain;Red Blend;2012.0
+US;86;48.0;Oregon;Columbia Valley (OR);Petit Verdot;2015.0
+Argentina;86;19.0;Mendoza Province;Mendoza;Malbec;2017.0
+Argentina;86;14.0;Mendoza Province;Mendoza;Malbec-Syrah;2015.0
+France;86;25.0;Burgundy;Mâcon-Villages;Chardonnay;2016.0
+US;86;13.0;California;Russian River Valley;Pinot Noir;2015.0
+Spain;86;11.0;Northern Spain;Ribera del Duero;Tempranillo;2016.0
+Spain;86;35.0;Catalonia;Cava;Sparkling Blend;2013.0
+US;86;16.0;Oregon;Willamette Valley;Chardonnay;2016.0
+Australia;86;10.0;South Australia;South Australia;Merlot;2016.0
+Spain;86;;Northern Spain;Navarra;Red Blend;2009.0
+Argentina;86;45.0;Mendoza Province;Luján de Cuyo;Cabernet Sauvignon;2013.0
+US;86;24.0;California;Lake County;Fumé Blanc;2016.0
+Germany;86;13.0;Germany;Germany;Sparkling Blend;
+Spain;86;11.0;Northern Spain;Toro;Tinta de Toro;2015.0
+Argentina;86;20.0;Mendoza Province;Mendoza;Malbec Blend;2014.0
+Italy;86;26.0;Veneto;Valpolicella Superiore Ripasso;Red Blend;2015.0
+Italy;86;30.0;Veneto;Valpolicella Classico Superiore Ripasso;Red Blend;2015.0
+US;86;18.0;Oregon;Willamette Valley;Pinot Noir;2014.0
+Spain;86;13.0;Catalonia;Cava;Sparkling Blend;
+France;86;24.0;Burgundy;Mâcon-Fuissé;Chardonnay;2016.0
+US;86;;California;Monterey;Pinot Noir;2015.0
+US;86;18.0;Virginia;Virginia;Vidal Blanc;2017.0
+US;86;35.0;Virginia;Virginia;Sparkling Blend;
+France;86;18.0;Burgundy;Bourgogne;Chardonnay;2017.0
+France;86;18.0;Burgundy;Mâcon-Lugny;Chardonnay;2017.0
+Chile;86;15.0;Curicó Valley;Curicó Valley;Carmenère;2017.0
+Chile;86;17.0;Colchagua Valley;Colchagua Valley;Syrah;2015.0
+Chile;86;17.0;Colchagua Valley;Colchagua Valley;Carmenère;2016.0
+US;86;10.0;Texas;Texas;Pinot Grigio;2017.0
+US;86;10.0;Texas;Texas;Sauvignon Blanc;2017.0
+US;86;44.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2015.0
+US;86;34.0;California;Napa Valley;Sauvignon Blanc;2016.0
+US;86;;Texas;Texas High Plains;Red Blend;2016.0
+US;86;14.0;California;Mendocino;Pinot Gris;2017.0
+US;86;30.0;Texas;Texas;Albariño;2015.0
+Bulgaria;86;12.0;Danube River Plains;Danube River Plains;Rosé;2016.0
+US;86;14.0;California;California;Chardonnay;2016.0
+US;86;38.0;Virginia;Virginia;Tannat;2017.0
+Italy;87;40.0;Northeastern Italy;Collio;Malvasia;2014.0
+France;87;54.0;Champagne;Champagne;Pinot Noir;
+Austria;87;20.0;Niederösterreich;Niederösterreich;Sparkling Blend;
+US;87;70.0;California;Napa Valley;Red Blend;2014.0
+France;87;13.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+Italy;87;16.0;Veneto;Prosecco Treviso;Glera;2016.0
+US;87;62.0;California;Sonoma Valley;Bordeaux-style Red Blend;2013.0
+US;87;20.0;Oregon;Chehalem Mountains;Albariño;2016.0
+US;87;25.0;California;Arroyo Grande Valley;Pinot Gris;2016.0
+France;87;70.0;Champagne;Champagne;Champagne Blend;
+US;87;26.0;Washington;Yakima Valley;Pinot Gris;2016.0
+US;87;28.0;California;Carneros;Vermentino;2016.0
+US;87;13.0;Washington;Columbia Valley (WA);Sangiovese;2016.0
+Canada;87;20.0;Ontario;Niagara Escarpment;Pinot Noir;2015.0
+Argentina;87;15.0;Mendoza Province;La Consulta;Cabernet Franc;2016.0
+France;87;50.0;Champagne;Champagne;Champagne Blend;
+France;87;40.0;Champagne;Champagne;Champagne Blend;
+Spain;87;27.0;Northern Spain;Rioja;Garnacha;2014.0
+US;87;25.0;Oregon;Chehalem Mountains;Pinot Noir;2014.0
+Italy;87;22.0;Veneto;Prosecco;Glera;2016.0
+Spain;84;15.0;Northern Spain;Rueda;Verdejo;2016.0
+Spain;84;14.0;Northern Spain;Rueda;Verdejo;2016.0
+US;84;50.0;California;Russian River Valley;Chardonnay;2014.0
+Spain;84;65.0;Catalonia;Conca de Barberà;Chardonnay;2014.0
+US;84;17.0;Oregon;Umpqua Valley;White Blend;2014.0
+Spain;84;25.0;Northern Spain;Vino de la Tierra de Castilla y León;Verdejo;2016.0
+France;84;35.0;Bordeaux;Haut-Médoc;Bordeaux-style Red Blend;2015.0
+Israel;84;18.0;Galilee;Galilee;Sauvignon Blanc;2016.0
+Spain;84;22.0;Northern Spain;Rueda;Verdejo;2016.0
+US;84;13.0;California;California;Red Blend;2013.0
+US;84;45.0;Oregon;Eola-Amity Hills;Pinot Noir;2014.0
+Spain;84;13.0;Levante;Jumilla;Monastrell;2016.0
+France;84;23.0;Bordeaux;Médoc;Bordeaux-style Red Blend;2015.0
+Spain;84;4.0;Central Spain;Vino de la Tierra de Castilla;Sauvignon Blanc;2016.0
+US;84;10.0;California;California;Red Blend;2015.0
+US;84;27.0;California;Sonoma Valley;Chardonnay;2015.0
+Spain;84;12.0;Northern Spain;Calatayud;Garnacha;2016.0
+Spain;84;11.0;Central Spain;Vino de la Tierra de Castilla;Verdejo;2016.0
+Spain;84;15.0;Northern Spain;Toro;Tinta de Toro;2016.0
+France;84;;Bordeaux;Médoc;Bordeaux-style Red Blend;2015.0
+Austria;90;20.0;Kremstal;Kremstal;Grüner Veltliner;2017.0
+US;90;30.0;California;Santa Ynez Valley;Viognier;2016.0
+US;90;25.0;California;Santa Ynez Valley;Malvasia Bianca;2017.0
+Italy;90;40.0;Northeastern Italy;Collio;White Blend;2015.0
+Italy;90;28.0;Northeastern Italy;Collio;Pinot Grigio;2016.0
+Italy;90;;Veneto;San Martino della Battaglia;Friulano;2016.0
+US;90;35.0;California;Lake County;Cabernet Sauvignon;2015.0
+US;90;28.0;California;Santa Barbara County;Pinot Noir;2013.0
+Austria;90;;Burgenland;Burgenland;Blaufränkisch;2016.0
+US;90;41.0;New York;North Fork of Long Island;Champagne Blend;2015.0
+Austria;90;27.0;Südsteiermark;Südsteiermark;Gelber Muskateller;2017.0
+US;90;28.0;California;Paso Robles Geneseo District;Rhône-style Red Blend;2016.0
+Austria;90;24.0;Burgenland;Burgenland;St. Laurent;2016.0
+US;90;90.0;California;Mount Veeder;Cabernet Sauvignon;2014.0
+US;90;46.0;California;St. Helena;Zinfandel;2014.0
+US;90;21.0;California;Santa Barbara County;Rhône-style White Blend;2016.0
+Israel;90;20.0;Galilee;Galilee;Cabernet Sauvignon;2014.0
+US;90;8.0;California;California;White Blend;2017.0
+Spain;90;27.0;Galicia;Rías Baixas;Albariño;2017.0
+US;90;25.0;California;Carneros;Gewürztraminer;2016.0
+Italy;94;60.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;94;75.0;California;Sonoma Coast;Pinot Noir;2016.0
+US;94;55.0;California;Russian River Valley;Chardonnay;2016.0
+US;94;32.0;California;Yorkville Highlands;Petite Sirah;2016.0
+US;94;35.0;California;Sonoma Coast;Pinot Noir;2016.0
+US;94;68.0;California;Sonoma Coast;Chardonnay;2015.0
+US;94;95.0;California;Calistoga;Cabernet Sauvignon;2015.0
+Australia;94;60.0;New South Wales;Hunter Valley;Sémillon;2012.0
+Italy;94;26.0;Sicily & Sardinia;Vermentino di Gallura;Vermentino;2017.0
+Italy;94;62.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;94;50.0;California;California;Pinot Noir;2015.0
+US;94;160.0;California;Napa Valley;Cabernet Sauvignon;2016.0
+Germany;94;47.0;Pfalz;Pfalz;Riesling;2017.0
+Italy;94;28.0;Piedmont;Ghemme;Red Blend;2009.0
+US;94;58.0;California;Russian River Valley;Pinot Noir;2016.0
+Italy;94;78.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Australia;94;100.0;South Australia;Coonawarra;Cabernet Sauvignon;2016.0
+Portugal;94;109.0;Port;Port;Port;3030.0
+US;94;35.0;California;Santa Barbara County;Syrah;2016.0
+US;94;82.0;California;Sonoma Coast;Pinot Noir;2016.0
+US;90;24.0;California;Anderson Valley;Pinot Noir;2017.0
+US;90;28.0;California;Sonoma County;Red Blend;2015.0
+New Zealand;90;50.0;Central Otago;Central Otago;Pinot Noir;2016.0
+US;90;25.0;California;California;Rosé;2017.0
+Austria;90;20.0;Kremstal;Kremstal;Grüner Veltliner;2016.0
+US;89;10.0;Texas;Texas;Rosé;
+Argentina;89;12.0;Mendoza Province;Mendoza;Malbec;
+Austria;89;20.0;Vienna;Vienna;Grüner Veltliner;2017.0
+Austria;89;12.0;Niederösterreich;Niederösterreich;Rosé;2017.0
+US;89;32.0;California;Sierra Foothills;Red Blend;
+New Zealand;89;16.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+Spain;89;34.0;Northern Spain;Valdeorras;Godello;2016.0
+New Zealand;89;16.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+Argentina;89;40.0;Mendoza Province;Mendoza;Red Blend;2013.0
+US;89;28.0;California;Monterey;Tannat;2014.0
+Italy;89;40.0;Central Italy;Montefalco Sagrantino;Sagrantino;2011.0
+Italy;89;23.0;Tuscany;Chianti;Red Blend;2013.0
+Italy;89;14.0;Tuscany;Chianti Superiore;Red Blend;2016.0
+France;89;22.0;Provence;Côtes de Provence;Rosé;2017.0
+France;89;17.0;Rhône Valley;Côtes du Rhône Villages;Rhône-style Red Blend;2014.0
+Portugal;88;11.0;Douro;Douro;Portuguese Red;2016.0
+Portugal;88;11.0;Douro;Douro;Portuguese Red;2016.0
+Italy;88;;Piedmont;Barolo;Nebbiolo;2012.0
+France;88;35.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+US;88;85.0;California;Santa Maria Valley;Pinot Noir;2014.0
+France;88;12.0;Southwest France;Gaillac;Red Blend;2016.0
+France;88;16.0;Southwest France;Fronton;Red Blend;2017.0
+France;88;21.0;Rhône Valley;Costières de Nîmes;Rhône-style White Blend;2016.0
+France;88;17.0;Southwest France;Cahors;Malbec-Merlot;2016.0
+Spain;88;30.0;Northern Spain;Ribera del Duero;Tempranillo;2014.0
+US;88;27.0;California;San Luis Obispo County;Albariño;2017.0
+US;88;50.0;California;Russian River Valley;Pinot Noir;2015.0
+Portugal;88;13.0;Lisboa;Lisboa;Alvarinho-Chardonnay;2017.0
+France;88;20.0;Southwest France;Jurançon Sec;White Blend;2016.0
+Argentina;88;25.0;Mendoza Province;Tupungato;Malbec;2016.0
+France;88;15.0;Southwest France;Côtes de Gascogne;Chardonnay;2016.0
+France;88;14.0;Southwest France;Côtes de Gascogne;Gros Manseng;2016.0
+France;88;15.0;Ile de Beauté;Ile de Beauté;White Blend;2017.0
+Spain;88;30.0;Northern Spain;Ribera del Duero;Tempranillo;2014.0
+Italy;88;80.0;Piedmont;Barolo;Nebbiolo;2012.0
+Portugal;86;18.0;Tejo;Tejo;Touriga Nacional;2014.0
+Portugal;86;13.0;Tejo;Tejo;Rosado;2016.0
+US;86;14.0;Virginia;Virginia;Vidal Blanc;2016.0
+France;86;24.0;Loire Valley;Sancerre;Sauvignon Blanc;2015.0
+New Zealand;86;20.0;Marlborough;Marlborough;Pinot Noir;2015.0
+Argentina;86;40.0;Mendoza Province;Tupungato;Red Blend;2014.0
+US;86;38.0;Virginia;Virginia;Red Blend;2014.0
+US;86;25.0;Texas;Texas High Plains;Malbec;2014.0
+Portugal;86;12.0;Tejo;Tejo;Portuguese Red;2015.0
+Portugal;86;18.0;Lisboa;Lisboa;Portuguese Red;2015.0
+Argentina;86;20.0;Mendoza Province;Luján de Cuyo;Cabernet Sauvignon;2015.0
+France;86;12.0;France Other;Vin de France;Sauvignon Blanc;2016.0
+Argentina;86;20.0;Mendoza Province;Uco Valley;Red Blend;2015.0
+Argentina;86;17.0;Other;Río Negro Valley;Pinot Noir;2016.0
+Italy;86;14.0;Piedmont;Dolcetto di Diano d'Alba;Dolcetto;2016.0
+Argentina;86;20.0;Mendoza Province;Mendoza;Cabernet Sauvignon;2014.0
+Argentina;86;16.0;Mendoza Province;Mendoza;Malbec;2015.0
+France;86;20.0;Loire Valley;Chinon;Cabernet Franc;2015.0
+US;86;60.0;California;St. Helena;Red Blend;2013.0
+US;86;16.0;California;Sonoma County;Chardonnay;2014.0
+US;87;80.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+US;87;30.0;Washington;Wahluke Slope;Malbec;2015.0
+Italy;87;18.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+Italy;87;18.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+US;87;12.0;Washington;Columbia Valley (WA);Chardonnay;2016.0
+France;87;14.0;Loire Valley;Muscadet Sèvre et Maine;Melon;2016.0
+France;87;14.0;Loire Valley;Val de Loire;Sauvignon Gris;2016.0
+Italy;87;11.0;Veneto;Prosecco;Glera;2016.0
+Spain;87;16.0;Catalonia;Cava;Macabeo;
+Italy;87;22.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+US;87;30.0;Oregon;Southern Oregon;Malbec;2013.0
+Argentina;87;25.0;Mendoza Province;Mendoza;Cabernet Sauvignon-Malbec;2014.0
+Germany;87;13.0;Mosel;Mosel;Riesling;2016.0
+US;87;20.0;California;Russian River Valley;Pinot Noir;2015.0
+US;87;5.0;California;California;Sparkling Blend;
+Austria;87;19.0;Österreichischer Perlwein;Österreichischer Perlwein;Sparkling Blend;
+New Zealand;87;27.0;Waipara Valley;Waipara Valley;Sauvignon Blanc;2016.0
+Argentina;87;12.0;Other;Salta;White Blend;2016.0
+US;87;27.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;87;16.0;California;Santa Lucia Highlands;Pinot Noir;2015.0
+Germany;86;13.0;Germany;Germany;Sparkling Blend;
+US;86;12.0;Washington;Columbia Valley (WA);Merlot;1420.0
+US;86;16.0;California;Monterey County;Chardonnay;2016.0
+Spain;86;25.0;Northern Spain;Campo de Borja;Garnacha;2014.0
+US;86;28.0;Oregon;Willamette Valley;Auxerrois;2016.0
+US;86;13.0;California;Paso Robles;Cabernet Sauvignon;2015.0
+US;86;22.0;California;Paso Robles;Muscat Canelli;2016.0
+US;86;40.0;Washington;Columbia Valley (WA);Bordeaux-style Red Blend;2013.0
+Italy;86;;Veneto;Valpolicella Superiore Ripasso;Red Blend;2014.0
+Australia;86;29.0;South Australia;Adelaide;Red Blend;2011.0
+Argentina;86;20.0;Mendoza Province;Tupungato;Red Blend;2016.0
+Italy;86;;Veneto;Bardolino;Red Blend;2015.0
+US;86;25.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;86;13.0;California;North Coast;Sauvignon Blanc;2016.0
+Spain;86;13.0;Northern Spain;Navarra;Sauvignon Blanc;2016.0
+Spain;86;17.0;Northern Spain;Rueda;Verdejo;2016.0
+US;86;90.0;California;Moon Mountain District Sonoma County;Cabernet Sauvignon;2014.0
+US;86;30.0;California;Temecula Valley;Merlot;2014.0
+US;86;32.0;California;El Pomar District;Rhône-style White Blend;2016.0
+US;86;18.0;Oregon;Oregon;Rosé;2016.0
+Italy;86;19.0;Central Italy;Lambrusco Grasparossa di Castelvetro;Lambrusco Grasparossa;
+US;86;30.0;California;California;Orange Muscat;2016.0
+US;86;40.0;California;Carneros;Chardonnay;2016.0
+US;86;15.0;California;Lodi;Cabernet Sauvignon;2016.0
+France;86;16.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2015.0
+Spain;85;28.0;Catalonia;Cava;Trepat;2015.0
+New Zealand;85;25.0;Central Otago;Central Otago;Pinot Gris;2016.0
+US;85;45.0;Washington;Red Mountain;Cabernet Sauvignon;2015.0
+US;85;35.0;California;Paso Robles;Merlot;2014.0
+Chile;85;20.0;Casablanca Valley;Casablanca Valley;Pinot Noir;2016.0
+France;85;25.0;Burgundy;Viré-Clessé;Chardonnay;2016.0
+France;85;15.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2016.0
+France;85;20.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;85;;Burgundy;Mâcon-Verze;Chardonnay;2016.0
+France;85;26.0;Bordeaux;Côtes de Bourg;Bordeaux-style Red Blend;2016.0
+France;85;10.0;Burgundy;Mâcon-Chardonnay;Chardonnay;2016.0
+France;85;35.0;Burgundy;Bourgogne;Pinot Noir;2016.0
+US;85;21.0;Washington;Columbia Valley (WA);Petit Verdot;2014.0
+Bulgaria;85;12.0;Danube River Plains;Danube River Plains;Cabernet Sauvignon;2015.0
+New Zealand;85;30.0;Hawke's Bay;Hawke's Bay;Chardonnay;2016.0
+Italy;92;69.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;92;40.0;California;Santa Cruz Mountains;Pinot Noir;2016.0
+Italy;92;79.0;Piedmont;Barolo;Nebbiolo;2010.0
+Italy;92;;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Italy;92;;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Italy;92;198.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+France;92;34.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2015.0
+US;92;60.0;California;Adelaida District;Mourvèdre-Syrah;2013.0
+US;91;35.0;California;Russian River Valley;Zinfandel;2014.0
+Italy;91;95.0;Piedmont;Barolo;Nebbiolo;2013.0
+Italy;91;;Piedmont;Barolo;Nebbiolo;2011.0
+Spain;91;30.0;Northern Spain;Rioja;Tempranillo Blend;2010.0
+US;91;26.0;California;Central Coast;Rhône-style Red Blend;2015.0
+Argentina;91;27.0;Mendoza Province;Mendoza;Syrah;2015.0
+Italy;91;75.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+France;91;37.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2015.0
+France;91;36.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2015.0
+France;91;19.0;Rhône Valley;Tavel;Rosé;2016.0
+France;91;40.0;Bordeaux;Pomerol;Bordeaux-style Red Blend;2014.0
+France;91;40.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2015.0
+Italy;84;;Lombardy;Franciacorta;Sparkling Blend;
+Spain;84;12.0;Levante;Jumilla;Red Blend;2016.0
+Portugal;84;45.0;Douro;Douro;Rosé;2016.0
+US;84;22.0;Oregon;Applegate Valley;Rosé;
+Spain;83;47.0;Northern Spain;Valdeorras;Godello;2011.0
+US;83;40.0;Minnesota;Minnesota;Marquette;2015.0
+Spain;83;18.0;Northern Spain;Toro;Tinta de Toro;2016.0
+Spain;83;15.0;Northern Spain;Navarra;White Blend;2016.0
+Spain;83;13.0;Catalonia;Cava;Sparkling Blend;
+Spain;83;15.0;Levante;Utiel-Requena;Chardonnay;2016.0
+Spain;83;15.0;Northern Spain;Somontano;Chardonnay;2016.0
+Spain;83;15.0;Northern Spain;Navarra;Viura;2015.0
+US;83;;Maryland;Maryland;Chardonnay;2015.0
+Italy;83;26.0;Southern Italy;Castel del Monte;Red Blend;2015.0
+US;83;15.0;Oregon;Rogue Valley;Red Blend;2015.0
+US;83;35.0;California;Napa Valley;Petite Sirah;2014.0
+Spain;83;10.0;Central Spain;Almansa;Verdejo;2016.0
+France;83;;Bordeaux;Médoc;Bordeaux-style Red Blend;2015.0
+Spain;83;10.0;Levante;Jumilla;Monastrell;2016.0
+Spain;83;9.0;Northern Spain;Campo de Borja;Verdejo;2016.0
+US;90;26.0;California;Petaluma Gap;Pinot Gris;2017.0
+US;90;60.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+US;90;;California;Central Coast;Chardonnay;2016.0
+US;90;26.0;California;Mendocino;Zinfandel;2013.0
+US;90;45.0;California;Russian River Valley;Syrah;2016.0
+US;90;36.0;California;Rockpile;Zinfandel;2015.0
+Italy;90;30.0;Piedmont;Erbaluce di Caluso;Erbaluce;2013.0
+US;90;45.0;California;Napa Valley;Merlot;2015.0
+US;90;21.0;California;Fair Play;Zinfandel;2014.0
+France;90;42.0;Bordeaux;Pessac-Léognan;Bordeaux-style Red Blend;2015.0
+France;90;20.0;Bordeaux;Castillon Côtes de Bordeaux;Bordeaux-style Red Blend;2015.0
+France;90;45.0;Bordeaux;Pomerol;Bordeaux-style Red Blend;2014.0
+France;90;28.0;Bordeaux;Saint-Croix-du-Mont;Bordeaux-style White Blend;2015.0
+US;90;15.0;California;Lodi;Rosé;2017.0
+US;90;70.0;Washington;Walla Walla Valley (WA);Sangiovese;2015.0
+Austria;90;17.0;Wagram;Wagram;Grüner Veltliner;2017.0
+France;90;30.0;Rhône Valley;Crozes-Hermitage;Marsanne;2016.0
+US;90;38.0;California;Sonoma Mountain;Chardonnay;2015.0
+France;90;25.0;Loire Valley;Crémant de Loire;Champagne Blend;
+Austria;90;20.0;Südsteiermark;Südsteiermark;Weissburgunder;2017.0
+Australia;94;135.0;South Australia;Barossa;Shiraz;2013.0
+US;94;65.0;California;Santa Ynez Valley;Syrah;2015.0
+US;94;220.0;California;Rutherford;Cabernet Sauvignon;2015.0
+US;94;195.0;California;Napa Valley;Cabernet Franc-Merlot;2016.0
+Australia;94;48.0;New South Wales;Hunter Valley;Sémillon;2011.0
+Italy;94;60.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+Portugal;94;80.0;Douro;Douro;Portuguese Red;2016.0
+US;94;75.0;California;Paso Robles;Bordeaux-style Red Blend;2016.0
+US;94;245.0;California;Mount Veeder;Cabernet Sauvignon;2014.0
+US;94;65.0;California;Russian River Valley;Chardonnay;2014.0
+Italy;94;58.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;94;75.0;California;Fort Ross-Seaview;Pinot Noir;2016.0
+US;94;45.0;New York;Seneca Lake;Riesling;2016.0
+Italy;94;40.0;Piedmont;Ghemme;Nebbiolo;2013.0
+US;94;35.0;California;Santa Lucia Highlands;Syrah;2016.0
+Italy;94;75.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+US;94;160.0;California;Napa Valley;Bordeaux-style Red Blend;2014.0
+Germany;94;40.0;Rheingau;Rheingau;Riesling;2016.0
+US;94;75.0;Oregon;Dundee Hills;Chardonnay;2016.0
+Germany;94;40.0;Mosel;Mosel;Riesling;2017.0
+France;89;15.0;Rhône Valley;Côtes du Rhône;Rosé;2017.0
+France;89;15.0;Rhône Valley;Côtes du Rhône;Rhône-style White Blend;2017.0
+US;89;30.0;California;Green Valley;Sauvignon Blanc;2014.0
+US;89;45.0;Washington;Yakima Valley;Chardonnay;2015.0
+Italy;89;35.0;Northeastern Italy;Collio;White Blend;2015.0
+Italy;89;35.0;Tuscany;Chianti Rufina;Red Blend;2012.0
+Italy;89;35.0;Central Italy;Montefalco Sagrantino;Sagrantino;2013.0
+Italy;89;28.0;Tuscany;Chianti;Red Blend;2015.0
+France;89;34.0;Provence;Côtes de Provence;Rosé;2017.0
+France;89;14.0;Rhône Valley;Costières de Nîmes;Rosé;2017.0
+France;89;19.0;Provence;Côtes de Provence Sainte-Victoire;Rosé;2017.0
+US;89;16.0;New York;Finger Lakes;Riesling;2016.0
+France;89;38.0;Rhône Valley;Châteauneuf-du-Pape;Rhône-style Red Blend;2014.0
+Italy;89;15.0;Tuscany;Chianti Rufina;Red Blend;2015.0
+Italy;89;18.0;Central Italy;Verdicchio dei Castelli di Jesi Classico;Verdicchio;2016.0
+US;89;75.0;California;Paso Robles;Cabernet Sauvignon;2012.0
+Austria;89;12.0;Burgenland;Burgenland;Zweigelt;2016.0
+Austria;89;12.0;Burgenland;Burgenland;Sauvignon Blanc;2017.0
+Austria;89;30.0;Wachau;Wachau;Riesling;2017.0
+Italy;89;32.0;Northeastern Italy;Alto Adige;Sauvignon;2016.0
+US;88;45.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2015.0
+France;88;23.0;Provence;Côtes de Provence;Rosé;2017.0
+Italy;88;70.0;Piedmont;Barolo;Nebbiolo;2012.0
+France;88;13.0;Rhône Valley;Côtes du Rhône;Rosé;2017.0
+US;88;145.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+Portugal;88;15.0;Alentejo;Alentejo;Portuguese Red;2017.0
+US;88;18.0;California;California;Pinot Gris;2017.0
+US;88;65.0;California;Los Carneros;Sparkling Blend;2014.0
+US;88;20.0;California;Monterey;Rosé;2017.0
+US;88;25.0;California;Santa Ynez Valley;Sauvignon Blanc;2016.0
+US;88;50.0;California;Anderson Valley;Sparkling Blend;2014.0
+US;88;30.0;Washington;Wahluke Slope;Barbera;2014.0
+US;88;16.0;Washington;Yakima Valley;Riesling;2017.0
+Italy;88;45.0;Piedmont;Barolo;Nebbiolo;2014.0
+France;88;10.0;France Other;Vin de France;G-S-M;2016.0
+France;88;20.0;France Other;Vin de France;White Blend;2017.0
+US;88;27.0;Washington;Columbia Valley (WA);Sauvignon Blanc;2017.0
+Spain;88;36.0;Catalonia;Cava;Sparkling Blend;2014.0
+Italy;88;70.0;Piedmont;Barolo;Nebbiolo;2013.0
+Italy;88;50.0;Piedmont;Barolo;Nebbiolo;2012.0
+Argentina;86;13.0;Mendoza Province;Tupungato;Cabernet Sauvignon;2016.0
+US;86;35.0;California;California;Red Blend;2014.0
+Argentina;86;12.0;Mendoza Province;Mendoza;Malbec;2016.0
+France;86;9.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+France;86;9.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+France;86;7.0;France Other;Vin de France;Malbec;2016.0
+France;86;12.0;Ile de Beauté;Ile de Beauté;Rosé;2016.0
+Israel;86;15.0;Galilee;Galilee;Fumé Blanc;2016.0
+US;86;25.0;California;Russian River Valley;Sauvignon Blanc;2016.0
+US;86;17.0;America;America;Sparkling Blend;
+US;86;17.0;America;America;Sparkling Blend;
+US;86;85.0;California;Napa Valley;Cabernet Franc;2013.0
+Portugal;86;9.0;Alentejano;Alentejano;Portuguese Red;2015.0
+Portugal;86;9.0;Dão;Dão;Rosé;2016.0
+Portugal;86;12.0;Tejo;Tejo;Portuguese White;2016.0
+US;86;34.0;Oregon;Rogue Valley;Grenache;2012.0
+Argentina;86;20.0;Mendoza Province;Mendoza;Malbec;2015.0
+Portugal;86;11.0;Douro;Douro;Rosé;2016.0
+France;86;12.0;France Other;Vin de France;Rosé;2016.0
+Moldova;86;10.0;Moldova;Moldova;Cabernet Sauvignon;2011.0
+France;87;59.0;Champagne;Champagne;Champagne Blend;
+Italy;87;19.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+US;87;37.0;California;Dry Creek Valley;Zinfandel;2014.0
+Italy;87;16.0;Veneto;Prosecco Treviso;Glera;
+US;87;40.0;California;Santa Clara Valley;Malbec;2014.0
+Italy;87;13.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;2016.0
+US;87;18.0;California;Paso Robles;Cabernet Sauvignon;2015.0
+US;87;36.0;Washington;Columbia Valley (WA);Cabernet Franc;2014.0
+US;87;22.0;Washington;Columbia Valley (WA);Chardonnay;2016.0
+France;87;56.0;Champagne;Champagne;Champagne Blend;
+US;87;36.0;California;California;Sparkling Blend;2014.0
+Italy;87;18.0;Veneto;Valdobbiadene Superiore di Cartizze;Glera;2016.0
+US;87;36.0;Washington;Yakima Valley;Cinsault;2014.0
+Italy;87;14.0;Veneto;Prosecco;Glera;
+US;87;25.0;Washington;Columbia Valley (WA);Viognier;2016.0
+Spain;87;11.0;Catalonia;Cava;Sparkling Blend;
+US;87;34.0;California;Lake County;Cabernet Sauvignon;2014.0
+US;87;10.0;Washington;Washington;Pinot Gris;1420.0
+Italy;87;20.0;Veneto;Valdobbiadene Prosecco;Glera;
+US;87;15.0;California;California;Chardonnay;2016.0
+France;91;32.0;Bordeaux;Lalande de Pomerol;Bordeaux-style Red Blend;2015.0
+Italy;91;60.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;40.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2014.0
+US;91;48.0;California;Sta. Rita Hills;Pinot Noir;2015.0
+France;91;72.0;Rhône Valley;Côte Rôtie;Syrah;2013.0
+Italy;91;;Piedmont;Barolo;Nebbiolo;2013.0
+US;91;50.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+US;91;38.0;California;Chalone;Grenache;2015.0
+Italy;91;120.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Italy;91;32.0;Tuscany;Rosso di Montalcino;Sangiovese;2015.0
+US;91;55.0;California;Sta. Rita Hills;Pinot Noir;2014.0
+US;91;85.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+US;91;50.0;California;Sta. Rita Hills;Pinot Noir;2013.0
+Italy;91;80.0;Piedmont;Barolo;Nebbiolo;2013.0
+US;91;25.0;California;Russian River Valley;Chardonnay;2016.0
+Spain;91;30.0;Catalonia;Penedès;Sparkling Blend;2013.0
+US;91;52.0;California;Spring Mountain District;Cabernet Sauvignon;2014.0
+Italy;91;90.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Italy;91;60.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+France;91;33.0;Rhône Valley;Saint-Joseph;Syrah;2014.0
+New Zealand;85;18.0;New Zealand;New Zealand;Rosé;2017.0
+Czech Republic;85;18.0;Moravia;Moravia;Rosé;2016.0
+US;85;20.0;Texas;Texas;Viognier;2016.0
+US;85;17.0;California;Lodi;Sauvignon Blanc;2017.0
+US;85;19.0;Texas;Texas;Pinot Blanc;2017.0
+US;85;26.0;California;Lodi;Zinfandel;2015.0
+US;85;15.0;California;Paso Robles;Merlot;2016.0
+Spain;85;13.0;Northern Spain;Rueda;Sauvignon Blanc;2017.0
+France;85;18.0;Burgundy;Mâcon Chaintré;Chardonnay;2017.0
+Kosovo;85;;Rahoveci Valley;Rahoveci Valley;Chardonnay;2016.0
+New Zealand;85;17.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+France;85;8.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+Chile;85;;Curicó Valley;Curicó Valley;Cabernet Sauvignon;2017.0
+US;85;12.0;California;Santa Barbara County;Sauvignon Blanc;2017.0
+Italy;85;18.0;Central Italy;Umbria;Grechetto;2016.0
+France;85;12.0;Bordeaux;Crémant de Bordeaux;Sparkling Blend;
+France;85;17.0;Bordeaux;Bordeaux Rosé;Rosé;2017.0
+France;85;12.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+US;85;14.0;California;Paso Robles;Red Blend;2015.0
+France;85;20.0;Burgundy;Mâcon-Péronne;Chardonnay;2016.0
+US;83;100.0;Oregon;Willamette Valley;Syrah;2012.0
+Spain;82;9.0;Central Spain;La Mancha;Verdejo;2016.0
+US;82;33.0;Ohio;Grand River Valley;Pinot Noir;2015.0
+Spain;82;29.0;Northern Spain;Rioja;Tempranillo Blend;2008.0
+Spain;82;;Northern Spain;Rueda;Sauvignon Blanc;2016.0
+Spain;82;;Northern Spain;Rueda;Verdejo;2016.0
+US;82;30.0;Ohio;Grand River Valley;Riesling;2015.0
+US;82;40.0;California;Russian River Valley;Merlot;2015.0
+Spain;81;17.0;Catalonia;Cava;Sparkling Blend;
+Spain;81;10.0;Central Spain;Vino de la Tierra de Castilla;Chardonnay;2016.0
+US;81;31.0;Michigan;Lake Michigan Shore;Pinot Noir;2015.0
+Spain;81;14.0;Catalonia;Terra Alta;Garnatxa Blanca;2016.0
+Italy;98;195.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+Italy;97;485.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+Italy;97;68.0;Piedmont;Barbaresco;Nebbiolo;2013.0
+Italy;97;68.0;Piedmont;Barbaresco;Nebbiolo;
+Italy;97;68.0;Piedmont;Barbaresco;Nebbiolo;2013.0
+US;97;50.0;California;Paso Robles;Cabernet Sauvignon;2015.0
+Italy;97;90.0;Piedmont;Barolo;Nebbiolo;2013.0
+Italy;97;68.0;Piedmont;Barbaresco;Nebbiolo;2013.0
+US;86;28.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+Germany;86;10.0;Rheinhessen;Rheinhessen;Red Blend;
+US;86;46.0;California;Russian River Valley;Chardonnay;2015.0
+US;86;10.0;Washington;Yakima Valley;Syrah;2015.0
+US;86;30.0;California;Dry Creek Valley;Zinfandel;2013.0
+US;86;12.0;California;Lodi;Cabernet Sauvignon;2014.0
+US;86;36.0;California;Moon Mountain District Sonoma County;Red Blend;2015.0
+Australia;86;20.0;South Australia;McLaren Vale;Cabernet Sauvignon-Merlot-Shiraz;2015.0
+Argentina;86;15.0;Mendoza Province;Tupungato;Malbec;2015.0
+Spain;86;30.0;Northern Spain;Bierzo;Godello;2015.0
+Argentina;86;13.0;Mendoza Province;Mendoza;Cabernet Franc-Petit Verdot;2016.0
+US;86;34.0;Oregon;Columbia Valley (OR);Syrah;2014.0
+France;86;113.0;Burgundy;Gevrey-Chambertin;Pinot Noir;2016.0
+Argentina;86;18.0;Mendoza Province;Tupungato;Cabernet Sauvignon;2016.0
+France;86;;Burgundy;Mâcon-Mancey;Gamay;2016.0
+France;86;29.0;Burgundy;Mâcon-Villages;Chardonnay;2015.0
+US;86;15.0;Oregon;Oregon;Chardonnay;2015.0
+US;86;32.0;California;Temecula;Pinot Grigio;2016.0
+France;86;18.0;Burgundy;Mâcon-Villages;Chardonnay;2016.0
+Israel;86;16.0;Upper Galilee;Upper Galilee;Rosé;2016.0
+Austria;90;25.0;Burgenland;Burgenland;Pinot Noir;2016.0
+France;90;17.0;Rhône Valley;Côtes du Rhône Villages;Rhône-style Red Blend;2016.0
+US;90;35.0;California;Bennett Valley;Merlot;2014.0
+Italy;90;19.0;Northeastern Italy;Collio;Friulano;2016.0
+Italy;90;24.0;Northeastern Italy;Collio;Malvasia;2016.0
+Austria;90;26.0;Kamptal;Kamptal;Riesling;2017.0
+Austria;90;25.0;Kamptal;Kamptal;Riesling;2017.0
+US;90;70.0;California;Napa Valley;Chardonnay;2016.0
+Austria;90;22.0;Wagram;Wagram;Grüner Veltliner;2017.0
+France;90;17.0;Loire Valley;Muscadet Sèvre et Maine;Melon de Bourgogne;2017.0
+Italy;90;45.0;Sicily & Sardinia;Sicilia;Nero d'Avola;2014.0
+Austria;90;22.0;Carnuntum;Carnuntum;Chardonnay;2017.0
+US;90;29.0;California;Russian River Valley;Zinfandel;2016.0
+Italy;90;23.0;Lombardy;Lugana;Turbiana;2016.0
+Italy;90;31.0;Northeastern Italy;Alto Adige;Pinot Grigio;2016.0
+US;90;19.0;California;Mendocino County;Rosé;2017.0
+US;90;100.0;California;Diamond Mountain District;Cabernet Sauvignon;2014.0
+US;90;40.0;California;Sonoma County;Cabernet Sauvignon;2014.0
+US;90;39.0;California;Central Coast;Syrah-Petite Sirah;2014.0
+US;90;25.0;California;Napa Valley;Cabernet Sauvignon;2017.0
+US;94;80.0;California;Napa Valley;Cabernet Sauvignon;2016.0
+US;94;48.0;California;Santa Maria Valley;Pinot Noir;2015.0
+US;94;45.0;Oregon;Yamhill-Carlton;Chardonnay;2016.0
+US;94;200.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+US;94;95.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+Portugal;94;50.0;Lisboa;Lisboa;Portuguese Red;2015.0
+Portugal;94;50.0;Lisboa;Lisboa;Portuguese Red;2015.0
+US;94;90.0;California;Coombsville;Cabernet Sauvignon;2015.0
+US;94;85.0;California;Rutherford;Bordeaux-style Red Blend;2015.0
+US;94;160.0;California;Oakville;Cabernet Sauvignon;2015.0
+US;93;36.0;California;Sonoma Valley;Viognier;2017.0
+US;93;395.0;California;Napa Valley;Bordeaux-style Red Blend;2016.0
+US;93;50.0;California;Santa Cruz Mountains;Pinot Noir;2014.0
+US;93;45.0;California;Sonoma Coast;Chardonnay;2016.0
+Italy;93;60.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+France;93;17.0;Bordeaux;Castillon Côtes de Bordeaux;Bordeaux-style Red Blend;2016.0
+Italy;93;48.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+US;93;39.0;California;Edna Valley;Red Blend;2015.0
+US;93;65.0;California;Sonoma Coast;Chardonnay;2016.0
+US;93;48.0;California;Sonoma Coast;Pinot Noir;2016.0
+Argentina;86;12.0;Mendoza Province;Mendoza;Malbec;2016.0
+France;86;9.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+France;86;9.0;Loire Valley;Touraine;Sauvignon Blanc;2016.0
+France;86;7.0;France Other;Vin de France;Malbec;2016.0
+France;86;12.0;Ile de Beauté;Ile de Beauté;Rosé;2016.0
+US;86;12.0;California;California;Moscato;2015.0
+Portugal;86;9.0;Alentejano;Alentejano;Portuguese White;2016.0
+Portugal;86;12.0;Tejo;Tejo;Portuguese White;2016.0
+US;86;34.0;Oregon;Rogue Valley;Grenache;2012.0
+Argentina;86;20.0;Mendoza Province;Mendoza;Malbec;2015.0
+Portugal;86;11.0;Douro;Douro;Rosé;2016.0
+US;86;20.0;California;California;Red Blend;2014.0
+Argentina;86;10.0;Mendoza Province;Mendoza;Chardonnay;2016.0
+France;86;14.0;France Other;Vin de France;Sauvignon Blanc;2016.0
+US;86;20.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+France;86;17.0;Loire Valley;Sancerre;Sauvignon Blanc;2015.0
+France;86;18.0;Loire Valley;Bourgueil;Rosé;2016.0
+France;86;45.0;Loire Valley;Sancerre;Pinot Noir;2015.0
+Italy;86;16.0;Piedmont;Dolcetto d'Alba;Dolcetto;2016.0
+Argentina;86;17.0;Other;Alto Valle del Río Negro;Chardonnay;2016.0
+Austria;89;17.0;Traisental;Traisental;Grüner Veltliner;2017.0
+Austria;89;19.0;Weinland Österreich;Weinland Österreich;Zweigelt;2016.0
+US;89;38.0;Washington;Columbia Valley (WA);Petit Verdot;2015.0
+New Zealand;89;22.0;Nelson;Nelson;Sauvignon Blanc;2016.0
+Italy;89;25.0;Tuscany;Chianti;Red Blend;2013.0
+Italy;89;21.0;Tuscany;Chianti;Red Blend;2015.0
+Italy;89;65.0;Tuscany;Chianti;Red Blend;2005.0
+Italy;89;20.0;Tuscany;Vernaccia di San Gimignano;Vernaccia;2016.0
+France;89;14.0;Provence;Coteaux d'Aix-en-Provence;Rosé;2017.0
+US;89;12.0;Washington;Columbia Valley (WA);Rosé;2017.0
+US;89;28.0;California;Clarksburg;Red Blend;2016.0
+US;89;36.0;California;Paso Robles;Cabernet Sauvignon;2014.0
+Austria;89;19.0;Niederösterreich;Niederösterreich;Grüner Veltliner;2017.0
+Italy;89;40.0;Central Italy;Montefalco Sagrantino;Sagrantino;2013.0
+South Africa;89;18.0;Western Cape;Western Cape;Sauvignon Blanc;2017.0
+US;89;45.0;Washington;Columbia Valley (WA);Grenache-Syrah;2015.0
+Austria;89;23.0;Niederösterreich;Niederösterreich;Gelber Muskateller;2017.0
+Austria;89;16.0;Niederösterreich;Niederösterreich;Rosé;2017.0
+Italy;89;22.0;Tuscany;Chianti Colli Senesi;Red Blend;2013.0
+Italy;89;22.0;Northeastern Italy;Friuli Colli Orientali;Friulano;2015.0
+US;88;28.0;California;Lake County;Grenache;2014.0
+US;88;25.0;California;Paso Robles;Tempranillo;2016.0
+France;88;12.0;France Other;Vin de France;Sauvignon Blanc;2017.0
+US;88;45.0;California;Dry Creek Valley;Petite Sirah;2015.0
+US;88;35.0;Washington;Yakima Valley;Garnacha;2016.0
+US;88;45.0;Washington;Yakima Valley;Merlot;2016.0
+US;88;25.0;Washington;Yakima Valley;Bordeaux-style Red Blend;2015.0
+US;88;60.0;California;Temecula Valley;Red Blend;2014.0
+US;88;45.0;California;California;Teroldego;2016.0
+Portugal;88;22.0;Lisboa;Lisboa;Portuguese White;2016.0
+Italy;88;65.0;Piedmont;Barolo;Nebbiolo;2014.0
+Italy;88;63.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;;California;California;Cabernet Franc;
+US;88;25.0;California;Santa Lucia Highlands;Rosé;2017.0
+Portugal;88;24.0;Dão;Dão;Portuguese White;2017.0
+Italy;88;27.0;Central Italy;Abruzzo;Pecorino;2016.0
+Italy;88;109.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;15.0;California;California;Pinot Noir;2017.0
+France;88;30.0;Corse;Corse;Red Blend;2016.0
+US;88;26.0;California;Los Carneros;Pinot Noir;2017.0
+New Zealand;87;18.0;Marlborough;Marlborough;Sauvignon Blanc;2016.0
+Spain;87;15.0;Catalonia;Cava;Garnacha;
+New Zealand;87;28.0;Marlborough;Marlborough;Champagne Blend;
+Argentina;87;16.0;Other;Salta;Malbec;2016.0
+Italy;87;19.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;2016.0
+Italy;87;18.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+US;87;30.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2013.0
+Italy;87;17.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;2016.0
+US;87;36.0;California;Santa Clara Valley;Cabernet Sauvignon;2013.0
+France;87;60.0;Champagne;Champagne;Champagne Blend;
+France;87;17.0;Loire Valley;Pouilly-Fumé;Sauvignon Blanc;2016.0
+New Zealand;87;18.0;Marlborough;Marlborough;Sauvignon Blanc;2016.0
+US;87;45.0;California;Russian River Valley;Chardonnay;2015.0
+France;87;25.0;Loire Valley;Vouvray;Chenin Blanc;2014.0
+France;87;48.0;Champagne;Champagne;Champagne Blend;
+France;87;52.0;Champagne;Champagne;Champagne Blend;
+US;87;12.0;Washington;Columbia Valley (WA);Chardonnay;2015.0
+Italy;87;15.0;Veneto;Soave Classico;Garganega;2015.0
+France;87;36.0;Champagne;Champagne;Champagne Blend;
+US;87;9.0;California;California;Viognier;2016.0
+Italy;91;50.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;30.0;California;Livermore Valley;Cabernet Franc;2015.0
+US;91;30.0;California;Livermore Valley;G-S-M;2015.0
+Italy;91;45.0;Tuscany;Montecucco;Sangiovese;2012.0
+Italy;91;50.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Italy;91;16.0;Italy Other;Vino Spumante;Sparkling Blend;1931.0
+Italy;91;45.0;Piedmont;Barolo;Nebbiolo;2012.0
+Canada;91;16.0;Ontario;Niagara Peninsula;Riesling;2016.0
+France;91;45.0;Bordeaux;Fronsac;Bordeaux-style Red Blend;2014.0
+France;91;16.0;Bordeaux;Cadillac Côtes de Bordeaux;Bordeaux-style Red Blend;2015.0
+France;91;35.0;Bordeaux;Lalande de Pomerol;Merlot;2014.0
+France;91;57.0;Bordeaux;Pauillac;Bordeaux-style Red Blend;2015.0
+France;91;45.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2015.0
+France;91;17.0;Bordeaux;Saint-Émilion;Bordeaux-style Red Blend;2014.0
+France;91;38.0;Bordeaux;Lalande de Pomerol;Bordeaux-style Red Blend;2015.0
+Italy;91;250.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+US;91;34.0;California;Sonoma Coast;Chardonnay;2015.0
+Italy;91;60.0;Piedmont;Barolo;Nebbiolo;2012.0
+Italy;91;70.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;25.0;California;Russian River Valley;Chardonnay;2016.0
+France;85;19.0;Burgundy;Mâcon-Charnay;Chardonnay;2017.0
+Spain;85;14.0;Northern Spain;Rueda;Verdejo;2017.0
+US;85;13.0;California;California;White Blend;2017.0
+New Zealand;85;15.0;New Zealand;New Zealand;Rosé;2017.0
+US;85;22.0;Texas;Texas;Riesling;2016.0
+US;85;14.0;California;Russian River Valley;Pinot Gris;2017.0
+New Zealand;85;20.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+US;85;18.0;California;Paso Robles;Syrah;2017.0
+France;85;22.0;Burgundy;Bourgogne;Chardonnay;2017.0
+Spain;85;15.0;Northern Spain;Rioja;Tempranillo;2015.0
+Spain;85;14.0;Catalonia;Terra Alta;Garnatxa Blanca;2017.0
+US;85;22.0;Virginia;Monticello;Chardonnay;2016.0
+Chile;85;12.0;Colchagua Valley;Colchagua Valley;Merlot;2016.0
+Chile;85;50.0;Maule Valley;Maule Valley;Carmenère;2015.0
+Chile;85;16.0;Elqui Valley;Elqui Valley;Chardonnay;2017.0
+US;85;21.0;California;Lodi;Chardonnay;2016.0
+France;85;15.0;Burgundy;Mâcon-Villages;Chardonnay;2017.0
+Chile;85;12.0;Maipo Valley;Maipo Valley;Merlot;2017.0
+France;85;12.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;85;15.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2016.0
+US;86;85.0;California;Oak Knoll District;Cabernet Sauvignon;2014.0
+Germany;86;15.0;Rheinhessen;Rheinhessen;Pinot Grigio;2016.0
+US;86;49.0;California;Temecula Valley;Cabernet Franc;2013.0
+Spain;86;12.0;Northern Spain;Navarra;Merlot-Cabernet Sauvignon;2010.0
+France;86;;Burgundy;Bourgogne;Chardonnay;2016.0
+Spain;86;20.0;Northern Spain;Getariako Txakolina;Hondarrabi Zuri;2016.0
+US;86;30.0;California;Dry Creek Valley;Malbec;2012.0
+US;86;15.0;California;Clarksburg;Cabernet Sauvignon;2014.0
+US;86;45.0;Oregon;Oregon;Pinot Noir;2013.0
+US;86;18.0;Oregon;Willamette Valley;Sauvignon Blanc;2015.0
+Spain;86;24.0;Catalonia;Cava;Xarel-lo;2014.0
+France;86;13.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2014.0
+Spain;86;37.0;Northern Spain;Rioja;White Blend;2013.0
+France;86;18.0;Burgundy;Mâcon-Fuissé;Chardonnay;2016.0
+France;86;132.0;Burgundy;Chambolle-Musigny;Pinot Noir;2016.0
+Argentina;86;16.0;Mendoza Province;Mendoza;Cabernet Sauvignon;2016.0
+US;86;15.0;Oregon;Oregon;Pinot Gris;2016.0
+US;86;45.0;California;Temecula Valley;Cabernet Sauvignon;2013.0
+Spain;86;20.0;Catalonia;Priorat;Garnacha Blend;2014.0
+Moldova;86;10.0;Moldova;Moldova;Sparkling Blend;
+US;96;150.0;California;Happy Canyon of Santa Barbara;Cabernet Sauvignon;2014.0
+Austria;96;77.0;Wachau;Wachau;Riesling;2016.0
+Austria;96;55.0;Wachau;Wachau;Riesling;2016.0
+Italy;96;68.0;Piedmont;Barbaresco;Nebbiolo;2013.0
+US;96;85.0;California;Russian River Valley;Pinot Noir;2015.0
+US;96;85.0;California;Russian River Valley;Pinot Noir;2015.0
+US;96;125.0;California;Adelaida District;Red Blend;
+Italy;96;68.0;Piedmont;Barbaresco;Nebbiolo;2013.0
+US;96;150.0;California;Happy Canyon of Santa Barbara;Bordeaux-style Red Blend;2014.0
+Italy;96;;Piedmont;Barolo;Nebbiolo;2013.0
+Austria;96;50.0;Wachau;Wachau;Grüner Veltliner;2016.0
+US;96;175.0;California;Diamond Mountain District;Cabernet Sauvignon;2014.0
+France;96;150.0;Rhône Valley;Côte Rôtie;Syrah;2013.0
+US;96;45.0;California;Sonoma Coast;Pinot Noir;2015.0
+US;96;50.0;California;Sta. Rita Hills;Chardonnay;2015.0
+Italy;95;96.0;Tuscany;Chianti Classico;Sangiovese;
+US;95;59.0;California;Russian River Valley;Pinot Noir;2015.0
+Italy;95;70.0;Piedmont;Barolo;Nebbiolo;2013.0
+US;95;50.0;California;Red Hills;Malbec;2014.0
+Austria;95;43.0;Kamptal;Kamptal;Riesling;2016.0
+Israel;90;25.0;Judean Hills;Judean Hills;Red Blend;2016.0
+US;90;42.0;California;Calaveras County;Petite Sirah;2015.0
+US;90;15.0;California;California;Petite Sirah;2016.0
+US;90;51.0;California;Howell Mountain;Zinfandel;2014.0
+France;90;15.0;Rhône Valley;Côtes du Rhône;Rhône-style White Blend;2017.0
+Austria;90;24.0;Niederösterreich;Niederösterreich;Grüner Veltliner;2017.0
+US;90;20.0;Washington;Columbia Valley (WA);Riesling;2016.0
+France;90;45.0;Bordeaux;Puisseguin Saint-Émilion;Bordeaux-style Red Blend;2015.0
+Greece;89;22.0;Amyndeon;Amyndeon;Xinomavro;2014.0
+US;89;36.0;California;Fiddletown;Montepulciano;2014.0
+US;89;42.0;California;Russian River Valley;Pinot Noir;2015.0
+Austria;89;18.0;Kamptal;Kamptal;Grüner Veltliner;2017.0
+Israel;89;50.0;Galilee;Galilee;Red Blend;2013.0
+Austria;89;22.0;Kamptal;Kamptal;Riesling;2017.0
+France;89;70.0;Bordeaux;Cadillac;Bordeaux-style White Blend;2011.0
+France;89;15.0;Rhône Valley;Lirac;Rhône-style Red Blend;2015.0
+France;89;14.0;Bordeaux;Saint-Croix-du-Mont;Bordeaux-style White Blend;2016.0
+France;89;36.0;Bordeaux;Sauternes;Bordeaux-style White Blend;2012.0
+US;89;55.0;California;Rutherford;Cabernet Sauvignon;2015.0
+US;89;18.0;California;Lake County;Sauvignon Blanc;2017.0
+Australia;93;28.0;Western Australia;Margaret River;Chardonnay;2017.0
+Italy;93;47.0;Piedmont;Gattinara;Nebbiolo;2013.0
+Italy;93;100.0;Sicily & Sardinia;Isola dei Nuraghi;Red Blend;2014.0
+US;93;50.0;California;Paso Robles;Zinfandel;2016.0
+US;93;55.0;California;Santa Cruz Mountains;Syrah;2015.0
+US;93;45.0;California;Mendocino Ridge;Chardonnay;2016.0
+Italy;93;60.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+US;93;39.0;California;Santa Maria Valley;Chardonnay;2015.0
+Spain;93;44.0;Northern Spain;Rioja;Tempranillo;2011.0
+US;93;50.0;California;Santa Barbara County;Syrah;2015.0
+US;93;38.0;California;Santa Barbara County;Petite Sirah;2016.0
+US;93;34.0;California;Sonoma Coast;Pinot Noir;2016.0
+Spain;93;56.0;Northern Spain;Rioja;Tempranillo Blend;2011.0
+Italy;93;38.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Germany;93;84.0;Rheinhessen;Rheinhessen;Riesling;2017.0
+Italy;93;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;93;16.0;Sicily & Sardinia;Vermentino di Gallura;Vermentino;2017.0
+US;93;35.0;California;Monterey;Pinot Noir;2016.0
+US;93;48.0;California;Santa Maria Valley;Pinot Noir;2016.0
+US;93;45.0;Oregon;Eola-Amity Hills;Chardonnay;2016.0
+US;89;13.0;Washington;Columbia Valley (WA);Rosé;
+Austria;89;20.0;Vienna;Vienna;Grüner Veltliner;2017.0
+Austria;89;12.0;Niederösterreich;Niederösterreich;Rosé;2017.0
+US;89;32.0;California;Sierra Foothills;Red Blend;
+US;89;10.0;Texas;Texas;Rosé;
+Argentina;89;12.0;Mendoza Province;Mendoza;Malbec;
+South Africa;89;12.0;Western Cape;Western Cape;Sauvignon Blanc;
+US;89;25.0;New York;Finger Lakes;Pinot Noir;2015.0
+US;89;;Virginia;Virginia;Sauvignon Blanc;2016.0
+Italy;89;15.0;Tuscany;Chianti Colli Senesi;Sangiovese;2016.0
+US;89;28.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2016.0
+Spain;89;15.0;Northern Spain;Rioja;Tempranillo;2015.0
+Austria;89;20.0;Niederösterreich;Niederösterreich;Rosé;2017.0
+US;89;38.0;California;Paso Robles;Mourvèdre;2015.0
+Italy;89;27.0;Tuscany;Chianti;Red Blend;2015.0
+Italy;89;20.0;Tuscany;Vernaccia di San Gimignano;Vernaccia;2015.0
+France;89;28.0;Provence;Côtes de Provence Sainte-Victoire;Rosé;2017.0
+US;89;35.0;California;Sonoma Valley;Chardonnay;2015.0
+US;89;40.0;California;Livermore Valley;Zinfandel;2014.0
+France;89;30.0;Provence;Côtes de Provence;Rosé;2017.0
+Portugal;86;13.0;Tejo;Tejo;Portuguese White;2016.0
+US;86;40.0;Oregon;Chehalem Mountains;Pinot Noir;2015.0
+Portugal;86;11.0;Alentejo;Alentejo;Antão Vaz;2016.0
+Italy;86;10.0;Sicily & Sardinia;Sicilia;Cabernet Sauvignon;2015.0
+Argentina;86;12.0;Mendoza Province;Mendoza;Bonarda;2015.0
+France;86;26.0;Loire Valley;Sancerre;Sauvignon Blanc;2015.0
+Italy;86;21.0;Piedmont;Dolcetto d'Alba;Dolcetto;2015.0
+US;86;27.0;Oregon;Oregon;Syrah;2014.0
+Bulgaria;86;13.0;Thracian Valley;Thracian Valley;Cabernet Sauvignon;2013.0
+Portugal;86;20.0;Alentejano;Alentejano;Portuguese White;2016.0
+New Zealand;86;18.0;Marlborough;Marlborough;Pinot Noir;2013.0
+France;86;25.0;Loire Valley;Sancerre;Sauvignon Blanc;2016.0
+US;86;32.0;California;Napa Valley;Sauvignon Blanc;2016.0
+US;86;30.0;California;Santa Maria Valley;Pinot Noir;2015.0
+US;86;24.0;Oregon;Rogue Valley;Merlot;2014.0
+US;86;27.0;Oregon;Rogue Valley;Cabernet Franc;2014.0
+US;86;12.0;California;California;Red Blend;2015.0
+Portugal;86;9.0;Alentejano;Alentejano;Portuguese Red;2016.0
+US;86;28.0;California;Temecula;Rosé;2016.0
+Italy;86;12.0;Piedmont;Dolcetto d'Alba;Dolcetto;2016.0
+Italy;88;80.0;Piedmont;Barolo;Nebbiolo;2011.0
+France;88;14.0;Southwest France;Côtes de Gascogne;Chenin Blanc-Chardonnay;2017.0
+France;88;20.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+France;88;26.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+France;88;24.0;Alsace;Crémant d'Alsace;Sparkling Blend;2015.0
+Italy;88;50.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;25.0;California;Santa Barbara County;Rhône-style White Blend;2016.0
+Spain;88;25.0;Central Spain;Vino de la Tierra de Castilla;Red Blend;2013.0
+US;88;28.0;California;Santa Ynez Valley;White Blend;2016.0
+US;88;25.0;California;Sonoma County;Sauvignon Blanc;2017.0
+Italy;88;40.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;18.0;California;Sonoma County;Merlot;1220.0
+France;88;12.0;France Other;Vin de France;Merlot;
+France;88;12.0;France Other;Vin de France;Gros Manseng;
+US;88;40.0;Washington;Columbia Valley (WA);Syrah-Cabernet Sauvignon;2013.0
+US;88;25.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2015.0
+US;88;75.0;California;Temecula Valley;Cabernet Sauvignon;2015.0
+US;88;45.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2015.0
+Italy;88;95.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;24.0;Washington;Columbia Valley (WA);Zinfandel;2015.0
+US;91;90.0;California;Rutherford;Cabernet Sauvignon;2014.0
+US;91;28.0;California;Sierra Foothills;Zinfandel;2014.0
+Italy;91;140.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+France;91;25.0;Loire Valley;Chinon;Cabernet Franc;2014.0
+US;91;35.0;California;Arroyo Seco;Pinot Noir;2014.0
+Italy;91;80.0;Piedmont;Barolo;Nebbiolo;2011.0
+Italy;91;110.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;52.0;California;Paso Robles;Petite Sirah;2015.0
+US;91;38.0;California;Russian River Valley;Dolcetto;2014.0
+US;91;40.0;California;Malibu Coast;Rhône-style Red Blend;2013.0
+US;91;36.0;California;Santa Barbara County;Syrah;2013.0
+US;91;100.0;California;Diamond Mountain District;Cabernet Sauvignon;2014.0
+US;91;80.0;California;Atlas Peak;Red Blend;2014.0
+US;91;20.0;California;California;Cabernet Sauvignon;2015.0
+Italy;91;;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;32.0;California;California;White Blend;2016.0
+Italy;91;70.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;15.0;California;California;Pinot Noir;
+US;91;130.0;California;Edna Valley;Pinot Noir;2016.0
+US;91;64.0;California;Paso Robles;Malbec;2014.0
+US;87;30.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+Italy;87;21.0;Northeastern Italy;Collio;Ribolla Gialla;2016.0
+Austria;87;18.0;Weinland Österreich;Weinland Österreich;Zweigelt;2016.0
+France;87;23.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+Spain;87;12.0;Catalonia;Cava;Sparkling Blend;
+US;87;25.0;California;Paso Robles;Cabernet Sauvignon;2015.0
+Italy;87;14.0;Northeastern Italy;Collio;White Blend;2014.0
+France;87;17.0;Loire Valley;Muscadet Sèvre et Maine;Melon;2016.0
+Spain;87;16.0;Catalonia;Cava;Sparkling Blend;
+Italy;87;19.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+US;87;45.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+France;87;23.0;Loire Valley;Sancerre;Sauvignon Blanc;2016.0
+Argentina;87;25.0;Mendoza Province;Mendoza;Cabernet Franc;2015.0
+France;86;20.0;Alsace;Crémant d'Alsace;Sparkling Blend;
+Italy;86;14.0;Veneto;Prosecco Treviso;Glera;
+US;86;17.0;California;Paso Robles;Cabernet Sauvignon;2014.0
+Italy;86;18.0;Veneto;Conegliano Valdobbiadene Prosecco Superiore;Glera;
+US;86;28.0;California;Napa Valley;White Blend;2016.0
+US;86;16.0;Washington;Horse Heaven Hills;Cabernet Sauvignon;2015.0
+Italy;86;;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+France;85;24.0;Burgundy;Mâcon-Villages;Chardonnay;2015.0
+New Zealand;85;13.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+France;85;35.0;Burgundy;Monthélie;Pinot Noir;2015.0
+Chile;85;27.0;Aconcagua Costa;Aconcagua Costa;Syrah;2016.0
+US;85;10.0;California;California;Sauvignon Blanc;2017.0
+Chile;85;15.0;Maule Valley;Maule Valley;Bordeaux-style Red Blend;2016.0
+US;85;15.0;California;California;Cabernet Sauvignon;2016.0
+France;85;21.0;Burgundy;Mâcon-Villages;Chardonnay;2016.0
+Italy;85;6.0;Northeastern Italy;Friuli Grave;Pinot Grigio;2017.0
+US;85;20.0;Texas;Texas High Plains;Montepulciano;2014.0
+France;85;55.0;Burgundy;Mâcon-Loché;Chardonnay;2016.0
+US;85;36.0;Washington;Rattlesnake Hills;Cabernet Franc;2015.0
+US;85;22.0;Texas;Texas;G-S-M;
+Spain;85;20.0;Catalonia;Cava;Sparkling Blend;2015.0
+Spain;85;10.0;Catalonia;Cava;Sparkling Blend;
+New Zealand;85;20.0;Marlborough;Marlborough;Pinot Noir;2015.0
+Chile;85;12.0;Central Valley;Central Valley;Cabernet Sauvignon;2015.0
+Chile;85;17.0;Colchagua Valley;Colchagua Valley;Carmenère;2016.0
+Spain;85;15.0;Spain Other;Spain;Sparkling Blend;
+Chile;85;14.0;Colchagua Valley;Colchagua Valley;Cabernet Sauvignon;2015.0
+Austria;95;89.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Italy;95;85.0;Tuscany;Toscana;Sangiovese;2013.0
+Austria;95;48.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Austria;95;50.0;Leithaberg;Leithaberg;Blaufränkisch;2015.0
+Austria;95;61.0;Kremstal;Kremstal;Riesling;2016.0
+Austria;95;70.0;Wachau;Wachau;Grüner Veltliner;2016.0
+France;95;175.0;Rhône Valley;Côte Rôtie;Rhône-style Red Blend;2012.0
+Austria;95;49.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Austria;95;50.0;Wachau;Wachau;Riesling;2016.0
+Italy;95;485.0;Piedmont;Barbaresco;Nebbiolo;2014.0
+US;95;85.0;California;Oakville;Cabernet Sauvignon;2015.0
+US;95;65.0;California;Russian River Valley;Chardonnay;2015.0
+US;95;95.0;California;Sonoma Coast;Pinot Noir;2015.0
+Austria;95;80.0;Kamptal;Kamptal;Riesling;2016.0
+Austria;95;41.0;Kremstal;Kremstal;Riesling;2016.0
+US;95;45.0;California;Mendocino Ridge;Pinot Noir;2015.0
+Austria;95;58.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Austria;95;40.0;Kremstal;Kremstal;Riesling;2016.0
+Austria;95;26.0;Carnuntum;Carnuntum;Blaufränkisch;2015.0
+US;95;62.0;California;Green Valley;Pinot Noir;2015.0
+US;86;50.0;California;Alexander Valley;Cabernet Sauvignon;2013.0
+US;86;60.0;California;Sonoma Valley;Sangiovese;2014.0
+Italy;86;16.0;Veneto;Valpolicella Classico Superiore;Red Blend;2013.0
+Germany;86;25.0;Rheinhessen;Rheinhessen;White Blend;2016.0
+US;86;14.0;California;California;Sauvignon Blanc;2016.0
+US;86;24.0;California;Temecula;Roussanne;2016.0
+US;86;85.0;California;St. Helena;Cabernet Sauvignon;2013.0
+Italy;86;20.0;Veneto;Valpolicella;Red Blend;2016.0
+US;86;39.0;Oregon;Eola-Amity Hills;Pinot Noir;2015.0
+Argentina;86;19.0;Mendoza Province;Mendoza;Malbec-Carménère;2014.0
+US;86;44.0;Oregon;Dundee Hills;Pinot Noir;2015.0
+US;86;32.0;Oregon;Rogue Valley;Tempranillo;2014.0
+Argentina;86;20.0;Mendoza Province;Tupungato;Cabernet Sauvignon;2014.0
+Argentina;86;17.0;Mendoza Province;Mendoza;Cabernet Sauvignon;2014.0
+Italy;86;22.0;Veneto;Valpolicella;Red Blend;2015.0
+France;86;15.0;Bordeaux;Bordeaux Blanc;Bordeaux-style White Blend;2016.0
+Argentina;86;20.0;Mendoza Province;Uco Valley;Malbec;2014.0
+US;86;20.0;California;San Benito County-Sonoma County-Monterey County;Pinot Noir;2016.0
+US;86;65.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+Australia;86;29.0;South Australia;McLaren Vale;Red Blend;2011.0
+US;89;18.0;California;Lake County;Sauvignon Blanc;2017.0
+US;89;25.0;California;Central Coast;Merlot;2016.0
+Italy;89;20.0;Lombardy;Lugana;Turbiana;2016.0
+US;89;32.0;California;Paso Robles;Red Blend;2013.0
+US;89;42.0;California;Paso Robles;Petite Sirah;2014.0
+France;89;15.0;Rhône Valley;Côtes du Rhône;Rhône-style Red Blend;2016.0
+Greece;89;14.0;Drama;Drama;White Blend;
+France;89;28.0;Rhône Valley;Lirac;Rhône-style Red Blend;2015.0
+France;89;19.0;Rhône Valley;Côtes du Rhône;Rhône-style Red Blend;2016.0
+France;89;26.0;Loire Valley;Touraine Chenonceaux;Sauvignon Blanc;2015.0
+France;89;35.0;Rhône Valley;Côtes du Rhône Villages;Grenache;2015.0
+Austria;89;17.0;Wachau;Wachau;Riesling;2017.0
+US;89;26.0;California;San Diego County;Albariño;2017.0
+Italy;89;22.0;Northeastern Italy;Alto Adige;Sauvignon;2017.0
+Austria;89;22.0;Kamptal;Kamptal;Riesling;2017.0
+France;89;20.0;Beaujolais;Morgon;Gamay;2015.0
+Argentina;89;25.0;Mendoza Province;Mendoza;Malbec;2015.0
+Italy;89;21.0;Northeastern Italy;Alto Adige;Sauvignon;2016.0
+Italy;89;39.0;Northeastern Italy;Alto Adige;Pinot Grigio;2015.0
+US;89;25.0;California;Napa Valley;Cabernet Sauvignon;2015.0
+US;93;50.0;California;Santa Maria Valley;Pinot Noir;2015.0
+US;93;55.0;California;Monterey County;Pinot Noir;2016.0
+Italy;93;33.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Portugal;93;35.0;Alentejo;Alentejo;Portuguese Red;2014.0
+Portugal;93;80.0;Douro;Douro;Portuguese White;2017.0
+Australia;93;100.0;South Australia;Eden Valley;Shiraz;2015.0
+Germany;93;35.0;Mosel;Mosel;Riesling;2016.0
+Germany;93;32.0;Mosel;Mosel;Riesling;2017.0
+Germany;93;33.0;Mosel;Mosel;Riesling;2017.0
+Germany;93;51.0;Mosel;Mosel;Riesling;2017.0
+US;93;22.0;California;Amador County;Zinfandel;2016.0
+US;93;55.0;California;Paso Robles;Rhône-style Red Blend;2015.0
+US;93;32.0;Oregon;Eola-Amity Hills;Riesling;2017.0
+US;93;50.0;California;Sta. Rita Hills;Pinot Noir;2015.0
+US;93;50.0;California;Sonoma Coast;Pinot Noir;2016.0
+US;93;85.0;California;Howell Mountain;Merlot;2015.0
+US;93;45.0;California;Santa Barbara County;Syrah;2015.0
+Portugal;93;25.0;Alentejo;Alentejo;Portuguese Red;2014.0
+US;93;42.0;California;Santa Lucia Highlands;Pinot Noir;2016.0
+Australia;93;50.0;South Australia;Coonawarra;Cabernet Sauvignon;2015.0
+France;86;10.0;France Other;Vin de France;Merlot;2015.0
+Portugal;86;9.0;Tejo;Tejo;Touriga Nacional;2015.0
+France;86;12.0;France Other;Vin de France;Pinot Noir;2016.0
+US;86;25.0;Texas;Texas;Cabernet Sauvignon;2012.0
+US;86;15.0;California;Mendocino County;Zinfandel;2014.0
+Argentina;86;18.0;Mendoza Province;Mendoza;Malbec;2015.0
+US;86;20.0;Oregon;Oregon;Pinot Noir;2014.0
+France;86;20.0;Loire Valley;Châteaumeillant;Rosé;2016.0
+France;86;13.0;Loire Valley;Val de Loire;Sauvignon Blanc;2016.0
+US;86;28.0;Virginia;Virginia;Viognier;2015.0
+Germany;86;13.0;Rheinhessen;Rheinhessen;White Blend;2016.0
+Australia;86;25.0;South Australia;Mount Gambier;Rosé;2016.0
+US;86;16.0;California;Lodi;Zinfandel;2015.0
+Argentina;86;13.0;Mendoza Province;Mendoza;Cabernet Sauvignon;2016.0
+Italy;86;23.0;Sicily & Sardinia;Terre Siciliane;Nerello Mascalese;2015.0
+Portugal;86;12.0;Alentejano;Alentejano;Portuguese Red;2016.0
+US;86;23.0;California;Russian River Valley;Chardonnay;2015.0
+Portugal;86;8.0;Alentejano;Alentejano;Portuguese Red;2015.0
+Portugal;86;13.0;Tejo;Tejo;Portuguese White;2016.0
+France;86;20.0;Loire Valley;Menetou-Salon;Sauvignon Blanc;2015.0
+France;89;28.0;Provence;Côtes de Provence;Rosé;2017.0
+France;89;30.0;Provence;Côtes de Provence;Rosé;2017.0
+Austria;89;16.0;Weinviertel;Weinviertel;Grüner Veltliner;2017.0
+New Zealand;89;18.0;Awatere Valley;Awatere Valley;Sauvignon Blanc;2017.0
+Austria;89;18.0;Niederösterreich;Niederösterreich;Grüner Veltliner;2017.0
+Italy;89;21.0;Tuscany;Chianti;Sangiovese;2016.0
+Italy;89;;Tuscany;Vernaccia di San Gimignano;Vernaccia;2016.0
+Italy;89;;Tuscany;Chianti Colli Senesi;Red Blend;2013.0
+Italy;89;;Tuscany;Chianti Colli Senesi;Red Blend;2014.0
+France;89;25.0;Provence;Côtes de Provence;Rosé;2017.0
+Austria;89;20.0;Thermenregion;Thermenregion;Austrian white blend;2017.0
+US;89;45.0;New York;Seneca Lake;Riesling;2015.0
+Austria;89;11.0;Weinland Österreich;Weinland Österreich;Rosé;2017.0
+Italy;89;18.0;Tuscany;Vernaccia di San Gimignano;Vernaccia;2015.0
+Austria;89;26.0;Wachau;Wachau;Grüner Veltliner;2017.0
+US;89;24.0;California;Santa Clara Valley;Merlot;2014.0
+US;89;17.0;California;Santa Barbara County;Syrah;2015.0
+Italy;89;;Tuscany;Vernaccia di San Gimignano;Vernaccia;2015.0
+New Zealand;89;16.0;Marlborough;Marlborough;Sauvignon Blanc;2017.0
+France;89;18.0;Provence;Côtes de Provence;Rosé;2017.0
+US;88;24.0;Washington;Columbia Valley (WA);Zinfandel;2015.0
+Italy;88;19.0;Central Italy;Cerasuolo d'Abruzzo;Rosé;2016.0
+Italy;88;18.0;Central Italy;Colline Teatine;White Blend;2017.0
+US;88;28.0;California;Dry Creek Valley;Rosé;2017.0
+Italy;88;40.0;Central Italy;Montepulciano d'Abruzzo Colline Teramane;Montepulciano;2013.0
+US;88;52.0;California;Temecula;Meritage;2014.0
+Spain;88;22.0;Catalonia;Cava;Sparkling Blend;2015.0
+Spain;88;15.0;Catalonia;Cava;Sparkling Blend;2015.0
+Italy;88;13.0;Central Italy;Montepulciano d'Abruzzo;Montepulciano;2014.0
+Italy;88;16.0;Central Italy;Abruzzo;Pecorino;2016.0
+Portugal;88;13.0;Vinho Verde;Vinho Verde;Alvarinho-Trajadura;2017.0
+US;88;22.0;California;Santa Barbara County;Chardonnay;2016.0
+Portugal;88;17.0;Douro;Douro;Portuguese White;2017.0
+Italy;88;39.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;20.0;Washington;Wahluke Slope;Red Blend;2015.0
+Italy;88;45.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;35.0;California;Napa Valley;Merlot;2015.0
+US;88;32.0;Colorado;Colorado;Chardonnay;2015.0
+Spain;88;28.0;Levante;Utiel-Requena;Bobal;2015.0
+Italy;88;19.0;Central Italy;Montepulciano d'Abruzzo;Montepulciano;2015.0
+US;91;29.0;Washington;Wahluke Slope;Zinfandel;2015.0
+US;91;21.0;Washington;Columbia Valley (WA);Syrah;2015.0
+Italy;91;109.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+France;91;55.0;Rhône Valley;Châteauneuf-du-Pape;Rhône-style Red Blend;2012.0
+Argentina;91;42.0;Mendoza Province;Luján de Cuyo;Cabernet Sauvignon;2015.0
+Italy;91;50.0;Piedmont;Barolo;Nebbiolo;2013.0
+Canada;91;30.0;British Columbia;Okanagan Valley;Chardonnay;2015.0
+Italy;91;120.0;Piedmont;Barolo;Nebbiolo;2012.0
+Italy;91;80.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Canada;91;30.0;Ontario;Niagara Peninsula;Riesling;2016.0
+US;91;75.0;California;Chalk Hill;Chardonnay;2015.0
+France;91;18.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2015.0
+Hungary;91;17.0;Tokaji;Tokaji;White Blend;2015.0
+Canada;91;16.0;Ontario;Niagara-On-The-Lake;Cabernet Franc;2015.0
+France;91;25.0;Bordeaux;Graves;Bordeaux-style Red Blend;2015.0
+France;91;41.0;Bordeaux;Montagne-Saint-Émilion;Bordeaux-style Red Blend;2015.0
+France;91;35.0;Bordeaux;Pessac-Léognan;Bordeaux-style Red Blend;2011.0
+France;91;27.0;Bordeaux;Lussac Saint-Émilion;Bordeaux-style Red Blend;2015.0
+France;91;80.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2015.0
+France;91;25.0;Bordeaux;Castillon Côtes de Bordeaux;Bordeaux-style Red Blend;2015.0
+Italy;86;24.0;Veneto;Prosecco;Glera;2016.0
+France;86;13.0;Loire Valley;Val de Loire;Sauvignon Blanc;2016.0
+France;86;13.0;Loire Valley;Muscadet Sèvre et Maine;Melon;2016.0
+France;86;46.0;Champagne;Champagne;Champagne Blend;
+Argentina;86;22.0;Mendoza Province;Mendoza;Chardonnay;2015.0
+Spain;86;20.0;Catalonia;Cava;Sparkling Blend;
+New Zealand;86;22.0;Marlborough;Marlborough;Sauvignon Blanc;2015.0
+Argentina;86;10.0;Mendoza Province;Mendoza;Malbec;2014.0
+France;86;16.0;Loire Valley;Gros Plant du Pays Nantais;Gros Plant;2016.0
+US;86;25.0;Oregon;Willamette Valley;Pinot Noir;2016.0
+US;86;12.0;California;Monterey;Pinot Noir;2015.0
+Canada;86;28.0;Ontario;Lake Erie North Shore;Gewürztraminer;2201.0
+US;86;9.0;California;California;Sauvignon Blanc;2016.0
+New Zealand;86;13.0;Marlborough;Marlborough;Sauvignon Blanc;2016.0
+US;86;10.0;Washington;Washington;Riesling;2015.0
+US;86;13.0;Washington;Columbia Valley (WA);Merlot;2015.0
+US;86;79.0;California;Russian River Valley;Pinot Noir;2014.0
+Italy;86;16.0;Veneto;Prosecco;Glera;2016.0
+New Zealand;86;18.0;Marlborough;Marlborough;Sauvignon Blanc;2015.0
+US;86;40.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+Chile;85;9.0;Maule Valley;Maule Valley;Carmenère;2017.0
+Chile;85;30.0;Casablanca Valley;Casablanca Valley;Sauvignon Blanc;2017.0
+Chile;85;13.0;Rapel Valley;Rapel Valley;Carmenère;2017.0
+France;85;16.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;85;12.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;85;18.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2016.0
+France;85;15.0;Bordeaux;Bordeaux Supérieur;Bordeaux-style Red Blend;2016.0
+France;85;14.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+France;85;14.0;Bordeaux;Bordeaux;Bordeaux-style Red Blend;2016.0
+Spain;85;13.0;Catalonia;Cava;Sparkling Blend;
+France;85;19.0;Burgundy;Mâcon-Villages;Chardonnay;2016.0
+Chile;85;11.0;Maule Valley;Maule Valley;Carmenère;2017.0
+Chile;85;11.0;Maule Valley;Maule Valley;Merlot;2017.0
+US;85;19.0;Virginia;Virginia;Chardonnay;2017.0
+US;85;35.0;California;Napa Valley;Sauvignon Blanc;2017.0
+US;85;35.0;Virginia;Monticello;Viognier;2017.0
+US;85;17.0;California;California;Orange Muscat;2017.0
+US;85;10.0;Texas;Texas;Gewürztraminer;2017.0
+US;85;16.0;Washington;Columbia Valley (WA);Riesling;2017.0
+Chile;85;16.0;Colchagua Valley;Colchagua Valley;Red Blend;2017.0
+Argentina;86;14.0;Mendoza Province;Tupungato;Malbec;2017.0
+US;86;32.0;California;El Dorado;Red Blend;2014.0
+US;86;;California;Temecula Valley;Sauvignon Blanc;2016.0
+Spain;86;25.0;Levante;Jumilla;Monastrell;2015.0
+US;86;15.0;Washington;Columbia Valley (WA);Merlot;2015.0
+France;86;15.0;Bordeaux;Bordeaux Blanc;Sauvignon Blanc;2016.0
+US;86;40.0;Oregon;Umpqua Valley;Pinot Noir;2015.0
+Spain;86;17.0;Northern Spain;Ribera del Duero;Tempranillo;2016.0
+US;86;36.0;Washington;Rattlesnake Hills;Cabernet Franc;2014.0
+Spain;86;24.0;Catalonia;Cava;Xarel-lo;2015.0
+US;86;14.0;Oregon;Willamette Valley;Pinot Gris;2015.0
+France;86;18.0;Burgundy;Bourgogne;Pinot Noir;2015.0
+US;86;18.0;Oregon;Willamette Valley;Pinot Gris;2015.0
+Spain;86;18.0;Catalonia;Cava;Sparkling Blend;
+US;86;10.0;California;California;Cabernet Sauvignon;2014.0
+US;86;14.0;California;Central Coast;Chardonnay;2016.0
+Argentina;86;50.0;Mendoza Province;Uco Valley;Red Blend;2015.0
+Italy;86;12.0;Veneto;Bardolino Classico;Red Blend;2016.0
+Italy;86;20.0;Veneto;Valpolicella Superiore Ripasso;Red Blend;2015.0
+US;86;27.0;Oregon;Eola-Amity Hills;Pinot Noir;2015.0
+Austria;95;77.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Austria;95;89.0;Wachau;Wachau;Riesling;2016.0
+US;95;60.0;California;Russian River Valley;Chardonnay;2015.0
+US;95;80.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+Austria;95;65.0;Carnuntum;Carnuntum;Blaufränkisch;
+Austria;95;85.0;Kamptal;Kamptal;Riesling;2016.0
+Austria;95;20.0;Kremstal;Kremstal;Riesling;2016.0
+Austria;95;37.0;Kremstal;Kremstal;Riesling;2016.0
+South Africa;95;330.0;Coastal Region;Coastal Region;Shiraz;2015.0
+Austria;95;35.0;Kamptal;Kamptal;Riesling;2016.0
+US;95;80.0;California;Napa Valley;Cabernet Sauvignon;2014.0
+Austria;95;58.0;Niederösterreich;Niederösterreich;Riesling;2016.0
+US;95;80.0;California;Central Coast;Syrah;2013.0
+Austria;95;75.0;Kamptal;Kamptal;Riesling;2016.0
+Austria;95;50.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Austria;95;49.0;Wachau;Wachau;Grüner Veltliner;2016.0
+Austria;95;55.0;Wachau;Wachau;Riesling;2016.0
+Austria;95;174.0;Wachau;Wachau;Riesling;2016.0
+Italy;95;;Tuscany;Colli della Toscana Centrale;Sangiovese;2014.0
+US;95;140.0;Washington;Washington;Syrah;2014.0
+US;93;57.0;California;Anderson Valley;Pinot Noir;2015.0
+US;93;57.0;California;Anderson Valley;Pinot Noir;2015.0
+US;93;40.0;California;Arroyo Grande Valley;Zinfandel;2015.0
+US;93;46.0;California;Santa Maria Valley;Chardonnay;2016.0
+Italy;93;65.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+US;93;36.0;California;Contra Costa County;Zinfandel;2016.0
+Australia;93;80.0;Victoria;Yarra Valley;Shiraz;2015.0
+US;93;95.0;California;Coombsville;Cabernet Sauvignon;2015.0
+US;93;76.0;California;Napa Valley;Chardonnay;2015.0
+US;93;38.0;California;Adelaida District;Marsanne;2016.0
+China;93;300.0;China;China;Red Blend;2014.0
+Argentina;93;30.0;Mendoza Province;Mendoza;Bordeaux-style Red Blend;2010.0
+Australia;93;25.0;Victoria;Great Western;Riesling;2017.0
+Portugal;93;40.0;Dão;Dão;Touriga Nacional;2016.0
+US;93;50.0;California;Napa Valley;Pinot Noir;2016.0
+Italy;93;49.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Italy;93;213.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+France;93;42.0;Bordeaux;Listrac-Médoc;Bordeaux-style Red Blend;2015.0
+Italy;93;60.0;Piedmont;Barbaresco;Nebbiolo;2015.0
+Germany;93;57.0;Mosel;Mosel;Riesling;2016.0
+US;89;32.0;Washington;Yakima Valley;Rhône-style Red Blend;2015.0
+Italy;89;22.0;Northeastern Italy;Alto Adige;Pinot Grigio;2017.0
+France;89;15.0;Rhône Valley;Côtes du Rhône;Rhône-style Red Blend;2016.0
+Italy;89;;Sicily & Sardinia;Sicilia;Grillo;2017.0
+Israel;89;35.0;Israel;Israel;Cabernet Sauvignon;2013.0
+Israel;89;27.0;Israel;Israel;Pinotage;2015.0
+Italy;89;21.0;Northeastern Italy;Friuli;Pinot Grigio;2017.0
+Italy;89;21.0;Northeastern Italy;Venezia Giulia;Sauvignon;2017.0
+Italy;89;29.0;Sicily & Sardinia;Sicilia;Red Blend;2014.0
+US;89;22.0;California;Red Hills;Malbec;2017.0
+US;89;34.0;California;Anderson Valley;Pinot Noir;2014.0
+Italy;89;18.0;Veneto;Custoza;White Blend;2016.0
+Argentina;89;30.0;Mendoza Province;Agrelo;Cabernet Sauvignon;2014.0
+Italy;89;18.0;Northeastern Italy;Vigneti delle Dolomiti;Kerner;2016.0
+US;89;25.0;California;El Dorado;Zinfandel;2015.0
+France;89;22.0;Bordeaux;Lussac Saint-Émilion;Bordeaux-style Red Blend;2014.0
+Austria;89;16.0;Niederösterreich;Niederösterreich;Riesling;2017.0
+US;89;36.0;Washington;Yakima Valley;Chardonnay;2016.0
+Italy;89;19.0;Sicily & Sardinia;Sicilia;Grillo;2017.0
+Argentina;89;18.0;Mendoza Province;Valle de Uco;Malbec;2016.0
+France;86;15.0;France Other;Vin de France;Pinot Noir;2016.0
+US;86;55.0;California;Sonoma County;Bordeaux-style Red Blend;2014.0
+Argentina;86;10.0;Other;San Juan;Malbec;2016.0
+France;86;16.0;France Other;Vin de France;Grenache;
+France;86;16.0;France Other;Vin de France;Sauvignon Blanc;
+France;86;25.0;Corse;Corse;Rosé;2016.0
+Portugal;86;9.0;Douro;Douro;Portuguese Red;2014.0
+France;86;23.0;Loire Valley;Sancerre;Rosé;2016.0
+Argentina;86;8.0;Other;San Juan;Chardonnay;2016.0
+France;86;10.0;France Other;Mediterranée;Merlot;2016.0
+US;86;20.0;California;Alexander Valley;Sangiovese;2016.0
+US;86;24.0;California;Napa Valley;Sauvignon Blanc;2016.0
+US;86;20.0;California;Paso Robles;Cabernet Sauvignon;2014.0
+Portugal;86;;Douro;Douro;Portuguese White;2016.0
+Portugal;86;10.0;Tejo;Tejo;Touriga Nacional;2014.0
+Portugal;86;18.0;Tejo;Tejo;Syrah;2014.0
+Portugal;86;10.0;Tejo;Tejo;Portuguese White;2016.0
+US;86;22.0;Oregon;Dundee Hills;Pinot Noir;2016.0
+US;86;39.0;California;Sonoma Valley;Merlot;2014.0
+Portugal;86;12.0;Península de Setúbal;Península de Setúbal;Rosé;2016.0
+US;89;20.0;Texas;Texas;Rosé;2017.0
+US;89;12.0;Washington;Yakima Valley;Chardonnay;2016.0
+US;89;25.0;Virginia;Monticello;Cabernet Franc;2016.0
+Italy;89;18.0;Tuscany;Chianti Superiore;Red Blend;2016.0
+Italy;89;24.0;Tuscany;Chianti Rufina;Red Blend;2013.0
+France;89;12.0;Rhône Valley;Luberon;Rosé;2017.0
+Austria;89;22.0;Wiener Gemischter Satz;Wiener Gemischter Satz;Austrian white blend;2017.0
+Austria;89;19.0;Weinland Österreich;Weinland Österreich;Blaufränkisch;2016.0
+France;89;23.0;Provence;Bandol;Rosé;2017.0
+US;89;18.0;California;Lake County;Sauvignon Blanc;2016.0
+Austria;89;24.0;Niederösterreich;Niederösterreich;Gelber Muskateller;2017.0
+Italy;89;22.0;Tuscany;Orcia;Red Blend;2012.0
+Italy;89;45.0;Central Italy;Montefalco Sagrantino;Sagrantino;2012.0
+Austria;89;13.0;Niederösterreich;Niederösterreich;Zweigelt;2017.0
+Austria;89;;Kamptal;Kamptal;Grüner Veltliner;2017.0
+France;89;15.0;Rhône Valley;Côtes du Rhône;Rhône-style White Blend;2017.0
+Italy;89;20.0;Tuscany;Chianti;Red Blend;2015.0
+Austria;89;15.0;Weinviertel;Weinviertel;Grüner Veltliner;2017.0
+US;89;48.0;California;Sonoma Coast;Pinot Noir;2016.0
+Austria;89;15.0;Steiermark;Steiermark;Sämling;2017.0
+US;88;60.0;California;Mount Veeder;Chardonnay;2016.0
+France;88;19.0;Southwest France;Cahors;Malbec;2016.0
+Spain;88;13.0;Northern Spain;Rioja;Rosé;
+US;88;24.0;California;Sta. Rita Hills;Viognier;2017.0
+Italy;88;65.0;Piedmont;Barolo;Nebbiolo;2014.0
+US;88;29.0;California;San Benito County;Pinot Grigio;2017.0
+US;88;25.0;California;San Benito County;Barbera;2017.0
+Spain;88;;Catalonia;Penedès;Sparkling Blend;2016.0
+Italy;88;9.0;Central Italy;Montepulciano d'Abruzzo;Montepulciano;2015.0
+US;88;15.0;California;Monterey County;Rosé;2017.0
+Spain;88;20.0;Northern Spain;Rioja;Tempranillo Blend;2012.0
+Spain;88;30.0;Northern Spain;Navarra;Garnacha;2016.0
+Portugal;88;11.0;Douro;Douro;Portuguese Red;2016.0
+Portugal;88;11.0;Douro;Douro;Portuguese White;2017.0
+France;88;13.0;France Other;Vin de France;Chardonnay;2017.0
+Portugal;88;11.0;Beira Interior;Beira Interior;Portuguese Red;2015.0
+France;88;13.0;Southwest France;Côtes du Marmandais;Bordeaux-style Red Blend;2015.0
+Portugal;88;18.0;Tejo;Tejo;Castelão;2016.0
+Argentina;88;13.0;Mendoza Province;Mendoza;Malbec;
+France;88;15.0;Rhône Valley;Costières de Nîmes;Rhône-style Red Blend;2016.0
+France;91;35.0;Bordeaux;Lalande de Pomerol;Bordeaux-style Red Blend;2014.0
+Italy;91;70.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+US;91;44.0;California;Paso Robles;Grenache;2015.0
+US;91;48.0;California;Santa Maria Valley;Pinot Noir;2010.0
+US;91;50.0;California;Livermore Valley;Cabernet Franc;2013.0
+France;91;50.0;Rhône Valley;Châteauneuf-du-Pape;Rhône-style White Blend;2016.0
+France;91;27.0;Rhône Valley;Crozes-Hermitage;Rhône-style Red Blend;2014.0
+Spain;91;40.0;Northern Spain;Toro;Tinta de Toro;2014.0
+US;91;45.0;California;Sta. Rita Hills;Pinot Noir;2015.0
+Italy;91;55.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+Italy;91;85.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;91;26.0;California;Shenandoah Valley (CA);Syrah;2014.0
+US;91;75.0;California;Paso Robles Willow Creek District;Grenache;2015.0
+US;91;30.0;California;California;Red Blend;2014.0
+US;91;95.0;California;Temecula Valley;Rhône-style Red Blend;2014.0
+US;91;46.0;California;Russian River Valley;Chardonnay;2015.0
+Italy;91;152.0;Tuscany;Toscana;Red Blend;2013.0
+US;91;16.0;California;Lodi;Syrah;2015.0
+Italy;91;75.0;Tuscany;Brunello di Montalcino;Sangiovese;2012.0
+Italy;91;50.0;Tuscany;Brunello di Montalcino;Sangiovese;2013.0
+US;86;38.0;California;Russian River Valley;Chardonnay;2015.0
+US;86;40.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;86;20.0;Oregon;Willamette Valley;Rosé;2016.0
+US;86;28.0;Oregon;Oregon;Sangiovese;2013.0
+US;86;28.0;California;Dry Creek Valley;Rosé;2016.0
+Italy;86;22.0;Veneto;Valdobbiadene Prosecco Superiore;Glera;
+Italy;86;13.0;Veneto;Prosecco;Glera;
+US;86;35.0;Oregon;Willamette Valley;Pinot Noir;2015.0
+US;86;36.0;Oregon;Chehalem Mountains;Pinot Noir;2014.0
+US;86;25.0;California;Napa County;Cabernet Sauvignon;2015.0
+Canada;86;45.0;Ontario;Niagara-On-The-Lake;Cabernet Franc;2012.0
+Argentina;86;20.0;Mendoza Province;Mendoza;Malbec-Cabernet;2014.0
+South Africa;86;20.0;Stellenbosch;Stellenbosch;Red Blend;2016.0
+US;86;12.0;California;California;Pinot Grigio;2016.0
+New Zealand;86;15.0;Marlborough;Marlborough;Sauvignon Blanc;2016.0
+Italy;86;15.0;Veneto;Prosecco Treviso;Glera;
+US;86;55.0;California;Oak Knoll District;Cabernet Sauvignon;2013.0
+Italy;86;17.0;Veneto;Prosecco;Glera;
+France;86;24.0;Loire Valley;Sancerre;Rosé;2016.0
+US;86;36.0;Washington;Columbia Valley (WA);Cabernet Sauvignon;2014.0
