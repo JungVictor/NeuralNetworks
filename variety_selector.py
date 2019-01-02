@@ -17,11 +17,11 @@ import warnings
 warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
 
 #####################
-country = 'France'
+country = 'Spain'
 points = 87
-province = 'Alsace'
-region = 'Alsace'
-variety = 'Pinot Noir'
+price = 15
+province = 'Northern Spain'
+region = 'Navarra'
 #####################
 
 # Reading the main dataset
@@ -42,18 +42,25 @@ province_table, province_table_r = df_to_dict(province_table)
 # Translate from string to int, so the network can understand
 country = country_table_r[country]
 region = region_table_r[region]
-variety = variety_table_r[variety]
+price = from_price_to_range([price], price_range)[0][0]
 province = province_table_r[province]
 
 # y is the data we're studying.
-y = wines["price_range"]
+y = wines["variety"]
 # X is the data that we'll use to make correlation with y
-X = wines.drop(wines.columns[[2]], axis=1)
+X = wines.drop(wines.columns[[5]], axis=1)
 
 # Creating the actual sets we'll use to train the neural network (yay!)
 # by default, train_size=0.25, which means 1/4th of the dataset will serve for training
 # but 0.25 takes sooooooooo much time. Feel free to modify the value (between 1.0 and 0.0)
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.5)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99)
+
+# we fit the scaler with X_train
+scaler = StandardScaler().fit(X_train)
+
+# then we scale training and test sets
+scaler.transform(X_train)
+scaler.transform(X_test)
 
 ######################
 # CREATING THE NETWORK
@@ -66,7 +73,7 @@ gauss = GaussianProcessClassifier()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
 svc = SVC(kernel='linear', C=0.025)
 decision_tree = DecisionTreeClassifier()
-forest = RandomForestClassifier(n_estimators=100, min_samples_split=4)
+forest = RandomForestClassifier()
 
 neural_network = neighbors
 
@@ -76,24 +83,19 @@ print("BEGINNING OF THE TRAINING")
 neural_network.fit(X_train, y_train)
 print("END OF THE TRAINING")
 
-
 score = neural_network.score(X_test, y_test)
+print("Score of the classifier : {}".format(score))
 
 difference = 0
 actual = neural_network.predict(X_test)
 expected = [e for e in y_test]
-count = 0
 for i in range(len(actual)):
-    if actual[i] != expected[i]:
-        difference += abs(actual[i] - expected[i])
-        count += 1
+    difference += abs(actual[i] - expected[i])
 
-difference = difference / count / (len(price_range)+1) * 100
-print("Score of the classifier : {}%".format(score*100))
-print("Average difference between expected and actual : {}%".format(difference))
+print(difference / len(actual))
 
 # Asking the network to answer the problem
-X = [country, points, province, region, variety]
+X = [country, points, price, province, region]
 answer = neural_network.predict([X])[0]
-print(index_to_range(answer, price_range))
+print(variety_table[answer])
 

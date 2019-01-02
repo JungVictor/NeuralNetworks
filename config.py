@@ -19,5 +19,5 @@ csv_separator = ';'
 drop_description = True
 
 # Price range
-price_range = [10, 15, 20, 25, 30, 40, 55, 100]
+price_range = [10, 15, 20, 27, 40, 55, 100]
 #####################
