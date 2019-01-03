@@ -66,7 +66,7 @@ scaler.transform(X_test)
 
 # Multi-layer Perceptron, not My Little Pony
 network_shape = (10, 10, 10)    # 3 hidden layout of size 10
-neighbors = KNeighborsClassifier(15)
+neighbors = KNeighborsClassifier(15, algorithm='ball_tree')
 gauss = GaussianProcessClassifier()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
 svc = SVC(kernel='linear', C=0.025)
@@ -80,23 +80,11 @@ index = 0
 
 # TRAINING THE NETWORK
 print("BEGINNING OF THE TRAINING")
-for i in range(200):
-    neural_network.fit(X_train, y_train)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=i)
-    score = neural_network.score(X_test, y_test)
-    if score > 0.57:
-        break
+neural_network.fit(X_train, y_train)
 print("END OF THE TRAINING")
 
-print("Score of the classifier : {}".format(score))
-
-difference = 0
-actual = neural_network.predict(X_test)
-expected = [e for e in y_test]
-for i in range(len(actual)):
-    difference += abs(actual[i] - expected[i])
-
-print(difference / len(actual))
+score = neural_network.score(X_test, y_test)
+print("Score of the classifier : {:.1%}".format(score))
 
 vintages = [2000+i for i in range(0, 18)]
 
@@ -124,4 +112,4 @@ for i in range(len(X)):
             answers.append(False)
 
 
-print(correct, '/', len(X), correct/len(X)*100)
+print('Score on the 2018 data : {}/{} ({:.1%})'.format(correct,  len(X), correct/len(X)))

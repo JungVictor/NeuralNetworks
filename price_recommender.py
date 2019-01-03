@@ -54,7 +54,7 @@ X = wines.drop(wines.columns[[2]], axis=1)
 # Creating the actual sets we'll use to train the neural network (yay!)
 # by default, train_size=0.25, which means 1/4th of the dataset will serve for training
 # but 0.25 takes sooooooooo much time. Feel free to modify the value (between 1.0 and 0.0)
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=165)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.90, random_state=165)
 
 ######################
 # CREATING THE NETWORK
@@ -62,7 +62,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 
 # Multi-layer Perceptron, not My Little Pony
 network_shape = (100, 100, 100)    # 3 hidden layout of size 10
-neighbors = KNeighborsClassifier(1)
+neighbors = KNeighborsClassifier(1, algorithm='ball_tree')
 gauss = GaussianProcessClassifier()
 bayes = GaussianNB()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
@@ -74,14 +74,8 @@ neural_network = neighbors
 
 # TRAINING THE NETWORK
 print("BEGINNING OF THE TRAINING")
-for i in range(150):
-    neural_network.fit(X_train, y_train)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=i)
-    score = neural_network.score(X_test, y_test)
-    if score > 0.5:
-        break
+neural_network.fit(X_train, y_train)
 print("END OF THE TRAINING")
-
 
 score = neural_network.score(X_test, y_test)
 
@@ -94,17 +88,17 @@ for i in range(len(actual)):
         difference += abs(actual[i] - expected[i])
         count += 1
 
-difference = difference / count / (len(price_range)+1) * 100
-print("Score of the classifier : {}%".format(score*100))
-print("Average difference between expected and actual : {}%".format(difference))
+difference = difference / count / (len(price_range)+1)
+print("Score of the classifier : {:.1%}".format(score))
+print("Average price difference between expected and actual : {:.1%}".format(difference))
 
-# Asking the network to answer the problem
-answers = []
 
 X = pd.read_csv('test/review.csv', sep=csv_separator)
 X.dropna(inplace=True)
 X.reset_index(inplace=True, drop=True)
 correct = 0
+
+# Asking the network to answer the problem
 for i in range(len(X)):
     if X['country'][i] in country_table_r and X['province'][i] in province_table_r and X['region_1'][i] in region_table_r and X['variety'][i] in variety_table_r:
         ctr = country_table_r[X['country'][i]]
@@ -117,10 +111,7 @@ for i in range(len(X)):
         answer = index_to_range(neural_network.predict(wine)[0], price_range)
         expected = X['price'][i]
         if answer[0] <= expected < answer[1]:
-            answers.append(True)
             correct += 1
-        else:
-            answers.append(False)
 
 
-print(correct, '/', len(X), correct/len(X)*100)
+print('Score on the 2018 data : {}/{} ({:.1%})'.format(correct,  len(X), correct/len(X)))
