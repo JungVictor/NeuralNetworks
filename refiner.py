@@ -4,6 +4,7 @@
 import string
 import pandas as pd
 import numpy as np
+import re
 from config import csv_separator
 
 
@@ -177,14 +178,9 @@ def df_to_dict(df):
 def title_to_vintage(array):
     vintage = []
     for e in array:
-        year = ''.join(c for c in e if c.isdigit())
-        if len(year) > 4:
-            while year[0] > '2':
-                year = year[1:]
-            while len(year) > 4:
-                year = year[:-1]
-        if len(year) == 4:
-            vintage.append(int(year))
+        year = re.search(r'((19[7-9]|20[0-1])[0-9])', e)
+        if year != None:
+            vintage.append(year.group())
         else:
             vintage.append(np.nan)
     return vintage

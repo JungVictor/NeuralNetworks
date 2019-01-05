@@ -5,11 +5,11 @@ from config import *
 import numpy as np
 warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
 
+print("DATA PREPARATION")
+
 # Reading the file
 wines = pd.read_csv("winemag-data-130k-v2.csv")
-
 vintage = title_to_vintage(wines['title'])
-
 
 # Dropping the index columns, designation, region_2, taster name and twitter, title and winery
 wines.drop(wines.columns[[0, 3, 8, 9, 10, 11, 13]], axis=1, inplace=True)
