@@ -9,30 +9,34 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 import warnings
-warnings.filterwarnings("ignore")   # just ignore the warning messages
+
+warnings.filterwarnings("ignore")  # just ignore the warning messages
 
 print("PRICE RECOMMENDER")
 
 #####################
 country = 'Italy'
-points = 98
-province = 'Central Italy'
-region = 'Toscana'
-variety = 'Red Blend'
+points = 87
+province = 'Alsace'
+region = 'Alsace'
+variety = 'Pinot Gris'
 vintage = 2018
 
 # Testing the network on the 2018 reviews ?
+# Put 'False' if you want a better answer to a unique problem
 testing_2018 = False
 #####################
 
 # Reading the main dataset
-wines = pd.read_csv(output_dir+data_filename, sep=csv_separator)
+wines = pd.read_csv(output_dir + data_filename, sep=csv_separator)
+if testing_2018:
+    dataframe_2018 = pd.read_csv('test/review.csv', sep=csv_separator)
 
 # Reading the hash table
-country_table = pd.read_csv(output_dir+country_filename, sep=csv_separator)
-region_table = pd.read_csv(output_dir+region_filename, sep=csv_separator)
-variety_table = pd.read_csv(output_dir+variety_filename, sep=csv_separator)
-province_table = pd.read_csv(output_dir+province_filename, sep=csv_separator)
+country_table = pd.read_csv(output_dir + country_filename, sep=csv_separator)
+region_table = pd.read_csv(output_dir + region_filename, sep=csv_separator)
+variety_table = pd.read_csv(output_dir + variety_filename, sep=csv_separator)
+province_table = pd.read_csv(output_dir + province_filename, sep=csv_separator)
 
 # Translating the DataFrame to dict
 country_table, country_table_r = df_to_dict(country_table)
@@ -46,6 +50,26 @@ region = region_table_r[region]
 variety = variety_table_r[variety]
 province = province_table_r[province]
 
+# Selecting only the data from the countries we need
+# Array of the countries we need
+country_array = []
+
+if testing_2018:
+    for i in range(len(dataframe_2018['country'])):
+        ctr = dataframe_2018['country'][i]
+        vrt = dataframe_2018['variety'][i]
+        if ctr in country_table_r:
+            ctr = country_table_r[ctr]
+            if ctr not in country_array:
+                country_array.append(ctr)
+
+else:
+    country_array.append(country)
+
+if True:
+    wines['country'] = filter_nan_values(wines['country'], country_array)
+    wines.dropna(inplace=True)
+
 # y is the data we're studying.
 y = wines["price_range"]
 # X is the data that we'll use to make correlation with y
@@ -57,7 +81,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 ######################
 # CREATING THE NETWORK
 ######################
-network_shape = (30, 20, 20,)    # 3 hidden layout of size 30, 20, 20
+network_shape = (30, 20, 20,)  # 3 hidden layout of size 30, 20, 20
 
 # All tested networks
 neighbors = KNeighborsClassifier(1, algorithm='ball_tree')
@@ -76,7 +100,7 @@ print("\nBEGINNING OF THE TRAINING...", end='\t')
 neural_network.fit(X_train, y_train)
 print("END OF THE TRAINING")
 
-
+# Difference in price range from actual to expected
 difference = 0
 actual = neural_network.predict(X_test)
 expected = [e for e in y_test]
@@ -86,18 +110,18 @@ for i in range(len(actual)):
         difference += abs(actual[i] - expected[i])
         count += 1
 
-difference = difference / count / (len(price_range)+1)
+difference = difference / count
 
 # Score of the neural network in correctly predicting
 score = neural_network.score(X_test, y_test)
 print("Score of the classifier : {:.1%}".format(score))
-print("Average price difference between expected and actual : {:.1%}".format(difference))
+print("Average price difference between expected and actual : {:.2%} ({:.2} range)".format(difference/(len(price_range)+1), difference))
 
 #########################################
 # Testing the network on the 2018 reviews
 #########################################
 if testing_2018:
-    X = pd.read_csv('test/review.csv', sep=csv_separator)
+    X = dataframe_2018
     X.dropna(inplace=True)
     X.reset_index(inplace=True, drop=True)
     correct = 0
@@ -119,7 +143,7 @@ if testing_2018:
             if answer[0] <= expected < answer[1]:
                 correct += 1
 
-    print('Score on the 2018 data : {}/{} ({:.1%})'.format(correct,  count, correct/count))
+    print('Score on the 2018 data : {}/{} ({:.1%})'.format(correct, count, correct / count))
 
 ######################################
 # END TEST 2018

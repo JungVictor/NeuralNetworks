@@ -1,9 +1,8 @@
-import pandas as pd
 import warnings
 from refiner import *
 from config import *
-import numpy as np
-warnings.filterwarnings("ignore")   # just ignore the warning messages (who cares anyway?)
+
+warnings.filterwarnings("ignore")  # just ignore the warning messages (who cares anyway?)
 
 print("DATA PREPARATION")
 
@@ -30,7 +29,7 @@ wines["vintage"] = vintage
 
 # Dropping all lines where there's an undefined value
 dropped = wines.dropna()
-print("Dropped : {}%".format((len(wines) - len(dropped))/ len(wines)*100))
+print("Dropped : {}%".format((len(wines) - len(dropped)) / len(wines) * 100))
 wines = dropped
 wines.reset_index(drop=True, inplace=True)
 
@@ -41,9 +40,11 @@ wines["province"], province_table = string_hash(wines["province"])
 wines["variety"], variety_table = string_hash(wines["variety"])
 wines["price"], range_number = from_price_to_range(wines["price"], price_range)
 
-
 # Useful words for the description hash
-useful_words = ['fruit', 'tannins', 'cherry', 'ripe', 'black', 'spice', 'red', 'oak', 'berry', 'dry', 'plum', 'apple', 'blackberry', 'soft', 'white', 'crisp', 'sweet', 'citrus', 'Cabernet', 'vanilla', 'dark', 'light', 'bright', 'pepper', 'juicy', 'raspberry', 'green', 'firm', 'peach', 'lemon', 'chocolate', 'dried', 'balanced', 'Sauvignon', 'Pinot', 'smooth', 'licorice', 'herb', 'earth', 'tannic']
+useful_words = ['fruit', 'tannins', 'cherry', 'ripe', 'black', 'spice', 'red', 'oak', 'berry', 'dry', 'plum', 'apple',
+                'blackberry', 'soft', 'white', 'crisp', 'sweet', 'citrus', 'Cabernet', 'vanilla', 'dark', 'light',
+                'bright', 'pepper', 'juicy', 'raspberry', 'green', 'firm', 'peach', 'lemon', 'chocolate', 'dried',
+                'balanced', 'Sauvignon', 'Pinot', 'smooth', 'licorice', 'herb', 'earth', 'tannic']
 if not drop_description:
     wines["description"], words_table, r_words_table = description_hash(wines["description"], useful_words)
 
@@ -61,4 +62,4 @@ dict_to_csv(variety_table, output_dir, variety_filename)
 
 # Renaming columns and saving to csv
 wines.rename(index=str, columns={"region_1": "region", "price": "price_range"}, inplace=True)
-wines.to_csv(output_dir+data_filename, sep=csv_separator, encoding='utf-8', index=False)
+wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', index=False)

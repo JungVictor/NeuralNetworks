@@ -185,3 +185,13 @@ def title_to_vintage(array):
             vintage.append(np.nan)
     return vintage
 
+
+def filter_nan_values(array, values):
+    new_array = []
+    for e in array:
+        if e in values:
+            new_array.append(e)
+        else:
+            new_array.append(np.nan)
+    return new_array
+
