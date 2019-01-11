@@ -20,4 +20,5 @@ drop_description = True
 
 # Price range
 price_range = [10, 15, 20, 27, 40, 55, 100]
+price_range = [14, 19, 24, 30, 40, 55, 100]
 #####################

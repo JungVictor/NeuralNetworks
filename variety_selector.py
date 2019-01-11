@@ -2,10 +2,11 @@ from config import *
 from refiner import *
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 import warnings
 
@@ -14,11 +15,11 @@ warnings.filterwarnings("ignore")  # just ignore the warning messages
 print("VARIETY SELECTOR")
 
 #####################
-country = 'US'
-points = 87
-price = 20
-province = 'California'
-region = 'Napa Valley'
+country = 'France'
+points = 98
+price = 100
+province = 'Alsace'
+region = 'Alsace'
 
 # Testing the network on the 2018 reviews ?
 # Put 'False' if you want a better answer to a unique problem
@@ -68,10 +69,8 @@ else:
     country_array.append(country)
     # California is about 1/3 of the wine in the data, so we only select wines from California if
     # the province asked is California.
-    if country_table[country] == 'US' and province_table[province] == 'California':
-        wines['province'] = filter_nan_values(wines['province'], [province])
 
-if True:
+if country_table[country] != 'US':
     wines['country'] = filter_nan_values(wines['country'], country_array)
     wines.dropna(inplace=True)
 
@@ -89,7 +88,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 
 # All tested network
 network_shape = (10, 10, 10)  # 3 hidden layout of size 10
-neighbors = KNeighborsClassifier(15, algorithm='ball_tree')
+logit = LogisticRegression()
+# neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
+neighbors = KNeighborsRegressor(10, algorithm='ball_tree', weights='distance')
 gauss = GaussianProcessClassifier()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
 svc = SVC(kernel='linear', C=0.025)
@@ -114,6 +115,7 @@ print("Score of the classifier : {:.1%}".format(score))
 if testing_2018:
     answers = []
     X = dataframe_2018
+    X['variety'] = X['variety'].str.lower()
     X.dropna(inplace=True)
     X.reset_index(inplace=True, drop=True)
     correct = 0
@@ -144,7 +146,7 @@ if testing_2018:
 problem = [[country, points, price, province, region]]
 
 # Answer of the neural network
-answer = neural_network.predict(problem)[0]
+answer = np.floor(neural_network.predict(problem)[0])
 
 print("\nANSWER :")
 print("Variety selected : {}".format(variety_table[answer]))

@@ -17,7 +17,7 @@ print("REGION SELECTOR")
 #####################
 price = 50
 points = 87
-variety = "Red Blend"
+variety = "pinot gris"
 
 # Testing the network on the 2018 reviews ? (might take some time)
 testing_2018 = True
@@ -77,7 +77,7 @@ y = wines["province"]
 X = wines.drop(wines.columns[[0, 3, 4]], axis=1)
 
 # Creating the actual sets we'll use to train the neural network
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=200)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
 
 ######################
 # CREATING THE NETWORK
@@ -85,7 +85,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 network_shape = (10, 10, 10,)  # 3 hidden layout of size 10
 
 # All tested networks
-neighbors = KNeighborsClassifier(15)
+neighbors = KNeighborsClassifier(15, algorithm='ball_tree', weights='distance')
 gauss = GaussianProcessClassifier()
 bayes = GaussianNB()
 mlp = MLPClassifier()
@@ -121,6 +121,7 @@ elif only_US:
 
 X.dropna(inplace=True)
 X.reset_index(inplace=True, drop=True)
+X['variety'] = X['variety'].str.lower()
 correct = 0
 count = 0
 answers = []
@@ -170,7 +171,7 @@ if testing_2018:
     country_networks = {}
 
     for country in unique_answers:
-        network = KNeighborsClassifier(15)
+        network = KNeighborsClassifier(15, algorithm='ball_tree', weights='distance')
 
         data = province_data[country]
         data = pd.DataFrame(data)
@@ -178,7 +179,7 @@ if testing_2018:
         y_country = data['region']
         X_country = data.drop(data.columns[[-1]], axis=1)
 
-        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=200)
+        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
         network.fit(X_train, y_train)
         country_networks[country] = network
 
@@ -221,7 +222,7 @@ province = neural_network_province.predict(problem)[0]
 
 # Collecting data for the given country
 print("\nCOLLECTING DATA FOR {}...".format(province_table[province]), end='\t')
-if testing_2018 and country in province_data:
+if testing_2018 and province in province_data:
     province_data = province_data[province]
 else:
     province_data = {'points': [], 'price': [], 'variety': [], 'region': []}

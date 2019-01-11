@@ -74,7 +74,7 @@ def description_hash(array, keys):
     return column, values, reverse_values
 
 
-def from_price_to_range(array, steps):
+def from_price_to_range(array, prices):
     """
         Associate each price to a price range, according to the steps array.
 
@@ -83,6 +83,7 @@ def from_price_to_range(array, steps):
         ([0, 1, 1, 3, 0, 5], {0: 1, 1: 1, 3: 0, 5: 0})
     """
     range_number = {}
+    steps = [p for p in prices]
     steps.append(1000000)  # append infinity
     column = []
     for price in array:
@@ -194,4 +195,13 @@ def filter_nan_values(array, values):
         else:
             new_array.append(np.nan)
     return new_array
+
+
+def correct_grape_names(row):
+    regexp = [r'shiraz', r'ugni blanc', r'cinsaut', r'carinyena', r'^ribolla$', r'palomino', r'turbiana', r'verdelho', r'viura', r'pinot bianco|weissburgunder', r'garganega|grecanico', r'moscatel', r'moscato', r'melon de bourgogne', r'trajadura|trincadeira', r'cannonau|garnacha', r'grauburgunder|pinot grigio', r'pinot noir|pinot nero', r'colorino', r'mataro|monastrell', r'mourv(\w+)']
+    grapename = ['syrah', 'trebbiano', 'cinsault', 'carignan', 'ribolla gialla', 'palomino','verdicchio', 'verdejo','macabeo', 'pinot blanc', 'garganega', 'muscatel', 'muscat', 'muscadet', 'treixadura', 'grenache', 'pinot gris', 'pinot noir', 'lambrusco', 'mourvedre', 'mourvedre']
+    f = row
+    for exsearch, gname in zip(regexp, grapename):
+        f = re.sub(exsearch, gname, f)
+    return f
 
