@@ -23,7 +23,7 @@ region = 'Alsace'
 
 # Testing the network on the 2018 reviews ?
 # Put 'False' if you want a better answer to a unique problem
-testing_2018 = False
+testing_2018 = True
 #####################
 
 # Reading the main dataset
@@ -90,7 +90,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 network_shape = (10, 10, 10)  # 3 hidden layout of size 10
 logit = LogisticRegression()
 # neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
-neighbors = KNeighborsRegressor(10, algorithm='ball_tree', weights='distance')
+neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
 gauss = GaussianProcessClassifier()
 mlp = MLPClassifier(hidden_layer_sizes=network_shape)
 svc = SVC(kernel='linear', C=0.025)
@@ -128,7 +128,7 @@ if testing_2018:
             prc = from_price_to_range([X['price'][i]], price_range)[0][0]
             vnt = X['vintage'][i]
             wine = [[ctr, pts, prc, prv, rgn]]
-            answer = neural_network.predict(wine)[0]
+            answer = int(neural_network.predict(wine)[0])
             expected = variety_table_r[X['variety'][i]]
             if answer == expected:
                 answers.append(True)

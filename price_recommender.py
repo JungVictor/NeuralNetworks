@@ -55,6 +55,47 @@ province = province_table_r[province]
 # Array of the countries we need
 country_array = []
 
+#############
+# PLOTTING
+#############
+
+# AVERAGE PRICE RANGE PER COUNTRY
+average_price_range = []
+top_countries = [1, 2, 6, 5, 7, 0, 4, 8, 9, 3]
+country_average = wines.groupby(['country']).mean()['price_range']
+for i in range(len(top_countries)):
+    average_price_range.append(country_average[top_countries[i]])
+    top_countries[i] = country_table[top_countries[i]]
+
+plt.figure(1)
+plt.title('Average price range per country')
+plt.xlabel('Country')
+plt.ylabel('Average price range')
+plt.plot(top_countries, average_price_range)
+
+
+# AVERAGE POINTS PER PRICE RANGE
+average_points_per_interval = wines.groupby('price_range').mean()['points']
+
+plt.figure(2)
+plt.title('Average points per price range')
+plt.xlabel('Price range')
+plt.ylabel('Points')
+plt.plot(range(len(price_range) + 1), average_points_per_interval)
+
+# AVERAGE PRICE PER VARIETY
+average_price_variety = wines.groupby('variety').mean()['price_range'].sort_values()
+plt.figure(3)
+plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
+plt.title('Average price range per variety')
+plt.xlabel('Variety')
+plt.ylabel('Price range')
+plt.plot([variety_table[v] for v in average_price_variety.keys()], average_price_variety)
+
+
+
+#############
+
 if testing_2018:
     for i in range(len(dataframe_2018['country'])):
         ctr = dataframe_2018['country'][i]
@@ -70,6 +111,7 @@ else:
 if True:
     wines['country'] = filter_nan_values(wines['country'], country_array)
     wines.dropna(inplace=True)
+
 
 # y is the data we're studying.
 y = wines["price_range"]
@@ -148,7 +190,7 @@ if testing_2018:
             vrt = variety_table_r[X['variety'][i]]
             vnt = X['vintage'][i]
             wine = [[ctr, pts, prv, rgn, vrt]]
-            answer = int(neural_network.predict(wine)[0])
+            answer = np.round(neural_network.predict(wine)[0])
             expected = from_price_to_range([X['price'][i]], price_range)[0][0]
 
             expected_answers[expected] += 1
@@ -173,11 +215,14 @@ if testing_2018:
             key = '[{}, {}['.format(price_range[i-1], price_range[i])
         keys.append(key)
 
+    plt.figure(4)
+    plt.title('Guessing the price of a wine')
+    plt.xlabel('Price range')
+    plt.ylabel('Number of wines')
     plt.plot(keys, expected_values, color='blue', label='Expected')
     plt.plot(keys, actual_values, color='green', label='Actual')
     plt.plot(keys, errors, color='red', label='Errors')
     plt.legend()
-    plt.show()
 
     print('Score on the 2018 data : {}/{} ({:.1%})'.format(correct, count, correct / count))
 
@@ -197,3 +242,7 @@ if answer[0] == price_range[-1]:
     print('Price range recommended : more than ${}'.format(answer[0]))
 else:
     print('Price range recommended : from ${} to ${} ({})'.format(answer[0], answer[1], (answer[1] - answer[0]) * (brute - int(brute)) + answer[0]))
+
+
+plt.show()
+

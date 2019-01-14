@@ -67,6 +67,27 @@ for e in wines["country"]:
     else:
         country_count_after[e] += 1
 
+price_distribution = {}
+for p in wines['price']:
+    if p not in price_distribution:
+        price_distribution[p] = 1
+    else:
+        price_distribution[p] += 1
+
+price_distribution = sorted(price_distribution.items(), key=lambda k: k[0])
+price_distribution_keys = [x[0] for x in price_distribution]
+price_distribution_values = [x[1] for x in price_distribution]
+
+plt.figure(1)
+# we prepare the ploting
+plt.ylabel('Number of wines')   # labeling y-axis
+plt.xlabel('Price (USD)')              # labeling x-axis
+# this line is only here to rotate the labels on the x-axis if there is not enough space
+plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
+plt.bar(price_distribution_keys, price_distribution_values, width=0.8, bottom=None, align='center', data=None, color='green')
+plt.legend()
+
+
 # Hashing data
 wines["country"], country_table = string_hash(wines["country"])
 wines["region_1"], region_table = string_hash(wines["region_1"])
@@ -110,6 +131,7 @@ top_countries_after = sorted(country_count_after.items(), key=lambda k: k[1], re
 data_after_values = [x[1] for x in top_countries_after]
 data_after_keys = [x[0] for x in top_countries_after]
 
+plt.figure(2)
 plt.subplot(211)
 # we prepare the ploting
 plt.ylabel('Number of wines per country')   # labeling y-axis
@@ -148,4 +170,5 @@ plt.xlabel('Price')              # labeling x-axis
 plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
 plt.bar(keys, price_distribution, width=0.8, bottom=None, align='center', data=None, color='green')
 plt.legend()
+
 plt.show()
