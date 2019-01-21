@@ -32,6 +32,24 @@ def string_hash(array):
             counter += 1
     return column, countries
 
+def intelligent_region_province_hash(array, country, number_per_country):
+    countries = {}
+    count_per_country = {}
+    hash_table = {}
+    column = []
+    for i in range(len(array)):
+        reg_prv = array[i]
+        ctr = country[i]
+        if ctr not in countries:
+            countries[ctr] = len(countries)*number_per_country
+            count_per_country[ctr] = 0
+        if reg_prv not in hash_table:
+            hash_table[reg_prv] = count_per_country[ctr] + countries[ctr]
+            count_per_country[ctr] += 1
+        column.append(hash_table[reg_prv])
+    return column, hash_table
+
+
 
 def keys_value(keys):
     """
@@ -180,7 +198,7 @@ def title_to_vintage(array):
     vintage = []
     for e in array:
         year = re.search(r'((19[7-9]|20[0-1])[0-9])', e)
-        if year != None:
+        if year is not None:
             vintage.append(year.group())
         else:
             vintage.append(np.nan)

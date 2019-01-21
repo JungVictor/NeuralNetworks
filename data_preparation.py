@@ -78,6 +78,13 @@ price_distribution = sorted(price_distribution.items(), key=lambda k: k[0])
 price_distribution_keys = [x[0] for x in price_distribution]
 price_distribution_values = [x[1] for x in price_distribution]
 
+# Changing price to price range
+wines["price"], range_number = from_price_to_range(wines["price"], price_range)
+
+# SAVING RAW DATASET
+# Renaming columns and saving to csv
+wines.to_csv(output_dir + "raw_" + data_filename, sep=csv_separator, encoding='utf-8', index=False)
+
 plt.figure(1)
 # we prepare the ploting
 plt.ylabel('Number of wines')   # labeling y-axis
@@ -85,15 +92,14 @@ plt.xlabel('Price (USD)')              # labeling x-axis
 # this line is only here to rotate the labels on the x-axis if there is not enough space
 plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
 plt.bar(price_distribution_keys, price_distribution_values, width=0.8, bottom=None, align='center', data=None, color='green')
-plt.legend()
 
 
 # Hashing data
+wines.reset_index(drop=True, inplace=True)
 wines["country"], country_table = string_hash(wines["country"])
-wines["region_1"], region_table = string_hash(wines["region_1"])
-wines["province"], province_table = string_hash(wines["province"])
+wines["region_1"], region_table = intelligent_region_province_hash(wines["region_1"], wines["country"], 370)
+wines["province"], province_table = intelligent_region_province_hash(wines["province"], wines["country"], 50)
 wines["variety"], variety_table = string_hash(wines["variety"])
-wines["price"], range_number = from_price_to_range(wines["price"], price_range)
 
 # Useful words for the description hash
 useful_words = ['fruit', 'tannins', 'cherry', 'ripe', 'black', 'spice', 'red', 'oak', 'berry', 'dry', 'plum', 'apple',
@@ -139,7 +145,6 @@ plt.xlabel('Top 10 countries')              # labeling x-axis
 # this line is only here to rotate the labels on the x-axis if there is not enough space
 plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
 plt.bar(data_after_keys, data_after_values, width=0.8, bottom=None, align='center', data=None, color='red')
-plt.legend()
 
 ####################
 # PRICE DISTRIBUTION
@@ -169,6 +174,5 @@ plt.xlabel('Price')              # labeling x-axis
 # this line is only here to rotate the labels on the x-axis if there is not enough space
 plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
 plt.bar(keys, price_distribution, width=0.8, bottom=None, align='center', data=None, color='green')
-plt.legend()
 
 plt.show()

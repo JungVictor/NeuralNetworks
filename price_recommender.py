@@ -4,11 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
+from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 import warnings
 
 warnings.filterwarnings("ignore")  # just ignore the warning messages
@@ -17,10 +13,10 @@ print("PRICE RECOMMENDER")
 
 #####################
 country = 'US'
-points = 87
-province = 'Oregon'
-region = 'Oregon'
-variety = 'Pinot Noir'
+points = 96
+province = 'Madeira'
+region = 'Madeira'
+variety = 'verdejo'
 
 # Testing the network on the 2018 reviews ?
 # Put 'False' if you want a better answer to a unique problem
@@ -30,6 +26,10 @@ testing_2018 = True
 # Reading the main dataset
 wines = pd.read_csv(output_dir + data_filename, sep=csv_separator)
 wines.drop(wines.columns[[-1]], axis=1, inplace=True)
+
+wines_raw = pd.read_csv(output_dir + "raw_" + data_filename, sep=csv_separator)
+wines_raw.drop(wines.columns[[-1]], axis=1, inplace=True)
+
 if testing_2018:
     dataframe_2018 = pd.read_csv('test/review.csv', sep=csv_separator)
 
@@ -51,50 +51,15 @@ region = region_table_r[region]
 variety = variety_table_r[variety.lower()]
 province = province_table_r[province]
 
+encoder = OrdinalEncoder()
+y_raw = wines_raw['price']
+X_raw = wines_raw.drop(wines_raw.columns[[2]], axis=1)
+
+X_raw = encoder.fit_transform(X_raw)
+
 # Selecting only the data from the countries we need
 # Array of the countries we need
 country_array = []
-
-#############
-# PLOTTING
-#############
-
-# AVERAGE PRICE RANGE PER COUNTRY
-average_price_range = []
-top_countries = [1, 2, 6, 5, 7, 0, 4, 8, 9, 3]
-country_average = wines.groupby(['country']).mean()['price_range']
-for i in range(len(top_countries)):
-    average_price_range.append(country_average[top_countries[i]])
-    top_countries[i] = country_table[top_countries[i]]
-
-plt.figure(1)
-plt.title('Average price range per country')
-plt.xlabel('Country')
-plt.ylabel('Average price range')
-plt.plot(top_countries, average_price_range)
-
-
-# AVERAGE POINTS PER PRICE RANGE
-average_points_per_interval = wines.groupby('price_range').mean()['points']
-
-plt.figure(2)
-plt.title('Average points per price range')
-plt.xlabel('Price range')
-plt.ylabel('Points')
-plt.plot(range(len(price_range) + 1), average_points_per_interval)
-
-# AVERAGE PRICE PER VARIETY
-average_price_variety = wines.groupby('variety').mean()['price_range'].sort_values()
-plt.figure(3)
-plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
-plt.title('Average price range per variety')
-plt.xlabel('Variety')
-plt.ylabel('Price range')
-plt.plot([variety_table[v] for v in average_price_variety.keys()], average_price_variety)
-
-
-
-#############
 
 if testing_2018:
     for i in range(len(dataframe_2018['country'])):
@@ -124,16 +89,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 ######################
 # CREATING THE NETWORK
 ######################
-network_shape = (30, 20, 20,)  # 3 hidden layout of size 30, 20, 20
+network_shape = (10, 10, 10,)  # 3 hidden layout of size 10, 10, 10
 
 # All tested networks
-neighbors = KNeighborsRegressor(10, algorithm='ball_tree', weights='distance')
-gauss = GaussianProcessClassifier()
-bayes = GaussianNB()
-mlp = MLPClassifier(hidden_layer_sizes=network_shape, activation='tanh')
-svc = SVC(kernel='linear', C=0.025)
-decision_tree = DecisionTreeClassifier()
-forest = RandomForestClassifier(n_estimators=100, min_samples_split=4)
+neighbors = KNeighborsClassifier(17, algorithm='ball_tree', weights='distance')
+mlp = MLPClassifier(hidden_layer_sizes=network_shape, learning_rate='adaptive', max_iter=200)
 
 # Selecting one network for the exercise
 neural_network = neighbors
@@ -149,7 +109,7 @@ actual = neural_network.predict(X_test)
 expected = [e for e in y_test]
 count = 0
 for i in range(len(actual)):
-    if actual[i] != expected[i]:
+    if np.round(actual[i]) != expected[i]:
         difference += abs(actual[i] - expected[i])
         count += 1
 
@@ -178,6 +138,7 @@ if testing_2018:
         expected_answers[i] = 0
         errors[i] = 0
         actual_answers[i] = 0
+
 
     # Asking the network to answer the problem
     for i in range(len(X)):
@@ -241,7 +202,7 @@ print('\nANSWER :')
 if answer[0] == price_range[-1]:
     print('Price range recommended : more than ${}'.format(answer[0]))
 else:
-    print('Price range recommended : from ${} to ${} ({})'.format(answer[0], answer[1], (answer[1] - answer[0]) * (brute - int(brute)) + answer[0]))
+    print('Price range recommended : from ${} to ${})'.format(answer[0], answer[1]))
 
 
 plt.show()
