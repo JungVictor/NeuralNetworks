@@ -1,423 +1,365 @@
 id;value
 0;Douro
-1;Oregon
-2;Michigan
-3;Northern Spain
-4;Sicily & Sardinia
-5;Alsace
-6;Rheinhessen
-7;California
-8;Mosel
-9;Other
-10;Mendoza Province
-11;Virginia
-12;Colchagua Valley
-13;Southern Italy
-14;Beaujolais
-15;Maule Valley
-16;Bordeaux
-17;Maipo Valley
-18;Washington
-19;Central Italy
-20;Champagne
-21;Burgundy
-22;South Australia
-23;Rapel Valley
-24;Galicia
-25;France Other
-26;Tuscany
-27;Burgenland
-28;New York
-29;Leyda Valley
-30;Piedmont
-31;Stellenbosch
-32;Simonsberg-Stellenbosch
-33;Alentejano
-34;Central Spain
-35;Southwest France
-36;Aconcagua Valley
-37;Loncomilla Valley
-38;Marlborough
-39;Northeastern Italy
-40;Casablanca Valley
-41;Veneto
-42;Western Cape
-43;Judean Hills
-44;Alentejo
-45;Coastal Region
-46;Rhône Valley
-47;Galilee
-48;Beira Atlantico
-49;Tokaj
-50;Leithaberg
-51;Santorini
-52;Kremstal
-53;Catalonia
-54;Recas
-55;Hawke's Bay
-56;Curicó Valley
-57;Limarí Valley
-58;Colchagua Costa
-59;Languedoc-Roussillon
-60;Provence
-61;Victoria
-62;Rheingau
-63;Tokaji
-64;Valle de Guadalupe
-65;Central Valley
-66;Lontué Valley
-67;Italy Other
-68;Weinviertel
-69;Niederösterreich
-70;Wagram
-71;Loire Valley
-72;Lombardy
-73;Ontario
-74;Österreichischer Sekt
-75;Kamptal
-76;Steiermark
-77;Südsteiermark
-78;Crete
-79;Vinho Verde
-80;Idaho
-81;Tejo
-82;Western Australia
-83;Levante
-84;Martinborough
-85;Central Otago
-86;Lisboa
-87;Texas
-88;Península de Setúbal
-89;Australia Other
-90;Tasmania
-91;Franken
-92;Ahr
-93;Nahe
-94;Dealu Mare
-95;Darling
-96;Port
-97;Chile
-98;Südoststeiermark
-99;Corinth
-100;Halkidiki
-101;Thrace
-102;Pfalz
-103;Robertson
-104;Dan
-105;Northwestern Italy
-106;Andalucia
-107;Awatere Valley
-108;Wiener Gemischter Satz
-109;Wachau
-110;Pennsylvania
-111;Swartland
-112;Dão
-113;Rio Claro
-114;Villány
-115;Cachapoal Valley
-116;Jidvei
-117;America
-118;Traisental
-119;Bairrada
-120;Negev Hills
-121;Ribatejano
-122;Duriense
-123;New Jersey
-124;Beiras
-125;Spanish Islands
-126;Upper Galilee
-127;Vinho Espumante
-128;Epanomi
-129;Nemea
-130;Peloponnese
-131;Aconcagua Costa
-132;Moravia
-133;Slovenia
-134;Terras do Dão
-135;Beira Interior
-136;Panciu
-137;Bío Bío Valley
-138;Romania
-139;Minho
-140;Missouri
-141;New Mexico
-142;Nevada
-143;Bucelas
-144;Peumo
-145;Thermenregion
-146;Carnuntum
-147;Estremadura
-148;Canterbury
-149;Spain Other
-150;Drama
-151;Ella Valley
-152;Moselle Luxembourgeoise
-153;Walker Bay
-154;Württemberg
+50;Oregon
+51;Michigan
+100;Alsace
+150;Rheinhessen
+52;California
+151;Mosel
+200;Other
+201;Mendoza Province
+250;Northern Spain
+53;Virginia
+300;Sicily & Sardinia
+101;Beaujolais
+350;Maule Valley
+351;Colchagua Valley
+102;Bordeaux
+352;Maipo Valley
+54;Washington
+301;Central Italy
+103;Burgundy
+302;Southern Italy
+400;South Australia
+353;Rapel Valley
+251;Galicia
+450;Burgenland
+55;New York
+303;Tuscany
+354;Leyda Valley
+304;Piedmont
+500;Stellenbosch
+501;Simonsberg-Stellenbosch
+1;Alentejano
+104;Southwest France
+355;Aconcagua Valley
+356;Loncomilla Valley
+550;Marlborough
+305;Northeastern Italy
+357;Casablanca Valley
+306;Veneto
+502;Western Cape
+600;Judean Hills
+2;Alentejo
+503;Coastal Region
+105;Rhône Valley
+601;Galilee
+3;Beira Atlantico
+451;Kremstal
+650;Recas
+700;Santorini
+551;Hawke's Bay
+358;Curicó Valley
+359;Limarí Valley
+360;Colchagua Costa
+106;Languedoc-Roussillon
+107;Provence
+152;Rheingau
+401;Victoria
+750;Valle de Guadalupe
+361;Central Valley
+362;Lontué Valley
+452;Weinviertel
+453;Wagram
+108;Loire Valley
+307;Lombardy
+109;Champagne
+454;Kamptal
+455;Steiermark
+456;Südsteiermark
+457;Niederösterreich
+4;Vinho Verde
+56;Idaho
+5;Tejo
+402;Western Australia
+552;Martinborough
+553;Central Otago
+6;Lisboa
+57;Texas
+110;France Other
+7;Península de Setúbal
+403;Australia Other
+404;Tasmania
+252;Central Spain
+800;Tokaji
+253;Catalonia
+153;Nahe
+254;Levante
+651;Dealu Mare
+8;Port
+363;Chile
+458;Südoststeiermark
+701;Halkidiki
+154;Pfalz
+504;Robertson
+554;Awatere Valley
+459;Wiener Gemischter Satz
+460;Wachau
+58;Pennsylvania
+505;Swartland
+9;Dão
+364;Rio Claro
+801;Villány
+365;Cachapoal Valley
+652;Jidvei
+461;Traisental
+602;Negev Hills
+10;Duriense
+59;New Jersey
+255;Spanish Islands
+462;Österreichischer Sekt
+603;Upper Galilee
+702;Epanomi
+366;Aconcagua Costa
+850;Slovenia
+11;Terras do Dão
+12;Beira Interior
+60;America
+367;Bío Bío Valley
+653;Romania
+13;Minho
+61;Nevada
+368;Peumo
+463;Carnuntum
+14;Estremadura
+555;Canterbury
+256;Spain Other
+703;Drama
+604;Ella Valley
+506;Walker Bay
 155;Baden
-156;Pangeon
-157;Elqui Valley
-158;Wairau Valley
-159;Portuguese Table Wine
-160;Istria
-161;Peljesac
-162;Kakheti
-163;Canelones
-164;England
-165;Marchigue
-166;Paarl
-167;Weinland Österreich
-168;Mantinia
-169;Chalkidiki
-170;Lebanon
-171;Setubal
-172;Mosel-Saar-Ruwer
-173;Colorado
-174;Pocerina
-175;British Columbia
-176;Puente Alto
-177;Kumeu
-178;Trás-os-Montes
-179;Shomron
-180;Rapsani
-181;New South Wales
-182;Nelson
-183;Waipara Valley
-184;Constantia
-185;Arizona
-186;San Antonio
-187;Pinto Bandeira
-188;Primorska
-189;Moldova
-190;Uruguay
-191;Zenata
-192;South Africa
-193;Massachusetts
-194;Ohio
-195;Ica
-196;San Vicente
-197;Nashik
-198;Franschhoek
-199;South Island
-200;Atlantida
-201;Thracian Valley
-202;Tarnave
-203;Vipavska Dolina
-204;Bekaa Valley
-205;Elgin
-206;Itata Valley
-207;Table wine
-208;Samson
-209;Wagram-Donauland
-210;Cyprus
-211;Pageon
-212;Naoussa
-213;Wellington
-214;Danube River Plains
-215;Gisborne
-216;Wairarapa
-217;Armenia
-218;Santa Cruz
-219;Korčula
-220;Viile Timisului
-221;Illinois
-222;Aegean
-223;Simonsberg-Paarl
-224;Juanico
-225;Black Sea Coastal
-226;Santa Catarina
-227;Overberg
-228;Atalanti Valley
-229;Sebes
-230;Moscatel de Setúbal
-231;Macedonia
-232;Ribatejo
-233;Germany
-234;Palmela
-235;Galil
-236;Kras
-237;Croatia
-238;Waipara
-239;Olifants River
-240;Montevideo
-241;Vienna
-242;Hungary
-243;Lolol Valley
-244;Cauquenes Valley
-245;Neusiedlersee
-246;Groenekloof
-247;Alenquer
-248;Goriska Brda
-249;Murfatlar
-250;Washington-Oregon
-251;New Zealand
-252;Serra Gaúcha
-253;San Jose
-254;Vale dos Vinhedos
-255;Mittelburgenland
-256;Lutzville Valley
-257;North Carolina
-258;Apalta
-259;Malleco
-260;Israel
-261;Guerrouane
-262;Valais
-263;Choapa Valley
-264;Georgia
-265;Ankara
-266;Samos
-267;Mittelrhein
-268;Durbanville
-269;Eisenberg
-270;Sagrada Familia
-271;Obidos
-272;Austria
-273;Mostar
-274;Iowa
-275;Patras
-276;Korinthia
-277;Greece
-278;San Clemente
-279;Podunavlje
-280;Florina
-281;Buin
-282;Haut-Judeé
-283;Ukraine
-284;Maipo Valley-Colchagua Valley
-285;Breedekloof
-286;Leyda Valley-Maipo Valley
-287;Cederberg
-288;Vermont
-289;Switzerland
-290;Waitaki Valley
-291;Eger
-292;Golan Heights
-293;Fruška Gora
-294;Philadelphia
-295;Muzla
-296;Mátra
-297;Pirque
-298;Vinho Espumante de Qualidade
-299;Negev
-300;Pitsilia Mountains
-301;East Coast
-302;Mavrodaphne of Patras
-303;Attica
-304;Brazil
-305;Progreso
-306;Elazığ-Diyarbakir
-307;Jonkershoek Valley
-308;Tikves
-309;Vale Trentino
-310;Turkey
-311;Waiheke Island
-312;Molina
-313;Serra do Sudeste
-314;Dalmatian Coast
-315;Eilandia
-316;Dealurile Munteniei
-317;Thraki
-318;Curicó and Maipo Valleys
-319;Štajerska
-320;Middle and South Dalmatia
-321;Kentucky
-322;Župa
-323;Pafos
-324;Monemvasia
-325;Szekszárd
-326;Tulbagh
-327;Madeira
-328;Elazığ
-329;Cappadocia
-330;Kutjevo
-331;Ismarikos
-332;Connecticut
-333;Sithonia
-334;Curicó and Leyda Valleys
-335;Agioritikos
-336;Casablanca-Curicó Valley
-337;Beotia
-338;Algarve
-339;Hemel en Aarde
-340;Retsina
-341;Amindeo
-342;Terras do Sado
-343;Coelemu
-344;Cape South Coast
-345;Sopron
-346;Bulgaria
-347;North Dalmatia
-348;Northern Cape
-349;Vinho da Mesa
-350;Hvar
-351;Cephalonia
-352;Lemesos
-353;Cahul
-354;Cyclades
-355;Breede River Valley
-356;Elim
-357;Ticino
-358;Moscatel do Douro
-359;Vlootenburg
-360;Brda
-361;Dingač
-362;Morocco
-363;Achaia
-364;Polkadraai Hills
-365;Bot River
-366;Rhode Island
-367;Amyndeon
-368;Vânju Mare
-369;Hrvatsko Primorje
-370;Central Greece
-371;Dolenjska
-372;Österreichischer Perlwein
-373;Requinoa
-374;Mavrodaphne de Cephalonie
-375;Goumenissa
-376;Portugal
-377;Messinia
-378;Lakonia
-379;Markopoulo
-380;Vinho Licoroso
-381;Campanha
-382;Paardeberg
-383;San Antonio de las Minas Valley
-384;Krania Olympus
-385;Corinthia
-386;Slovenska Istra
-387;Commandaria
-388;Gladstone
-389;Jerusalem Hills
-390;Mount Athos
-391;Colares
-392;Helderberg
-393;Casablanca & Leyda Valleys
-394;Dealurile Hușilor
-395;Urla-Thrace
-396;Südburgenland
-397;Cape Peninsula
-398;Codru Region
-399;Sterea Ellada
-400;Muscat of Patras
-401;Imathia
-402;Alenteo
-403;Canada Other
-404;Malgas
-405;Letrinon
-406;Muscat of Kefallonian
-407;Thessalikos
-408;Hawaii
-409;China
-410;Limnos
-411;Viile Timis
-412;Devon Valley
-413;Krk
-414;Arcadia
-415;Cape Agulhas
-416;Kathikas
-417;Vin de Pays de Velvendo
-418;Landwein Rhein
-419;Lesbos
-420;Távora-Varosa
-421;Neuchâtel
+704;Pangeon
+369;Elqui Valley
+556;Wairau Valley
+15;Portuguese Table Wine
+900;England
+950;Canelones
+16;Bairrada
+370;Marchigue
+507;Paarl
+705;Chalkidiki
+1000;Lebanon
+17;Setubal
+156;Mosel-Saar-Ruwer
+62;Colorado
+1050;British Columbia
+371;Puente Alto
+557;Kumeu
+18;Trás-os-Montes
+605;Shomron
+706;Rapsani
+405;New South Wales
+558;Nelson
+559;Waipara Valley
+802;Tokaj
+1051;Ontario
+372;San Antonio
+464;Leithaberg
+465;Thermenregion
+1100;Pinto Bandeira
+707;Peloponnese
+851;Primorska
+1150;Zenata
+1200;Moravia
+508;South Africa
+63;Massachusetts
+64;New Mexico
+65;Ohio
+66;Arizona
+751;San Vicente
+1250;Nashik
+509;Franschhoek
+466;Weinland Österreich
+560;South Island
+951;Atlantida
+1300;Thracian Valley
+654;Tarnave
+852;Vipavska Dolina
+1001;Bekaa Valley
+510;Elgin
+373;Itata Valley
+19;Ribatejano
+606;Samson
+467;Wagram-Donauland
+1350;Cyprus
+1400;Thrace
+511;Wellington
+1301;Danube River Plains
+561;Gisborne
+562;Wairarapa
+1450;Moldova
+374;Santa Cruz
+655;Viile Timisului
+1401;Aegean
+512;Simonsberg-Paarl
+952;Juanico
+1302;Black Sea Coastal
+1500;Peljesac
+1101;Santa Catarina
+257;Andalucia
+513;Overberg
+708;Atalanti Valley
+656;Sebes
+709;Macedonia
+20;Ribatejo
+607;Galil
+21;Palmela
+1501;Croatia
+563;Waipara
+514;Olifants River
+953;Montevideo
+308;Northwestern Italy
+468;Vienna
+375;Lolol Valley
+376;Cauquenes Valley
+710;Pageon
+515;Groenekloof
+22;Alenquer
+67;Washington-Oregon
+564;New Zealand
+1550;Ica
+516;Lutzville Valley
+377;Apalta
+378;Malleco
+711;Crete
+608;Israel
+1600;Kakheti
+68;North Carolina
+1502;Istria
+379;Choapa Valley
+157;Germany
+954;San Jose
+1102;Serra Gaúcha
+1103;Vale dos Vinhedos
+1601;Georgia
+158;Mittelrhein
+380;Sagrada Familia
+309;Italy Other
+23;Obidos
+712;Patras
+159;Franken
+713;Korinthia
+714;Greece
+381;San Clemente
+517;Durbanville
+715;Florina
+382;Buin
+955;Uruguay
+609;Haut-Judeé
+383;Maipo Valley-Colchagua Valley
+384;Leyda Valley-Maipo Valley
+518;Cederberg
+1650;Switzerland
+853;Goriska Brda
+565;Waitaki Valley
+803;Eger
+610;Golan Heights
+1700;Muzla
+385;Pirque
+24;Vinho Espumante de Qualidade
+611;Negev
+1351;Pitsilia Mountains
+566;East Coast
+519;Darling
+804;Hungary
+1104;Brazil
+1402;Elazığ-Diyarbakir
+520;Jonkershoek Valley
+1750;Tikves
+521;Constantia
+956;Progreso
+716;Corinth
+567;Waiheke Island
+386;Molina
+1105;Serra do Sudeste
+69;Missouri
+522;Eilandia
+657;Dealurile Munteniei
+387;Curicó and Maipo Valleys
+70;Kentucky
+1800;Župa
+1403;Turkey
+160;Ahr
+717;Monemvasia
+718;Samos
+523;Tulbagh
+719;Ismarikos
+71;Connecticut
+388;Curicó and Leyda Valleys
+720;Agioritikos
+389;Casablanca-Curicó Valley
+25;Algarve
+524;Hemel en Aarde
+469;Mittelburgenland
+1404;Elazığ
+26;Terras do Sado
+525;Cape South Coast
+854;Štajerska
+805;Sopron
+1303;Bulgaria
+1503;North Dalmatia
+658;Murfatlar
+526;Northern Cape
+27;Vinho da Mesa
+1405;Cappadocia
+721;Cephalonia
+28;Beiras
+470;Austria
+722;Naoussa
+1850;Ukraine
+29;Madeira
+1900;Moselle Luxembourgeoise
+1451;Cahul
+612;Dan
+527;Breede River Valley
+1504;Podunavlje
+1651;Ticino
+528;Vlootenburg
+1106;Vale Trentino
+855;Brda
+1151;Morocco
+723;Achaia
+529;Bot River
+72;Rhode Island
+659;Vânju Mare
+530;Breedekloof
+806;Szekszárd
+724;Mantinia
+856;Dolenjska
+471;Österreichischer Perlwein
+660;Panciu
+390;Requinoa
+725;Goumenissa
+726;Lakonia
+1107;Campanha
+1950;Armenia
+531;Paardeberg
+30;Portugal
+31;Bucelas
+727;Krania Olympus
+1352;Pafos
+568;Gladstone
+613;Jerusalem Hills
+532;Philadelphia
+728;Mount Athos
+533;Helderberg
+391;Casablanca & Leyda Valleys
+1406;Urla-Thrace
+729;Cyclades
+472;Südburgenland
+534;Cape Peninsula
+32;Alenteo
+161;Württemberg
+535;Elim
+730;Letrinon
+731;Muscat of Kefallonian
+732;Thessalikos
+661;Viile Timis
+807;Mátra
+536;Devon Valley
+537;Cape Agulhas
+1353;Kathikas
+733;Vin de Pays de Velvendo
+734;Lesbos
+162;Landwein Rhein
+1652;Neuchâtel
