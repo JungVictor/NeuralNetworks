@@ -160,9 +160,11 @@ if testing_2018:
 
     # CREATE A NETWORK FOR EACH COUNTRY IDENTIFIED AS SOLUTION
     country_networks = {}
+    print("\nCREATING AND TRAINING NETWORK...", end='\t')
 
     for country in unique_answers:
         network = KNeighborsClassifier(16, algorithm='kd_tree', weights='uniform')
+        network = MLPClassifier(hidden_layer_sizes=(6,6,), learning_rate='adaptive', max_iter=2000)
 
         data = province_data[country]
         data = pd.DataFrame(data)
@@ -170,10 +172,11 @@ if testing_2018:
         y_country = data['region']
         X_country = data.drop(data.columns[[-1]], axis=1)
 
-        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
+        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.5, random_state=0)
         network.fit(X_train, y_train)
         country_networks[country] = network
 
+    print("DONE")
     # Solving the problem
     count = 0
     correct = 0

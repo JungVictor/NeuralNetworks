@@ -1,0 +1,911 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Neural network's report</title>
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+		<meta charset="UTF-8">
+	</head>
+	<style>
+		body{
+			color:#000;
+			width: 50%;
+			min-width: 700px;
+			margin:auto;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		h1{
+			margin-top: 3rem;
+			border: 1px solid #DDD;
+			border-left: 0;
+			border-right: 0;
+		}
+		h1, h2, h3, h4, .caption{
+			font-family: 'Lora', sans-serif;
+		}
+
+		p{
+			text-indent: 1rem;
+			text-align: justify;
+		}
+
+		img{
+			max-width: 100%;
+		}
+
+		table{
+			max-width: 100%;
+			margin: auto;
+		}
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td{
+			padding: 5px;
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+			color:inherit;
+			font-weight: inherit;
+		}
+		a:hover{
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		column, row{
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin:16px 0 16px 0;
+		}
+		column{
+			flex-flow: column nowrap;
+		}
+
+		row{
+			flex-flow: row nowrap;
+		}
+
+		.caption{
+			text-align: center;
+			width: 100%;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	</style>
+
+	<body>
+		<row>
+			<div style="flex-grow: 1;">
+				<center>
+					NEURAL NETWORK
+					<h1 style="margin-top: 0">CASE STUDY UPON WINE REVIEWS</h1>
+				</center>
+			</div>
+			<img src='images/logo.png'/>
+		</row>
+		<row>
+			<div style="flex-grow: 1;">
+				REPORT BY :<br/>
+				<b>
+					Jia FU, 
+					Victor JUNG, 
+					Steve MALALEL<br/>
+				</b><br/>
+			</div>
+			<i>25th January 2019</i>
+		</row>
+
+		<h1>Table of contents</h1>
+		<ul>
+			<li><a href='#1'>1. Introduction</a></li>
+			<li><a href='#2'>2. Preparation of the data</a></li>
+			<ul>
+				<li><a href='#2.1'>2.1. Presentation of the dataset</a></li>
+				<li><a href='#2.2'>2.2. Data preprocessing</a></li>
+				<ul>
+					<li><a href='#2.2.1'>2.2.1. Selecting the data</a></li>
+					<li><a href='#2.2.2'>2.2.2. Refining the data</a></li>
+					<li><a href='#2.2.3'>2.2.3. Encoding the data : ordinal values</a></li>
+					<li><a href='#2.2.4'>2.2.4. Encoding the data : prices</a></li>
+					<li><a href='#2.2.5'>2.2.5. Correlation table</a></li>
+				</ul>
+				<li><a href='#2.3'>2.3 Saving the data</a></li>
+			</ul>
+			<li><a href='#3'>3. Solving problems using Neural Networks</a></li>
+			<ul>
+				<li><a href='#3.1'>3.1. Recommending the price of a wine</a></li>
+				<ul>
+					<li><a href='#3.1.1'>3.1.1. Preparing the dataset</a></li>
+					<li><a href='#3.1.2'>3.1.2. Building the neural network</a></li>
+					<li><a href='#3.1.3'>3.1.3. Network's results and accuracy</a></li>
+				</ul>
+				<li><a href='#3.2'>3.2. Choosing a wine's variety</a></li>
+				<ul>
+					<li><a href='#3.2.1'>3.2.1. Preparing the dataset</a></li>
+					<li><a href='#3.2.2'>3.2.2. Building the neural network</a></li>
+					<li><a href='#3.2.3'>3.2.3. Network's results and accuracy</a></li>
+				</ul>
+				<li><a href='#3.3'>3.3. Selecting a production's region</a></li>
+				<ul>
+					<li><a href='#3.3.1'>3.3.1. Preparing the dataset</a></li>
+					<li><a href='#3.3.2'>3.3.2. Building the neural network</a></li>
+					<li><a href='#3.3.3'>3.3.3. Network's results and accuracy</a></li>
+				</ul>
+			</ul>
+			<li><a href='#4'>4. Limit of our study</a></li>
+			<ul>
+				<li><a href='#4.1'>4.1. The price of the wine</a></li>
+				<li><a href='#4.2'>4.2. The variety of the wine</a></li>
+				<li><a href='#4.3'>4.3. The region of the wine</a></li>
+			</ul>
+			<li><a href='#5'>5. Conclusion</a></li>
+		</ul>
+
+		<h1 id='1'>1. Introduction</h1>
+		<p>
+			The usage of neural networks is becoming increasingly important nowadays, especially in
+			the pattern recognition or in the analysis of data and prediction. We created several neural
+			networks with a set of data concerning œnological reviews in order to determine the price of
+			the wine, the variety or the best region for a wine according to some given features.
+		</p>
+
+		<h1 id='2'>2. Preparation of the data</h1>
+
+			<h2 id='2.1'>2.1. Presentation of the dataset</h2>
+			
+			<p>
+				The raw data we used was scrapped from the website Wine Enthusiast Magazine. It includes
+				approximately 130'000 reviews of wine. The dataset can be found <a href='https://www.kaggle.com/zynicide/wine-reviews'>here</a>.
+			</p>
+
+			<h2 id='2.2'>2.2. Data preprocessing</h2>
+			
+			<p>
+				In order to be able to fit the dataset to our neural network, we need to refine it, and decide
+				what information we need or what information we don't need. Then, we have to transform and
+				compress the data.
+			</p>
+
+				<h3 id='2.2.1'>2.2.1. Selecting the data</h3>
+				<p>
+					The first thing we did was to drop some of the data. If we feed to much data to our network,
+					it will be harder for it to establish correlation or link between data, thus reducing the efficiency
+					of our network. For this project, we decided to select only key information such as the general
+					location (country, province, region), the points of the review, the price of the wine and the
+					variety of grape used to make the wine. In order to have a complete and perfect dataset, we
+					also decided to drop all the lines were there was missing data. For instance, if a line is missing
+					information about the country, the variety or the price, this line is dropped. We also drop all
+					the duplicates if there is some.
+				</p>
+
+				<h3 id='2.2.2'>2.2.2. Refining the data</h3>
+				<p>
+					After selecting the data, we obtain these numbers :
+				</p>
+
+				<table>
+					<tr>
+						<th>Country</th>
+						<th>Region</th>
+						<th>Province</th>
+						<th>Variety</th>
+					</tr>
+					<tr>
+						<td>42</td>
+						<td>1560</td>
+						<td>415</td>
+						<td>681</td>
+					</tr>
+				</table>
+
+				<p>
+					There is too much varieties. When inspecting closer, we notice that there's a lot of varieties
+					having only 1 review, or being the same variety but named in another language. After correcting
+					these errors (thanks to <a href='https://www.kaggle.com/diveki/classification-with-nlp-xgboost-and-pipelines'>Zsolt Diveki's work</a>), we decide to only keep varieties with a number of review superior or equal to 200.
+					After this step, we obtain these numbers :
+				</p>
+
+				<table>
+					<tr>
+						<th>Country</th>
+						<th>Region</th>
+						<th>Province</th>
+						<th>Variety</th>
+					</tr>
+					<tr>
+						<td>40</td>
+						<td>1412</td>
+						<td>364</td>
+						<td>52</td>
+					</tr>
+				</table>
+
+				<h3 id='2.2.3'>2.2.3. Encoding the data : ordinal values</h3>
+				<p>
+					Many of the wine's features are categorical features, which mean that we need to encode
+					them into a comprehensive value for the network. To do so, we simply decide to create a hash
+					table to switch between a country, a region, a province or a variety to an integer. Each different
+					categorical value is assigned an integer value. For instance :
+				</p>
+
+				<row>
+					<table>
+						<tr>
+							<th>Country</th>
+							<th>Integer value</th>
+						</tr>
+						<tr>
+							<td>Portugal</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>US</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>France</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>...</td>
+							<td>...</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>Variety</th>
+							<th>Integer value</th>
+						</tr>
+						<tr>
+							<td>portuguese red</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>pinot gris</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>riesling</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>...</td>
+							<td>...</td>
+						</tr>
+					</table>
+				</row>
+
+				<p>
+					To encode the region and the province, we decided to allocate a certain range of values to
+					each country for them. We chose to allocate 50 provinces and 370 regions to each country. For
+					instance, Portugal's region will be between 0 and 370, and Portugal's province will be between
+					0 and 50. This means that we will have a very high correlation (near 1) between countries,
+					regions and provinces
+				</p>
+
+				<h3 id='2.2.4'>2.2.4. Encoding the data : prices</h3>
+				<p>
+					Now, let's have a closer look at the price's distribution :
+				</p>
+
+				<div class='caption'>Price distribution</div>
+				<img src="images/price_distribution.jpg">
+
+				<p>
+					We can clearly see that the values are too much spreading, although it seems that there is
+					a concentration around $30. To circumvent this problem, instead of using plain values, we use
+					ranges. We chose to have 3 different types of ranges : one with a uniform distribution, one with
+					a ”curvy” distribution and finally one with more realistic range's values, without considering
+					the distribution. The ranges are as follow :
+				</p>
+
+				<row>
+					<div>
+						<div class='caption'>Price distribution (realistic)</div>
+						<img src="images/price_range_r.png">
+					</div>
+					<div>
+						<div class='caption'>Price distribution (curve)</div>
+						<img src="images/price_range_c.png">
+					</div>
+				</row>
+				<div class='caption'>Price distribution (uniform)</div>
+				<img src="images/price_range.jpg">
+
+				<h3 id='2.2.5'>2.2.5. Correlation table</h3>
+				<p>
+					After the preprocessing of the data, we compute the correlation table between the features.
+					This will indicates us how are the data dependant to each other, meaning how efficient could
+					our network be. Indeed, our network will works the same way a human does : if he sees that
+					something is related to another thing, if the first thing change, then it will change the second
+					according to how much they are correlated. Of course, it's only the correlation between the
+					raw data, and our network could see beyond these.
+				</p>
+
+				<table>
+					<tr>
+						<th>CORRELATION</th>
+						<th>Country</th>
+						<th>Points</th>
+						<th>Price (range)</th>
+						<th>Region</th>
+						<th>Province</th>
+						<th>Variety</th>
+					</tr>
+					<tr>
+						<th>Country</th>
+						<td>1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>Points</th>
+						<td>-0.04</td>
+						<td>1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>Price (range)</th>
+						<td>-0.12</td>
+						<td>0.61</td>
+						<td>1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>Province</th>
+						<td>1</td>
+						<td>-0.04</td>
+						<td>-0.12</td>
+						<td>1</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>Region</th>
+						<td>1</td>
+						<td>-0.04</td>
+						<td>-0.12</td>
+						<td>1</td>
+						<td>1</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>Variety</th>
+						<td>0.11</td>
+						<td>-0.04</td>
+						<td>-0.05</td>
+						<td>0.11</td>
+						<td>0.11</td>
+						<td>1</td>
+					</tr>
+				</table>
+
+			<h2 id='2.3'>2.3. Saving the data</h2>
+			<p>
+				The data is now refined and ready for use. We save it in a .csv file, with a semicolon (;)
+				as separator. Of course, we also save under the same format all the hash tables we used to
+				transform the data, to be able to translate further data to feed the network or translate back
+				the network's answers.
+			</p>
+
+		<h1 id='3'>3. Solving problems using Neural networks</h1>
+		<p>
+			Once the preprocessing data's phase done, we can train our network to answer several problems. We are interested in 3 axes : predicting the price of a wine, choosing the grape's variety
+			and choosing the region where the wine is produced. To answer these questions, we have to
+			create and train neural networks with the data we previously refined. For each axe, we will
+			detail how we built the network and why we decided to build it that way, how we train it and
+			how we evaluate its efficiency. To validate our results, we decided to scrap more recent data
+			from the same website as the one used to scrap all the previous data.
+
+		</p>
+
+			<h2 id='3.1'>3.1. Recommending the price of a wine</h2>
+			<p>
+				As part of this study, we want to be able to predict the price of the wine given different
+				features. The features taken in account are : Country, Region, Province, Points and Variety.
+				We want to be able to, given these features, guess correctly the price of the wine.
+			</p>
+
+				<h3 id='3.1.1'>3.1.1. Preparing the dataset</h3>
+				<p>
+					The first question we have to answer to is : how to prepare the dataset in a way, in the first
+					time, to be able to fit it into the network and, in a second time, optimizing the results ?
+				</p>
+				<p>
+					First, we look at how the different features are correlated to the price feature. We compute
+					the correlation between country and price, points and price and finally variety and price.
+				</p>
+
+				<row>
+					<div>
+						<div class='caption'>Average price range per country</div>
+						<img src="images/price_range_difference.png">
+					</div>
+					<div>
+						<div class='caption'>Average price range per variety</div>
+						<img src="images/price_per_variety.png">
+					</div>
+				</row>
+				<div class='caption'>Average points per price range</div>
+				<img src="images/points_per_price.png">
+
+				<p>
+					From this, we understand that there is a different price range depending on the country, and
+					that this difference is very important. We can also see that there is a linear correlation between
+					the price range and the points given to the wine. Finally, there seems to be a correlation between
+					variety and price range too. What we can conclude from that is that the most important features
+					to correctly guess the wine's price are the variety and the points. In order to have better results,
+					we also decided to train our neural network only with data from the country we need to study.
+					So, for instance, if we need to guess the price of a French wine, we will only take in account
+					french wine's data.
+				</p>
+
+				<h3 id='3.1.2'>3.1.2. Building the neural network</h3>
+
+					<h4>Type of the network</h4>
+					<p>
+						For this first prediction, we tested a lot of different types of neural network, only to come at
+						the conclusion that the KNeighborsClassifier was the best one to solve this problem. How does
+						it works ? When getting an input, the network tries to fit it with the most similar data that
+						were fed to it, meaning searching the nearest neighbor, and answer according to what it seems
+						to be the nearest.
+					</p>
+
+					<h4>Parameters of the network</h4>
+					<p>
+						Upon testing different parameters for the network, the best results were obtained while considering the 17 nearest neighbors, using the ball tree algorithm and according more importance
+						to closest points (distance weight).
+					</p>
+
+					<h4>Building the training set</h4>
+					<p>
+						In order to train our network, we must split our data in two parts : one will be used as input,
+						while the other will be used as output, in order to know if the prediction is correct and if there
+						is a need to adapt the network. We split the data in two parts : one will be for the training,
+						and the other will be for the testing. Knowing that our network will predict using the nearest
+						neighbors, it is preferable to have the more data. We decide to take 99% of the data to train
+						the network, and 1% to test it.
+					</p>
+
+				<h3 id='3.1.3'>3.1.3. Network's results and accuracy</h3>
+				<p>
+					In this section, we will discuss about the accuracy of our network, and the influence of the
+					price ranges' choice upon the results.
+				</p>
+
+				<table>
+					<tr>
+						<th>ACCURACY</th>
+						<th>Testing set (%)</th>
+						<th>2018's reviews (%)</th>
+						<th>Average difference (%)</th>
+					</tr>
+					<tr>
+						<th>Realist</th>
+						<td>63.9</td>
+						<td>63.4</td>
+						<td>15.5</td>
+					</tr>
+					<tr>
+						<th>Curve</th>
+						<td>41.1</td>
+						<td>42.9</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<th>Uniform</th>
+						<td>38.5</td>
+						<td>42.3</td>
+						<td>20</td>
+					</tr>
+				</table>
+
+				<row>
+					<div>
+						<div class='caption'>Realistic</div>
+						<img src="images/price_recommender_r.jpg">
+					</div>
+					<div>
+						<div class='caption'>Curve</div>
+						<img src="images/price_recommender_c.jpg">
+					</div>
+				</row>
+				<div class='caption'>Uniform</div>
+				<img src="images/price_recommender.jpg">
+
+				<center><i>
+					These graphics show in blue the expected answers, in green the actual answers of the network
+					and in red the number of errors for the given range.
+				</i></center>
+
+				<p>
+					As we can see, the number of errors follows the general distribution, which is expected : the
+					more values you have in a range, the more errors you will have. When we try to be very precise
+					about the answer (see uniform or curve), then the network tend to have less accuracy on the
+					answers it provides, which is, again, expected.
+				</p>
+				<p>
+					However, we can see on these graphics that the network as a tendency to under-evaluate
+					the price of a wine. Indeed, regarding the uniform distribution, there is much more values for
+					the [14, 19[ range than expected, while there is too few for the following ranges. This is an
+					acceptable error, because it can easily be corrected by a human given the production's price :
+					it's either good or too few, and in the second case we can move on one range higher and most
+					likely pick the correct range. Once again, this is a price recommender and not a price predictor,
+					so given the precision of the ranges we can conclude that around 40% of accuracy is a good
+					score.
+				</p>
+
+			<h2 id='3.2'>3.2. Choosing a wine's variety</h2>
+			<p>
+				To another part, we want to choose a right variety for a wine by giving the country, the
+				point, the price and the region of it.
+			</p>
+
+				<h3 id='3.2.1'>3.2.1. Preparing the dataset</h3>
+				<p>
+					When we tried to predict the price of a wine, we saw that there is a kind of correlation
+					between variety and the price range. We also saw that there is a correlation between the price
+					range and the points so we can deduce there seems to be a correlation between variety and
+					points (as shown below). We can conclude that the most important features to correctly choose
+					wine's variety are the price and the points.
+				</p>
+
+				<div class='caption'>Average points per variety</div>
+				<img src="images/points_per_variety.jpg">
+
+				<p>
+					Now let's see the importance of the location by computing the 3 most used varieties per
+					country (top 10).
+				</p>
+				<table>
+					<tr>
+						<th>Country</th>
+						<th>1st variety</th>
+						<th>2nd variety</th>
+						<th>3rd variety</th>
+					</tr>
+					<tr>
+						<th>US</th>
+						<td>Pinot Noir</td>
+						<td>Cabernet Sauvignon</td>
+						<td>Chardonnay</td>
+					</tr>
+					<tr>
+						<th>France</th>
+						<td>Bordeaux-style Red Blend</td>
+						<td>Chardonnay</td>
+						<td>Rosé</td>
+					</tr>
+					<tr>
+						<th>Italy</th>
+						<td>Red Blend</td>
+						<td>Sangiovese</td>
+						<td>Nebbiolo</td>
+					</tr>
+					<tr>
+						<th>Spain</th>
+						<td>Tempranillo</td>
+						<td>Red Blend</td>
+						<td>Tempranillo Blend</td>
+					</tr>
+					<tr>
+						<th>Chile</th>
+						<td>Cabernet Sauvignon</td>
+						<td>Sauvignon Blanc</td>
+						<td>Carmenère</td>
+					</tr>
+					<tr>
+						<th>Portugal</th>
+						<td>Portuguese Red</td>
+						<td>Portuguese White</td>
+						<td>Port</td>
+					</tr>
+					<tr>
+						<th>Argentina</th>
+						<td>Malbec</td>
+						<td>Cabernet Sauvignon</td>
+						<td>Chardonnay</td>
+					</tr>
+					<tr>
+						<th>Australia</th>
+						<td>Syrah</td>
+						<td>Chardonnay</td>
+						<td>Cabernet Sauvignon</td>
+					</tr>
+					<tr>
+						<th>Austria</th>
+						<td>Grüner Veltliner</td>
+						<td>Riesling</td>
+						<td>Sauvignon Blanc</td>
+					</tr>
+					<tr>
+						<th>Germany</th>
+						<td>Riesling</td>
+						<td>Pinot Noir</td>
+						<td>Gewürztraminer</td>
+					</tr>
+				</table>
+				<p>
+					From this array, we can see that, amongst every variety, there's surprisingly only 6 varieties
+					that are shared by different countries : Riesling (Austria, Germany), Sauvignon Blanc (Chile,
+					Austria), Red Blend (Italy, Spain), Pinot Noir (US, Germany), Chardonnay (US, France, Argentina, Australia) and Cabernet Sauvignon (US, Chile, Argentina, Australia). This means the
+					country is also a good indicator of what variety to use.
+				</p>
+
+				<h3 id='3.2.2'>3.2.2. Building the neural network</h3>
+
+					<h4>Type of the network</h4>
+					<p>
+						As for the first problem, we tested different neural network and the KNeighborsClassifier was
+						also the best one.
+					</p>
+
+					<h4>Parameters of the network</h4>
+					<p>
+						We also tested with different parameters and, this time, the bests result were obtained with
+						the 15 nearest neighbors, using again the ball tree algorithm and according again more importance to closest points.
+
+					</p>
+
+					<h4>Building the training set</h4>
+					<p>
+						This exercise is similar to the price's one, so there's no difference with it concerning the
+						building of the training set. Once we established what data to take in account, we split our set
+						in two parts : one for the training and the other one for the testing.
+					</p>
+
+				<h3 id='3.2.3'>3.2.3. Network's results and accuracy</h3>
+				<p>
+					Unfortunately, we can't compute any graphic representation of the good or bad answers,
+					because we can't establish a way to compare varieties between themselves. For this problem,
+					we will only provide an array concerning the accuracy of the network on the testing set and on
+					the 2018's reviews.
+				</p>
+
+				<table>
+					<tr>
+						<th>ACCURACY</th>
+						<th>Testing set (%)</th>
+						<th>2018's reviews (%)</th>
+					</tr>
+					<tr>
+						<th>Realist</th>
+						<td>50.5</td>
+						<td>53.7</td>
+					</tr>
+					<tr>
+						<th>Curve</th>
+						<td>51.1</td>
+						<td>52.7</td>
+					</tr>
+					<tr>
+						<th>Uniform</th>
+						<td>50.1</td>
+						<td>54</td>
+					</tr>
+				</table>
+
+				<p>
+					The results are pretty good overall, we manage to have at least 50% of accuracy no matter
+					what price range we are using.
+				</p>
+
+			<h2 id='3.3'>3.3. Selecting a production's region</h2>
+			<p>
+				For the last part, we have to select a region to produce the wine using only the price, the
+				points and the variety used for the wine.
+			</p>
+
+				<h3 id='3.3.1'>3.3.1. Preparing the dataset</h3>
+				<p>
+					As we previously said during the data presentation, there is 1412 different regions in our
+					dataset, which is too much. We can't just simply create a network to directly predict what
+					region we want because the accuracy would obviously be too low : we have to build it differently.
+				</p>
+				<p>
+					Fortunately, the region is directly correlated with the country and the province, as shown
+					in the data presentation, if it was not already obvious. So, what we can do is to first predict
+					one of these two (or the two), and then predict the region based on the answer of the first
+					network. First, let's see with how many values we are dealing with. For the reminder : we have
+					40 countries, 364 provinces and 1412 regions.
+				</p>
+
+				<div class='caption'>Number of region and province per country (top 10 countries)</div>
+				<img src="images/region_province_country.jpg">
+
+				<p>
+					As we can see, the number of region per country is too high to have a good enough accuracy
+					to first guess the country and then guess the region. In a same way, the number of province
+					is too low to be interesting to guess first the country, then the province and then the region.
+					Thus, we decided to first guess the province and then the country, to have the best results in a
+					reasonable amount of time. Let's now compute the relation between province, price and points.
+					As there is too much provinces, we only selected provinces from France and US as an example.
+				</p>
+
+
+				<row>
+					<div>
+						<div class='caption'>Average price range per province (France, US)</div>
+						<img src="images/price_per_province.jpg">
+					</div>
+					<div>
+						<div class='caption'>Average points per province (France, US)</div>
+						<img src="images/price_per_province.jpg">
+					</div>
+				</row>
+
+
+				<p>
+					The preparation of the data is done in two steps : first we prepare the data to determine the
+					province, and then we filter the data according to the first answer to produce the final answer
+					which would be the region.
+				</p>
+
+				<h3 id='3.3.2'>3.3.2. Building the neural network</h3>
+				<p>
+					As we previously said, this problem is a bit particular and require two different network in
+					order to produce a good enough answer.
+				</p>
+
+					<h4>Type of the networks</h4>
+					<p>
+						For both networks, upon different testing and different pairing, we decided to use the KNeighborsClassifier. However, we built them using different parameters and different algorithms.
+					</p>
+
+					<h4>Parameters of the networks</h4>
+					<p>
+						For the first network, we built it using the ball tree algorithm, and considering a uniform
+						weight. Concerning the K-parameter, meaning how many neighbors we consider during the
+						prediction, we chose to go with 10.
+					</p>
+					<p>
+						For the second one, charged to decide which region to choose, we built it using the kdimensional tree (kd tree) algorithm, still considering a uniform weight. Yet, we decided to use
+						16 as our K-parameter. The reason for this is that we have to be more precise concerning which
+						region to choose, because all regions inside the same province are sharing a lot of characteristics.
+
+					</p>
+
+					<h4>Building the training set</h4>
+					<p>
+						The building of the training set is an interesting step for this exercise, because we have to
+						deal with two neural networks. The building of the first set is the same as we could see for the
+						previous one : we simply split the data between the X array that represents the features, and
+						the y array that represents the expected answers. For the second set, we have to first wait for
+						the first neural network's answer. After receiving the answer, we filter the data according to
+						the aforesaid answer : we only keep data concerning the province that the first network chose.
+						Afterward, we split the data as we previously did for all the other networks and simply fit it
+						into the network. For each network, the training set is composed of 99% of the data.
+					</p>
+
+				<h3 id='3.3.3'>3.3.3. Network's results and accuracy</h3>
+				<p>
+					For the same reason as the variety, we can't compute any graphics concerning the answers
+					of the network. So we will just put the results of the two networks in an array, according to
+					the price range we used and what part of the world we consider (all, US only or not US).
+				</p>
+
+				<table>
+					<tr>
+						<th rowspan="2"></th>
+						<th colspan="3">Province (%)</th>
+						<th colspan="3">Region (%)</th>
+					</tr>
+					<tr>
+						<th>ALL</th>
+						<th>US</th>
+						<th>NOT US</th>
+						<th>ALL</th>
+						<th>US</th>
+						<th>NOT US</th>
+					</tr>
+					<tr>
+						<th>Realist</th>
+						<td>49.2</td>
+						<td>69</td>
+						<td>53.5</td>
+						<td>41.1</td>
+						<td>26.2</td>
+						<td>57.3</td>
+					</tr>
+					<tr>
+						<th>Curve</th>
+						<td>49.8</td>
+						<td>68.5</td>
+						<td>55</td>
+						<td>43.6</td>
+						<td>27.3</td>
+						<td>60.1</td>
+					</tr>
+					<tr>
+						<th>Uniform</th>
+						<td>51.2</td>
+						<td>69.3</td>
+						<td>55</td>
+						<td>42.7</td>
+						<td>28.4</td>
+						<td>56.7</td>
+					</tr>
+				</table>
+				<center><i>Accuracy has been realised upon the 2018's review</i></center>
+				<p>
+					According to this array, the curve price range seems better when solving the problem for the
+					general case (all - 43.6%) and for the non-US case (not US - 60.1%). Otherwise, the uniform
+					distribution seems better for the US (US - 28.4%). However, the uniform distribution seems
+					to be the best at guessing the right province for every case. What seems interesting is, unlike
+					the price recommender, having a more or less uniform distribution for the price is better than
+					having a big concentration in one range, which means that it's important to correctly identify
+					the needs and process the data to answer a problem.
+				</p>
+				<p>
+					But why is there such a difference between the US and the rest of the world ? The answer
+					is quite simple : there's much more region per province in the US than in any other country :
+					thus, guessing the province is very difficult on average, resulting in poorer results.
+				</p>
+
+		<h1 id='4'>4. Limit of our study</h1>
+		<p>
+			While doing this study, we felt like we had much more to do, and that we could explore
+			many different paths to solve the problems. In this section, we're going to talk about what
+			could have been done to improve the results, our what could have been interesting to do if we
+			had more experience or more powerful tools at our disposal.
+		</p>
+
+			<h2 id='4.1'>4.1. The price of the wine</h2>
+			<p>
+				Concerning the price of the wine, there's not much left to do. What would have been
+				interesting is having the success rate of each wine. Indeed, our goal for this exercise is to help a
+				wine's producer fixing the price of his wine, probably with the intend to make as much money
+				as possible. Getting the success of the wine, for instance how many bottles were sold, as a
+				feature allows us to only take in account wines that were successful, in a commercial way, in
+				order to help fixing the best possible price to make a maximum profit.
+			</p>
+
+			<h2 id='4.2'>4.2. The variety of the wine</h2>
+			<p>
+				While doing some research for this subject, we found that the best way to determine the
+				variety of the grape used to produce a wine is by looking at the colour and the taste of it,
+				meaning in our case at the description. Unfortunately, we didn't had to take in account the
+				description of the wine to solve our problems. We have the feeling that, given only the description of the wine, we could have a better accuracy at guessing the correct variety. We tried to
+				go in that direction, but couldn't make it due to time limitation. Nonetheless, we think that
+				parsing the description using useful keywords (like ”red” or ”fruity” for instance) is the best
+				way to translate the data in order to fit it into a neural network. We already established a list
+				of useful words in the data preparation script, unfortunately unused and probably incomplete.
+			</p>
+
+			<h2 id='4.3'>4.3. The region of the wine</h2>
+			<p>
+				We are pretty happy with what we've done for the location of the winery. However, we think
+				that we can achieve more by preprocessing the data in a better way (that we couldn't find). For
+				instance, there's too much value for the US compared to any other country, naturally biasing a
+				bit the network (the over-fitting phenomenon, at a smaller scale obviously). Maybe that, with
+				more data for each country, we could balance the number of reviews per country in order to
+				eliminate any preference for a country solely based on the number of reviews.
+			</p>
+
+		<h1 id='5'>5. Conclusion</h1>
+		<p>
+			This subject has been very interesting to do and we learned a lot from it. The main thing
+			we learned is that, even if the network's construction is really important in machine learning,
+			the building of the data is also key in order to build a good neural network. The data is what
+			the network will use to learn, and in that point of view it is very important to eliminate every
+			aspect that could bias our system, like the over-representation of an element in a set. What is
+			really surprising is that we could clearly see all these little things affect our network while only
+			working upon wines' reviews, showing how much it can be important for bigger networks to
+			treat correctly the data before fitting it. With this subject, we only scratched a part of what
+			machine learning is, and how amazing and complex it can be.
+		</p>
+
+	</body>

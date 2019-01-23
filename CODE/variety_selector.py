@@ -87,12 +87,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 ######################
 
 # All tested network
-network_shape = (10, 10, 10)  # 3 hidden layout of size 10
+network_shape = (6, 6)  # 3 hidden layout of size 10
 logit = LogisticRegression()
-# neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
 neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
 gauss = GaussianProcessClassifier()
-mlp = MLPClassifier(hidden_layer_sizes=network_shape, learning_rate='adaptive', max_iter=200)
+mlp = MLPClassifier(hidden_layer_sizes=network_shape, learning_rate='adaptive', max_iter=500)
 svc = SVC(kernel='linear', C=0.025)
 decision_tree = DecisionTreeClassifier()
 forest = RandomForestClassifier()
