@@ -178,7 +178,7 @@
 		<p>
 			The usage of neural networks is becoming increasingly important nowadays, especially in
 			the pattern recognition or in the analysis of data and prediction. We created several neural
-			networks with a set of data concerning œnological reviews in order to determine the price of
+			networks with a set of data concerning oenology reviews in order to determine the price of
 			the wine, the variety or the best region for a wine according to some given features.
 		</p>
 
@@ -206,9 +206,9 @@
 					of our network. For this project, we decided to select only key information such as the general
 					location (country, province, region), the points of the review, the price of the wine and the
 					variety of grape used to make the wine. In order to have a complete and perfect dataset, we
-					also decided to drop all the lines were there was missing data. For instance, if a line is missing
+					also decided to drop all the lines where there was missing data. For instance, if a line is missing
 					information about the country, the variety or the price, this line is dropped. We also drop all
-					the duplicates if there is some.
+					the duplicates if there are some.
 
 					<div class='script'>data_preparation.py</div>
 					<code># READING THE FILE AND DROPPING DUPLICATES
@@ -258,9 +258,9 @@ wines.reset_index(drop=True, inplace=True)</code>
 				</table>
 
 				<p>
-					There is too much varieties. When inspecting closer, we notice that there's a lot of varieties
+					There are too much varieties. When inspecting closer, we notice that there are a lot of varieties
 					having only 1 review, or being the same variety but named in another language. After correcting
-					these errors (thanks to <a href='https://www.kaggle.com/diveki/classification-with-nlp-xgboost-and-pipelines'>Zsolt Diveki's work</a>), we decide to only keep varieties with a number of review superior or equal to 200.
+					these errors (thanks to <a href='https://www.kaggle.com/diveki/classification-with-nlp-xgboost-and-pipelines'>Zsolt Diveki's work</a>), we decide to only keep varieties with a number of reviews superior or equal to 200.
 					After this step, we obtain these numbers :
 				</p>
 
@@ -306,7 +306,7 @@ wines = wines.groupby('variety').filter(lambda x: len(x) > 200)</code>
 
 				<h3 id='2.2.3'>2.2.3. Encoding the data : ordinal values</h3>
 				<p>
-					Many of the wine's features are categorical features, which mean that we need to encode
+					Many features of the wine are categorical features, which mean that we need to encode
 					them into a comprehensive value for the network. To do so, we simply decide to create a hash
 					table to switch between a country, a region, a province or a variety to an integer. Each different
 					categorical value is assigned an integer value. For instance :
@@ -390,11 +390,11 @@ wines = wines.groupby('variety').filter(lambda x: len(x) > 200)</code>
 				<img src="images/price_distribution.jpg">
 
 				<p>
-					We can clearly see that the values are too much spreading, although it seems that there is
+					We can clearly see that the values are too much spread, although it seems that there is
 					a concentration around $30. To circumvent this problem, instead of using plain values, we use
 					ranges. We chose to have 3 different types of ranges : one with a uniform distribution, one with
-					a ”curvy” distribution and finally one with more realistic range's values, without considering
-					the distribution (as adviced by QUI Theo, thanks to him). The ranges are as follow :
+					a ”curvy” distribution and one with more realistic range's values, without considering
+					the distribution (as advised by QUI Theo, thanks to him). The ranges are as follows :
 				</p>
 
 				<row>
@@ -434,9 +434,9 @@ wines = wines.groupby('variety').filter(lambda x: len(x) > 200)</code>
 				<h3 id='2.2.5'>2.2.5. Correlation table</h3>
 				<p>
 					After the preprocessing of the data, we compute the correlation table between the features.
-					This will indicates us how are the data dependant to each other, meaning how efficient could
-					our network be. Indeed, our network will works the same way a human does : if he sees that
-					something is related to another thing, if the first thing change, then it will change the second
+					This will indicates us how they are dependant to each other, meaning how efficient could
+					our network be. Indeed, our network will work the same way a human do : if he sees that
+					something is related to another thing, if the first thing changes, then it will change the second
 					according to how much they are correlated. Of course, it's only the correlation between the
 					raw data, and our network could see beyond these.
 				</p>
@@ -510,8 +510,8 @@ wines = wines.groupby('variety').filter(lambda x: len(x) > 200)</code>
 			<h2 id='2.3'>2.3. Saving the data</h2>
 			<p>
 				The data is now refined and ready for use. We save it in a .csv file, with a semicolon (;)
-				as separator. Of course, we also save under the same format all the hash tables we used to
-				transform the data, to be able to translate further data to feed the network or translate back
+				as separator. Of course, we also save in separate .csv files all the tables we used to
+				transform the categorical values of the data into integer (see the examples under the <a href='#2.2.3'>corresponding section</a>). This will allow us to translate back
 				the network's answers.
 			</p>
 
@@ -523,7 +523,7 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 
 		<h1 id='3'>3. Solving problems using Neural networks</h1>
 		<p>
-			Once the preprocessing data's phase done, we can train our network to answer several problems. We are interested in 3 axes : predicting the price of a wine, choosing the grape's variety
+			Now that the data is ready, we can train our network to answer several problems. We are interested in 3 axes : predicting the price of a wine, choosing the grape's variety
 			and choosing the region where the wine is produced. To answer these questions, we have to
 			create and train neural networks with the data we previously refined. For each axe, we will
 			detail how we built the network and why we decided to build it that way, how we train it and
@@ -535,7 +535,7 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 			<h2 id='3.1'>3.1. Recommending the price of a wine</h2>
 			<p>
 				As part of this study, we want to be able to predict the price of the wine given different
-				features. The features taken in account are : Country, Region, Province, Points and Variety.
+				features. The features taken into account are : Country, Region, Province, Points and Variety.
 				We want to be able to, given these features, guess correctly the price of the wine.
 			</p>
 
@@ -569,7 +569,7 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 					variety and price range too. What we can conclude from that is that the most important features
 					to correctly guess the wine's price are the variety and the points. In order to have better results,
 					we also decided to train our neural network only with data from the country we need to study.
-					So, for instance, if we need to guess the price of a French wine, we will only take in account
+					So, for instance, if we need to guess the price of a French wine, we will only take into account
 					french wine's data.
 				</p>
 
@@ -579,7 +579,7 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 					<p>
 						For this first prediction, we tested a lot of different types of neural network, only to come at
 						the conclusion that the KNeighborsClassifier was the best one to solve this problem. How does
-						it works ? When getting an input, the network tries to fit it with the most similar data that
+						it work ? When getting an input, the network tries to fit it with the most similar data that
 						were fed to it, meaning searching the nearest neighbor, and answer according to what it seems
 						to be the nearest.
 					</p>
@@ -587,14 +587,14 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 					<h4>Parameters of the network</h4>
 					<p>
 						Upon testing different parameters for the network, the best results were obtained while considering the 17 nearest neighbors, using the ball tree algorithm and according more importance
-						to closest points (distance weight).
+						to closest points (distance weight). The ball tree is a space partitioning data structure for organizing points in a multi-dimensional space, meaning it can organize the data in a way that we can easily search for the nearest neighbor.
 					</p>
 
 					<h4>Building the training set</h4>
 					<p>
-						In order to train our network, we must split our data in two parts : one will be used as input,
+						In order to train our network, we must split the data in two parts : one will be used as input,
 						while the other will be used as output, in order to know if the prediction is correct and if there
-						is a need to adapt the network. We split the data in two parts : one will be for the training,
+						is a need to adapt the network. We split the data into two parts : one will be for the training,
 						and the other will be for the testing. Knowing that our network will predict using the nearest
 						neighbors, it is preferable to have the more data. We decide to take 99% of the data to train
 						the network, and 1% to test it.
@@ -774,7 +774,7 @@ neural_network.fit(X_train, y_train)</code>
 					</tr>
 				</table>
 				<p>
-					From this array, we can see that, amongst every variety, there's surprisingly only 6 varieties
+					From this array, we can see that, amongst every variety, there are surprisingly only 6 varieties
 					that are shared by different countries : Riesling (Austria, Germany), Sauvignon Blanc (Chile,
 					Austria), Red Blend (Italy, Spain), Pinot Noir (US, Germany), Chardonnay (US, France, Argentina, Australia) and Cabernet Sauvignon (US, Chile, Argentina, Australia). This means the
 					country is also a good indicator of what variety to use.
@@ -798,8 +798,8 @@ neural_network.fit(X_train, y_train)</code>
 					<h4>Building the training set</h4>
 					<p>
 						This exercise is similar to the price's one, so there's no difference with it concerning the
-						building of the training set. Once we established what data to take in account, we split our set
-						in two parts : one for the training and the other one for the testing.
+						building of the training set. Once we established what data to take into account, we split our set
+						into two parts : one for the training and the other one for the testing.
 					</p>
 
 					<div class="script">variety_selector.py</div>
@@ -861,8 +861,8 @@ neural_network.fit(X_train, y_train)</code>
 
 				<h3 id='3.3.1'>3.3.1. Preparing the dataset</h3>
 				<p>
-					As we previously said during the data presentation, there is 1412 different regions in our
-					dataset, which is too much. We can't just simply create a network to directly predict what
+					As we previously said during the data presentation, there are 1412 different regions in our
+					dataset, which is too much. We can't just simply create a network to directly predict which
 					region we want because the accuracy would obviously be too low : we have to build it differently.
 				</p>
 				<p>
@@ -906,7 +906,7 @@ neural_network.fit(X_train, y_train)</code>
 
 				<h3 id='3.3.2'>3.3.2. Building the neural network</h3>
 				<p>
-					As we previously said, this problem is a bit particular and require two different network in
+					As we previously said, this problem is a bit particular and require two different networks in
 					order to produce a good enough answer.
 				</p>
 
@@ -1066,7 +1066,7 @@ region = neural_network_region.predict(problem)[0]</code>
 				interesting is having the success rate of each wine. Indeed, our goal for this exercise is to help a
 				wine's producer fixing the price of his wine, probably with the intend to make as much money
 				as possible. Getting the success of the wine, for instance how many bottles were sold, as a
-				feature allows us to only take in account wines that were successful, in a commercial way, in
+				feature allows us to only take into account wines that were successful, in a commercial way, in
 				order to help fixing the best possible price to make a maximum profit.
 			</p>
 
@@ -1074,7 +1074,7 @@ region = neural_network_region.predict(problem)[0]</code>
 			<p>
 				While doing some research for this subject, we found that the best way to determine the
 				variety of the grape used to produce a wine is by looking at the colour and the taste of it,
-				meaning in our case at the description. Unfortunately, we didn't had to take in account the
+				meaning in our case at the description. Unfortunately, we didn't had to take into account the
 				description of the wine to solve our problems. We have the feeling that, given only the description of the wine, we could have a better accuracy at guessing the correct variety. We tried to
 				go in that direction, but couldn't make it due to time limitation. Nonetheless, we think that
 				parsing the description using useful keywords (like ”red” or ”fruity” for instance) is the best
