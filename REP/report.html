@@ -36,7 +36,34 @@
 		img{
 			max-width: 100%;
 		}
+		code{
+			display: flex;
+			box-sizing: border-box;
+			font-family: monospace;
+			white-space: pre;
+			width: 100%;
+			margin: 0 0 10px 0;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			padding: 6px;
+			background-color: #222;
+			color:white;
 
+		}
+		.script{
+			margin: 10px 0 0 0 ;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 6px;
+			border: 1px solid #222;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+			color:olive;
+			background-color: #EFEFEF;
+		}
+		.script::before{
+			content:">> ";
+		}
 		table{
 			max-width: 100%;
 			margin: auto;
@@ -182,6 +209,32 @@
 					also decided to drop all the lines were there was missing data. For instance, if a line is missing
 					information about the country, the variety or the price, this line is dropped. We also drop all
 					the duplicates if there is some.
+
+					<div class='script'>data_preparation.py</div>
+					<code># READING THE FILE AND DROPPING DUPLICATES
+wines = pd.read_csv("../winemag-data-130k-v2.csv")
+wines.drop_duplicates('description', inplace=True)
+wines.reset_index(drop=True, inplace=True)
+
+# Dropping the index columns, designation, region_2, taster name and twitter, title and winery
+wines.drop(wines.columns[[0, 3, 8, 9, 10, 11, 13]], axis=1, inplace=True)
+# Dropping description if not needed
+if drop_description:
+    wines.drop(wines.columns[[1]], axis=1, inplace=True)
+
+# Replacing region by the province if there is no region defined
+new_region = []
+for i in range(len(wines["region_1"])):
+    if pd.isna(wines["region_1"][i]):
+        new_region.append(wines["province"][i])
+    else:
+        new_region.append(wines["region_1"][i])
+
+wines["region_1"] = new_region
+
+# Dropping all lines where there's an undefined value
+wines.dropna(inplace=True)
+wines.reset_index(drop=True, inplace=True)</code>
 				</p>
 
 				<h3 id='2.2.2'>2.2.2. Refining the data</h3>
@@ -225,6 +278,31 @@
 						<td>52</td>
 					</tr>
 				</table>
+
+				<div class='script'>data_preparation.py</div>
+				<code># Filtering the variety
+wines['variety'] = wines['variety'].str.lower()
+
+# Changing the name of the variety
+filtered_name = ['red blend', 'portuguese red', 'white blend', 'sparkling blend', 'champagne blend',
+                 'portuguese white', 'rose', 'bordeaux-style red blend', 'rhone-style red blend',
+                 'bordeaux-style white blend', 'alsace white blend', 'austrian red blend',
+                 'austrian white blend', 'cabernet blend', 'malbec blend', 'portuguese rose',
+                 'portuguese sparkling', 'provence red blend', 'provence white blend',
+                 'rhone-style white blend', 'tempranillo blend', 'grenache blend',
+                 'meritage']
+
+name_pairs = [('spatburgunder', 'pinot noir'), ('garnacha', 'grenache'), ('pinot nero', 'pinot noir'),
+              ('alvarinho', 'albarino'), ('assyrtico', 'assyrtiko'), ('black muscat', 'muscat hamburg'),
+              ('kekfrankos', 'blaufrankisch'), ('garnacha blanca', 'grenache blanc'),
+              ('garnacha tintorera', 'alicante bouschet'), ('sangiovese grosso', 'sangiovese')]
+
+wines['variety'] = wines['variety'].apply(lambda row: correct_grape_names(row))
+for start, end in name_pairs:
+    wines['variety'] = wines['variety'].replace(start, end)
+
+# Drop all variety who has less than 200 reviews
+wines = wines.groupby('variety').filter(lambda x: len(x) > 200)</code>
 
 				<h3 id='2.2.3'>2.2.3. Encoding the data : ordinal values</h3>
 				<p>
@@ -289,6 +367,20 @@
 					regions and provinces
 				</p>
 
+				<div class='script'>refiner.py</div>
+				<code>def string_hash(array):
+    counter = 0
+    countries = {}
+    column = []
+    for element in array:
+        if element in countries:
+            column.append(countries[element])
+        else:
+            column.append(counter)
+            countries[element] = counter
+            counter += 1
+    return column, countries</code>
+
 				<h3 id='2.2.4'>2.2.4. Encoding the data : prices</h3>
 				<p>
 					Now, let's have a closer look at the price's distribution :
@@ -302,7 +394,7 @@
 					a concentration around $30. To circumvent this problem, instead of using plain values, we use
 					ranges. We chose to have 3 different types of ranges : one with a uniform distribution, one with
 					a ”curvy” distribution and finally one with more realistic range's values, without considering
-					the distribution. The ranges are as follow :
+					the distribution (as adviced by QUI Theo, thanks to him). The ranges are as follow :
 				</p>
 
 				<row>
@@ -317,6 +409,27 @@
 				</row>
 				<div class='caption'>Price distribution (uniform)</div>
 				<img src="images/price_range.jpg">
+
+
+				<div class='script'>refiner.py</div>
+				<code>def from_price_to_range(array, prices):
+    range_number = {}
+    steps = [p for p in prices]
+    steps.append(1000000)  # append infinity
+    column = []
+    for price in array:
+        i = 0
+        for price_range in steps:
+            if price < price_range:
+                column.append(i)
+                if i in range_number:
+                    range_number[i] += 1
+                else:
+                    range_number[i] = 0
+                break
+            else:
+                i += 1
+    return column, range_number</code>
 
 				<h3 id='2.2.5'>2.2.5. Correlation table</h3>
 				<p>
@@ -402,6 +515,12 @@
 				the network's answers.
 			</p>
 
+			<div class="script">data_preparation.py</div>
+			<code># RENAME COLUMNS
+wines.rename(index=str, columns={"region_1": "region", "price": "price_range"}, inplace=True)
+#SAVE CSV FILE
+wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', index=False)</code>
+
 		<h1 id='3'>3. Solving problems using Neural networks</h1>
 		<p>
 			Once the preprocessing data's phase done, we can train our network to answer several problems. We are interested in 3 axes : predicting the price of a wine, choosing the grape's variety
@@ -480,6 +599,21 @@
 						neighbors, it is preferable to have the more data. We decide to take 99% of the data to train
 						the network, and 1% to test it.
 					</p>
+
+					<div class="script">price_recommender.py</div>
+					<code># y is the data we're studying.
+y = wines["price_range"]
+# X is the data that we'll use to make correlation with y
+X = wines.drop(wines.columns[[2]], axis=1)
+
+# Creating the actual sets we'll use to train the neural network
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
+
+# CREATING THE NETWORK
+neighbors = KNeighborsClassifier(17, algorithm='ball_tree', weights='distance')
+neural_network = neighbors
+# TRAINING THE NETWORK
+neural_network.fit(X_train, y_train)</code>
 
 				<h3 id='3.1.3'>3.1.3. Network's results and accuracy</h3>
 				<p>
@@ -668,6 +802,21 @@
 						in two parts : one for the training and the other one for the testing.
 					</p>
 
+					<div class="script">variety_selector.py</div>
+					<code># y is the data we're studying.
+y = wines["variety"]
+# X is the data that we'll use to make correlation with y
+X = wines.drop(wines.columns[[5]], axis=1)
+
+# Creating the actual sets we'll use to train the neural network
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
+
+# CREATING THE NETWORK
+neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
+neural_network = neighbors
+# TRAINING THE NETWORK
+neural_network.fit(X_train, y_train)</code>
+
 				<h3 id='3.2.3'>3.2.3. Network's results and accuracy</h3>
 				<p>
 					Unfortunately, we can't compute any graphic representation of the good or bad answers,
@@ -790,6 +939,53 @@
 						Afterward, we split the data as we previously did for all the other networks and simply fit it
 						into the network. For each network, the training set is composed of 99% of the data.
 					</p>
+
+					<div class="script">region_selector.py</div>
+					<code># y is the data we're studying.
+y = wines["province"]
+# X is the data that we'll use to make correlation with y
+X = wines.drop(wines.columns[[0, 3, 4]], axis=1)
+
+# Creating the actual sets we'll use to train the neural network
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
+
+# CREATING THE NETWORK
+neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='uniform')
+neural_network = neighbors
+# TRAINING THE NETWORK
+neural_network.fit(X_train, y_train)
+
+# Data of the problem
+problem = [[points, price, variety]]
+# Province guessed by the first neural network
+province = neural_network_province.predict(problem)[0]
+
+# FILTERTING ACCORDING TO PROVINCE
+province_data = {'points': [], 'price': [], 'variety': [], 'region': []}
+    for i in range(len(wines)):
+        wine = [wines['province'][i], wines['points'][i], wines['price_range'][i], wines['variety'][i],
+                wines['region'][i]]
+        if wine[0] == province:
+            province_data['points'].append(wine[1])
+            province_data['price'].append(wine[2])
+            province_data['variety'].append(wine[3])
+            province_data['region'].append(wine[4])
+
+data = pd.DataFrame(province_data)
+
+# Creating the neural network
+neural_network_region = KNeighborsClassifier(16, algorithm='kd_tree', weights='uniform')
+
+# Creating the training data
+y_country = data['region']
+X_country = data.drop(data.columns[[-1]], axis=1)
+X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
+
+# Training the neural network
+neural_network_region.fit(X_train, y_train)
+
+# Answer of the neural network
+region = neural_network_region.predict(problem)[0]</code>
 
 				<h3 id='3.3.3'>3.3.3. Network's results and accuracy</h3>
 				<p>

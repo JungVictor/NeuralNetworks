@@ -164,7 +164,6 @@ if testing_2018:
 
     for country in unique_answers:
         network = KNeighborsClassifier(16, algorithm='kd_tree', weights='uniform')
-        network = MLPClassifier(hidden_layer_sizes=(6,6,), learning_rate='adaptive', max_iter=2000)
 
         data = province_data[country]
         data = pd.DataFrame(data)
@@ -172,7 +171,7 @@ if testing_2018:
         y_country = data['region']
         X_country = data.drop(data.columns[[-1]], axis=1)
 
-        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.5, random_state=0)
+        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
         network.fit(X_train, y_train)
         country_networks[country] = network
 
@@ -208,7 +207,7 @@ if testing_2018:
 # Data of the problem
 problem = [[points, price, variety]]
 
-# Country guessed by the first neural network
+# Province guessed by the first neural network
 province = neural_network_province.predict(problem)[0]
 
 ############################################
@@ -233,12 +232,12 @@ print("END OF COLLECTION")
 data = pd.DataFrame(province_data)
 
 # Creating the neural network
-neural_network_region = KNeighborsClassifier(15)
+neural_network_region = KNeighborsClassifier(16, algorithm='kd_tree', weights='uniform')
 
 # Creating the training data
 y_country = data['region']
 X_country = data.drop(data.columns[[-1]], axis=1)
-X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=200)
+X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
 
 # Training the neural network
 neural_network_region.fit(X_train, y_train)
