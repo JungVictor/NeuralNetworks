@@ -27,6 +27,9 @@ province_table, province_table_r = df_to_dict(province_table)
 # PLOTTING
 ###################
 
+correlation_matrix = wines.corr()
+print("CORRELATION MATRIX :\n{}".format(correlation_matrix))
+
 ################
 # PRICE SELECTOR
 ################

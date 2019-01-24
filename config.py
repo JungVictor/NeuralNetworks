@@ -24,5 +24,5 @@ uniform = [14, 19, 24, 30, 40, 55, 100]
 curve = [10, 15, 20, 27, 40, 55, 100]
 realist = [10, 20, 50, 80, 100, 150, 200]
 
-price_range = uniform
+price_range = realist
 #####################

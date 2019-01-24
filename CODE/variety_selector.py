@@ -3,11 +3,7 @@ from PRE.refiner import *
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
+from sklearn.preprocessing import StandardScaler
 import warnings
 
 warnings.filterwarnings("ignore")  # just ignore the warning messages
@@ -80,24 +76,27 @@ y = wines["variety"]
 X = wines.drop(wines.columns[[5]], axis=1)
 
 # Creating the actual sets we'll use to train the neural network
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.2, random_state=0)
+
+# we fit the scaler with X_train
+scaler = StandardScaler().fit(X_train)
+
+# then we scale training and test sets
+scaler.transform(X_train)
+scaler.transform(X_test)
 
 ######################
 # CREATING THE NETWORK
 ######################
 
 # All tested network
-network_shape = (6, 6)  # 3 hidden layout of size 10
-logit = LogisticRegression()
 neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='distance')
-gauss = GaussianProcessClassifier()
-mlp = MLPClassifier(hidden_layer_sizes=network_shape, learning_rate='adaptive', max_iter=500)
-svc = SVC(kernel='linear', C=0.025)
-decision_tree = DecisionTreeClassifier()
-forest = RandomForestClassifier()
+mlp = MLPClassifier(activation='logistic', solver='adam', learning_rate='adaptive',
+                    hidden_layer_sizes=(100, 100,), max_iter=1000)
+
 
 # Choosing the network we'll use
-neural_network = neighbors
+neural_network = mlp
 
 # TRAINING THE NETWORK
 print("\nBEGINNING OF THE TRAINING...", end='\t')

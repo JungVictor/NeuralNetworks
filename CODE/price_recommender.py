@@ -2,12 +2,12 @@ from config import *
 from PRE.refiner import *
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
+from sklearn.neural_network import MLPClassifier, MLPRegressor
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import OrdinalEncoder
 import warnings
 
-warnings.filterwarnings("ignore")  # just ignore the warning messages
+# warnings.filterwarnings("ignore")  # just ignore the warning messages
 
 print("PRICE RECOMMENDER")
 
@@ -84,24 +84,23 @@ y = wines["price_range"]
 X = wines.drop(wines.columns[[2]], axis=1)
 
 # Creating the actual sets we'll use to train the neural network
-X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.2, test_size=0.1, random_state=0)
 
 ######################
 # CREATING THE NETWORK
 ######################
-network_shape = (100,)  # 3 hidden layout of size 10, 10, 10
-
 # All tested networks
 neighbors = KNeighborsClassifier(17, algorithm='ball_tree', weights='distance')
-mlp = MLPClassifier(hidden_layer_sizes=network_shape, learning_rate='adaptive', max_iter=1000)
+mlp = MLPClassifier(activation='tanh', solver='adam', learning_rate='adaptive',
+                    hidden_layer_sizes=(40, 30, 20, 10,), max_iter=1000)
 
-# Selecting one network for the exercise
-neural_network = neighbors
+neural_network = mlp
 
 # TRAINING THE NETWORK
 print("\nBEGINNING OF THE TRAINING...", end='\t')
 neural_network.fit(X_train, y_train)
 print("END OF THE TRAINING")
+
 
 # Difference in price range from actual to expected
 difference = 0
@@ -202,7 +201,7 @@ print('\nANSWER :')
 if answer[0] == price_range[-1]:
     print('Price range recommended : more than ${}'.format(answer[0]))
 else:
-    print('Price range recommended : from ${} to ${})'.format(answer[0], answer[1]))
+    print('Price range recommended : from ${} to ${}'.format(answer[0], answer[1]))
 
 
 plt.show()

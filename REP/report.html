@@ -10,8 +10,9 @@
 	<style>
 		body{
 			color:#000;
-			width: 50%;
+			width: 70%;
 			min-width: 700px;
+			max-width: 900px;
 			margin:auto;
 			font-family: 'Source Sans Pro', sans-serif;
 		}
@@ -144,25 +145,28 @@
 				</ul>
 				<li><a href='#2.3'>2.3. Saving the data</a></li>
 			</ul>
-			<li><a href='#3'>3. Solving problems using Neural Networks</a></li>
+			<li><a href='#3'>3. Solving problems using Machine Learning</a></li>
 			<ul>
 				<li><a href='#3.1'>3.1. Recommending the price of a wine</a></li>
 				<ul>
 					<li><a href='#3.1.1'>3.1.1. Preparing the dataset</a></li>
-					<li><a href='#3.1.2'>3.1.2. Building the neural network</a></li>
-					<li><a href='#3.1.3'>3.1.3. Network's results and accuracy</a></li>
+					<li><a href='#3.1.2'>3.1.2. Building the network : lazy learning</a></li>
+					<li><a href='#3.1.3'>3.1.3. Building the network : backpropagation learning</a></li>
+					<li><a href='#3.1.4'>3.1.4. Network's results and accuracy</a></li>
 				</ul>
 				<li><a href='#3.2'>3.2. Choosing a wine's variety</a></li>
 				<ul>
 					<li><a href='#3.2.1'>3.2.1. Preparing the dataset</a></li>
-					<li><a href='#3.2.2'>3.2.2. Building the neural network</a></li>
-					<li><a href='#3.2.3'>3.2.3. Network's results and accuracy</a></li>
+					<li><a href='#3.2.2'>3.2.2. Building the network : lazy learning</a></li>
+					<li><a href='#3.2.3'>3.2.3. Building the network : backpropagation learning</a></li>
+					<li><a href='#3.2.4'>3.2.4. Network's results and accuracy</a></li>
 				</ul>
 				<li><a href='#3.3'>3.3. Selecting a production's region</a></li>
 				<ul>
 					<li><a href='#3.3.1'>3.3.1. Preparing the dataset</a></li>
-					<li><a href='#3.3.2'>3.3.2. Building the neural network</a></li>
-					<li><a href='#3.3.3'>3.3.3. Network's results and accuracy</a></li>
+					<li><a href='#3.3.2'>3.3.2. Building the network : lazy learning</a></li>
+					<li><a href='#3.3.3'>3.3.3. Building the network : semi-lazy learning</a></li>
+					<li><a href='#3.3.4'>3.3.4. Network's results and accuracy</a></li>
 				</ul>
 			</ul>
 			<li><a href='#4'>4. Limit of our study</a></li>
@@ -179,7 +183,9 @@
 			The usage of neural networks is becoming increasingly important nowadays, especially in
 			the pattern recognition or in the analysis of data and prediction. We created several neural
 			networks with a set of data concerning oenology reviews in order to determine the price of
-			the wine, the variety or the best region for a wine according to some given features.
+			the wine, the variety or the best region for a wine according to some given features. We will
+			try to solve the problems using two approaches : a lazy one (in other words a network
+			that already know how to classify using a tree) and a backpropagation one.
 		</p>
 
 		<h1 id='2'>2. Preparation of the data</h1>
@@ -521,7 +527,7 @@ wines.rename(index=str, columns={"region_1": "region", "price": "price_range"}, 
 #SAVE CSV FILE
 wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', index=False)</code>
 
-		<h1 id='3'>3. Solving problems using Neural networks</h1>
+		<h1 id='3'>3. Solving problems using Machine Learning</h1>
 		<p>
 			Now that the data is ready, we can train our network to answer several problems. We are interested in 3 axes : predicting the price of a wine, choosing the grape's variety
 			and choosing the region where the wine is produced. To answer these questions, we have to
@@ -573,9 +579,9 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 					french wine's data.
 				</p>
 
-				<h3 id='3.1.2'>3.1.2. Building the neural network</h3>
+				<h3 id='3.1.2'>3.1.2. Building the network : lazy learning</h3>
 
-					<h4>Type of the network</h4>
+					<h4>Type of the Classifier</h4>
 					<p>
 						For this first prediction, we tested a lot of different types of neural network, only to come at
 						the conclusion that the KNeighborsClassifier was the best one to solve this problem. How does
@@ -584,7 +590,7 @@ wines.to_csv(output_dir + data_filename, sep=csv_separator, encoding='utf-8', in
 						to be the nearest.
 					</p>
 
-					<h4>Parameters of the network</h4>
+					<h4>Parameters of the Classifier</h4>
 					<p>
 						Upon testing different parameters for the network, the best results were obtained while considering the 17 nearest neighbors, using the ball tree algorithm and according more importance
 						to closest points (distance weight). The ball tree is a space partitioning data structure for organizing points in a multi-dimensional space, meaning it can organize the data in a way that we can easily search for the nearest neighbor.
@@ -615,12 +621,37 @@ neural_network = neighbors
 # TRAINING THE NETWORK
 neural_network.fit(X_train, y_train)</code>
 
-				<h3 id='3.1.3'>3.1.3. Network's results and accuracy</h3>
+				<h3 id='3.1.3'>3.1.3. Building the network : backpropagation learning</h3>
+
+					<h4>Parameters of the Classifier</h4>
+					<p>
+						After testing several network shapes, we came to the conclusion that a pyramid-like shape, that is to say a network that has fewer neurons at each additional hidden layer, is better to solve this problem. We decided to use the hyperbolic tan function, 'tanh' (f(x) = tanh(x)).
+						Even if there is not that much difference, the best learning rate seems to be an adaptive one.
+					</p>
+
+					<div class="script">price_recommender.py</div>
+					<code>mlp = MLPClassifier(activation='tanh', solver='adam', learning_rate='adaptive',
+                    hidden_layer_sizes=(18, 16, 12, 8, 4,), max_iter=1000)</code>
+
+					<h4>Building the training set</h4>
+					<p>
+						As previously said in the lazy learning section, we must split our data into two parts in order to first train the network and then to test it.
+						The learning phase's duration is way more important for a backpropagation classifier than for a lazy one, so we must adapt the training set's size accordingly. We chose to take 20% of the set for the training part.
+					</p>
+
+					<div class="script">price_recommender.py</div>
+					<code>X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.2,
+						    test_size=0.1, random_state=0)</code>
+
+
+				<h3 id='3.1.4'>3.1.4. Network's results and accuracy</h3>
 				<p>
 					In this section, we will discuss about the accuracy of our network, and the influence of the
 					price ranges' choice upon the results.
 				</p>
 
+
+				<div class='caption'>K-Neighbors accuracy</div>
 				<table>
 					<tr>
 						<th>ACCURACY</th>
@@ -682,6 +713,52 @@ neural_network.fit(X_train, y_train)</code>
 					so given the precision of the ranges we can conclude that around 40% of accuracy is a good
 					score.
 				</p>
+
+				<div class='caption'>MLP accuracy</div>
+				<table>
+					<tr>
+						<th>ACCURACY</th>
+						<th>Testing set (%)</th>
+						<th>2018's reviews (%)</th>
+						<th>Average difference (%)</th>
+					</tr>
+					<tr>
+						<th>Realist</th>
+						<td>50.6</td>
+						<td>48.4</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<th>Curve</th>
+						<td>26.2</td>
+						<td>25.4</td>
+						<td>21.2</td>
+					</tr>
+					<tr>
+						<th>Uniform</th>
+						<td>25.1</td>
+						<td>27</td>
+						<td>27.5</td>
+					</tr>
+				</table>
+
+				<row>
+					<div>
+						<div class='caption'>Realistic</div>
+						<img src="images/price_recommender_r.jpg">
+					</div>
+					<div>
+						<div class='caption'>Curve</div>
+						<img src="images/price_recommender_c.jpg">
+					</div>
+				</row>
+				<div class='caption'>Uniform</div>
+				<img src="images/price_recommender.jpg">
+
+				<p>
+					The results are not very good compared to the KNeighbors' results. As we can see, the backpropagation network is having difficulties correctly identifying the several groups. It tends to concentrate its answers towards mainly one big group, and then generally in two smaller groups. We couldn't find any way to correct this behaviour : no matter what kind of shape we used for the hidden layouts, we would always observe this kind of phenomenon.
+				</p>
+
 
 			<h2 id='3.2'>3.2. Choosing a wine's variety</h2>
 			<p>
@@ -776,19 +853,18 @@ neural_network.fit(X_train, y_train)</code>
 				<p>
 					From this array, we can see that, amongst every variety, there are surprisingly only 6 varieties
 					that are shared by different countries : Riesling (Austria, Germany), Sauvignon Blanc (Chile,
-					Austria), Red Blend (Italy, Spain), Pinot Noir (US, Germany), Chardonnay (US, France, Argentina, Australia) and Cabernet Sauvignon (US, Chile, Argentina, Australia). This means the
-					country is also a good indicator of what variety to use.
+					Austria), Red Blend (Italy, Spain), Pinot Noir (US, Germany), Chardonnay (US, France, Argentina, Australia) and Cabernet Sauvignon (US, Chile, Argentina, Australia). This means the country is also a good indicator of what variety to use.
 				</p>
 
-				<h3 id='3.2.2'>3.2.2. Building the neural network</h3>
+				<h3 id='3.2.2'>3.2.2. Building the network : lazy learning</h3>
 
-					<h4>Type of the network</h4>
+					<h4>Type of the Classifier</h4>
 					<p>
 						As for the first problem, we tested different neural network and the KNeighborsClassifier was
 						also the best one.
 					</p>
 
-					<h4>Parameters of the network</h4>
+					<h4>Parameters of the Classifier</h4>
 					<p>
 						We also tested with different parameters and, this time, the bests result were obtained with
 						the 15 nearest neighbors, using again the ball tree algorithm and according again more importance to closest points.
@@ -817,7 +893,35 @@ neural_network = neighbors
 # TRAINING THE NETWORK
 neural_network.fit(X_train, y_train)</code>
 
-				<h3 id='3.2.3'>3.2.3. Network's results and accuracy</h3>
+				<h3 id='3.2.3'>3.2.3. Building the network : backpropagation learning</h3>
+
+					<h4>Parameters of the Classifier</h4>
+					<p>
+						To solve this problem, we tested many different shapes, most of them being pyramid-like or square-like.
+						The maximum result was reached with two hidden layouts of size 100, using the logisitic activation function 
+						(f(x) = 1 / (1 + exp(-x))), with the adam solver (the one by default).
+
+					</p>
+
+					<h4>Building the training set</h4>
+					<p>
+						As said previously, networks using backpropagation are slower than lazy ones, so we must reduce the size
+						of the training set we are using to keep a reasonable amount of time for the execution.
+						We decide to keep only 20% of the data to train our neural network.
+					</p>
+
+					<div class="script">variety_selector.py</div>
+					<code># Creating the actual sets we'll use to train the neural network
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.2, random_state=0)
+
+# Creating the network
+neural_network = MLPClassifier(activation='logistic', solver='adam', learning_rate='adaptive',
+                    	       hidden_layer_sizes=(100, 100,), max_iter=1000)
+
+# TRAINING THE NETWORK
+neural_network.fit(X_train, y_train)</code>
+
+				<h3 id='3.2.4'>3.2.4. Network's results and accuracy</h3>
 				<p>
 					Unfortunately, we can't compute any graphic representation of the good or bad answers,
 					because we can't establish a way to compare varieties between themselves. For this problem,
@@ -828,29 +932,41 @@ neural_network.fit(X_train, y_train)</code>
 				<table>
 					<tr>
 						<th>ACCURACY</th>
-						<th>Testing set (%)</th>
-						<th>2018's reviews (%)</th>
+						<th>Testing set (KN) (%)</th>
+						<th>2018's reviews (KN) (%)</th>
+						<th>Testing set (MLP) (%)</th>
+						<th>2018's reviews (MLP) (%)</th>
 					</tr>
 					<tr>
 						<th>Realist</th>
 						<td>50.5</td>
 						<td>53.7</td>
+						<td>31.1</td>
+						<td>33</td>
 					</tr>
 					<tr>
 						<th>Curve</th>
 						<td>51.1</td>
 						<td>52.7</td>
+						<td>30.7</td>
+						<td>32.7</td>
 					</tr>
 					<tr>
 						<th>Uniform</th>
 						<td>50.1</td>
 						<td>54</td>
+						<td>27.9</td>
+						<td>29.2</td>
 					</tr>
 				</table>
 
 				<p>
 					The results are pretty good overall, we manage to have at least 50% of accuracy no matter
-					what price range we are using.
+					what price range we are using with the KNeighbors classifier.
+					However, the results are poorer concerning the MLP classifier. Once again, it seems that the
+					neural network is having trouble concerning the classification into differents small groups,
+					but the results are nicer than for the price recommender, reaching at least 30% for each
+					type of price range we used.
 				</p>
 
 			<h2 id='3.3'>3.3. Selecting a production's region</h2>
@@ -904,7 +1020,7 @@ neural_network.fit(X_train, y_train)</code>
 					which would be the region.
 				</p>
 
-				<h3 id='3.3.2'>3.3.2. Building the neural network</h3>
+				<h3 id='3.3.2'>3.3.2. Building the network : lazy learning</h3>
 				<p>
 					As we previously said, this problem is a bit particular and require two different networks in
 					order to produce a good enough answer.
@@ -987,7 +1103,44 @@ neural_network_region.fit(X_train, y_train)
 # Answer of the neural network
 region = neural_network_region.predict(problem)[0]</code>
 
-				<h3 id='3.3.3'>3.3.3. Network's results and accuracy</h3>
+				<h3 id='3.3.3'>3.3.3. Building the network : semi-lazy learning</h3>
+
+					<h4>Type of the Classifiers</h4>
+					<p>
+						For the semi-lazy learning, we will use first a KNeighborsClassifier, as we did for the lazy part, and of course a MLPClassifier for the backpropagation part.
+						The goal here is to first guess the province using a lazy classifier (nearest neighbors) and then guess the region using a backpropagation classifier (multi-layer perceptron).
+					</p>
+
+					<h4>Parameters of the Classifiers</h4>
+					<p>
+						For the first network, we will use the exact same parameters as the lazy part.
+					</p>
+					<p>
+						For the second one, charged to decide which region to choose and being the backpropagation network, we chose
+						to build the network using a square-like shape, that is to say a network that has the same -or almost- number
+						of neurons for each hidden layout. This time, we will be using a logistic activation function (f(x) = 1 / (1 + exp(-x))).
+					</p>
+
+					<h4>Building the training set</h4>
+					<p>
+						The training set will be, once again, the same as for the lazy section. The difference will come from the backpropagation part.
+						For this last part, we will use 30% of the set to train our neural network, with as usual no random state.
+					</p>
+
+					<div class="script">region_selector.py</div>
+					<code># Creating the neural network
+neural_network_region = MLPClassifier(activation='logistic', solver='adam', learning_rate='adaptive',
+                                      hidden_layer_sizes=(30, 30, 30), max_iter=300)
+
+# Creating the training data
+y_country = data['region']
+X_country = data.drop(data.columns[[-1]], axis=1)
+X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.3, random_state=0)
+
+# Training the neural network
+neural_network_region.fit(X_train, y_train)</code>
+
+				<h3 id='3.3.4'>3.3.4. Network's results and accuracy</h3>
 				<p>
 					For the same reason as the variety, we can't compute any graphics concerning the answers
 					of the network. So we will just put the results of the two networks in an array, according to
@@ -998,9 +1151,13 @@ region = neural_network_region.predict(problem)[0]</code>
 					<tr>
 						<th rowspan="2"></th>
 						<th colspan="3">Province (%)</th>
-						<th colspan="3">Region (%)</th>
+						<th colspan="3">Region (lazy) (%)</th>
+						<th colspan="3">Region (Semi-lazy) (%)</th>
 					</tr>
 					<tr>
+						<th>ALL</th>
+						<th>US</th>
+						<th>NOT US</th>
 						<th>ALL</th>
 						<th>US</th>
 						<th>NOT US</th>
@@ -1016,6 +1173,9 @@ region = neural_network_region.predict(problem)[0]</code>
 						<td>41.1</td>
 						<td>26.2</td>
 						<td>57.3</td>
+						<td>39.4</td>
+						<td>25.6</td>
+						<td>53.8</td>
 					</tr>
 					<tr>
 						<th>Curve</th>
@@ -1025,6 +1185,9 @@ region = neural_network_region.predict(problem)[0]</code>
 						<td>43.6</td>
 						<td>27.3</td>
 						<td>60.1</td>
+						<td>40</td>
+						<td>25.4</td>
+						<td>53.8</td>
 					</tr>
 					<tr>
 						<th>Uniform</th>
@@ -1034,17 +1197,25 @@ region = neural_network_region.predict(problem)[0]</code>
 						<td>42.7</td>
 						<td>28.4</td>
 						<td>56.7</td>
+						<td>40.2</td>
+						<td>27.8</td>
+						<td>52.1</td>
 					</tr>
 				</table>
 				<center><i>Accuracy has been realised upon the 2018's review</i></center>
 				<p>
 					According to this array, the curve price range seems better when solving the problem for the
 					general case (all - 43.6%) and for the non-US case (not US - 60.1%). Otherwise, the uniform
-					distribution seems better for the US (US - 28.4%). However, the uniform distribution seems
-					to be the best at guessing the right province for every case. What seems interesting is, unlike
-					the price recommender, having a more or less uniform distribution for the price is better than
-					having a big concentration in one range, which means that it's important to correctly identify
-					the needs and process the data to answer a problem.
+					distribution seems better for the US (US - 28.4%), and also for the semi-lazy learning.
+					However, the uniform distribution seems to be the best at guessing the right province for every case. 
+					What seems interesting is, unlike the price recommender, having a more or less uniform distribution 
+					for the price is better than having a big concentration in one range, which means that it's 
+					important to correctly identify the needs and process the data to answer a problem.
+				</p>
+				<p>
+					There is no significative difference between the lazy network and the semi-lazy one.
+					This means we almost build a backpropagation network equivalent to a lazy one, which is a very
+					good result.
 				</p>
 				<p>
 					But why is there such a difference between the US and the rest of the world ? The answer

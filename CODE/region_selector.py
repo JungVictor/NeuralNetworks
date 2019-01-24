@@ -23,7 +23,7 @@ testing_2018 = True
 # False, True = Only US data
 # True, True = Only non-US data
 not_US = False
-only_US = False
+only_US = True
 #####################
 
 # Reading the main dataset
@@ -77,11 +77,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.99, rando
 ######################
 # CREATING THE NETWORK
 ######################
-network_shape = (10, 10, 10,)  # 3 hidden layout of size 10
-
 # All tested networks
 neighbors = KNeighborsClassifier(10, algorithm='ball_tree', weights='uniform')
-mlp = MLPClassifier()
+mlp = MLPClassifier(activation='logistic', solver='adam', learning_rate='adaptive',
+                    hidden_layer_sizes=(30, 30, 30, ), max_iter=1000)
+
 
 # Selecting one network for the exercise
 neural_network_province = neighbors
@@ -163,7 +163,8 @@ if testing_2018:
     print("\nCREATING AND TRAINING NETWORK...", end='\t')
 
     for country in unique_answers:
-        network = KNeighborsClassifier(16, algorithm='kd_tree', weights='uniform')
+        network = MLPClassifier(activation='logistic', solver='adam', learning_rate='adaptive',
+                                hidden_layer_sizes=(30, 30, 30), max_iter=300)
 
         data = province_data[country]
         data = pd.DataFrame(data)
@@ -171,7 +172,7 @@ if testing_2018:
         y_country = data['region']
         X_country = data.drop(data.columns[[-1]], axis=1)
 
-        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
+        X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.2, random_state=0)
         network.fit(X_train, y_train)
         country_networks[country] = network
 
@@ -232,12 +233,13 @@ print("END OF COLLECTION")
 data = pd.DataFrame(province_data)
 
 # Creating the neural network
-neural_network_region = KNeighborsClassifier(16, algorithm='kd_tree', weights='uniform')
+neural_network_region = MLPClassifier(activation='logistic', solver='adam', learning_rate='adaptive',
+                                      hidden_layer_sizes=(30, 30, 30), max_iter=300)
 
 # Creating the training data
 y_country = data['region']
 X_country = data.drop(data.columns[[-1]], axis=1)
-X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.99, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X_country, y_country, train_size=0.3, random_state=0)
 
 # Training the neural network
 neural_network_region.fit(X_train, y_train)
