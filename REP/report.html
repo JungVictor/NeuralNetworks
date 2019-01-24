@@ -631,7 +631,7 @@ neural_network.fit(X_train, y_train)</code>
 
 					<div class="script">price_recommender.py</div>
 					<code>mlp = MLPClassifier(activation='tanh', solver='adam', learning_rate='adaptive',
-                    hidden_layer_sizes=(18, 16, 12, 8, 4,), max_iter=1000)</code>
+                    hidden_layer_sizes=(40, 30, 20, 10,), max_iter=1000)</code>
 
 					<h4>Building the training set</h4>
 					<p>
@@ -724,8 +724,8 @@ neural_network.fit(X_train, y_train)</code>
 					</tr>
 					<tr>
 						<th>Realist</th>
-						<td>50.6</td>
-						<td>48.4</td>
+						<td>52.1</td>
+						<td>48.9</td>
 						<td>16</td>
 					</tr>
 					<tr>
@@ -745,15 +745,15 @@ neural_network.fit(X_train, y_train)</code>
 				<row>
 					<div>
 						<div class='caption'>Realistic</div>
-						<img src="images/price_recommender_r.jpg">
+						<img src="images/mlp_price_r.jpg">
 					</div>
 					<div>
 						<div class='caption'>Curve</div>
-						<img src="images/price_recommender_c.jpg">
+						<img src="images/mlp_price_c.jpg">
 					</div>
 				</row>
 				<div class='caption'>Uniform</div>
-				<img src="images/price_recommender.jpg">
+				<img src="images/mlp_price.jpg">
 
 				<p>
 					The results are not very good compared to the KNeighbors' results. As we can see, the backpropagation network is having difficulties correctly identifying the several groups. It tends to concentrate its answers towards mainly one big group, and then generally in two smaller groups. We couldn't find any way to correct this behaviour : no matter what kind of shape we used for the hidden layouts, we would always observe this kind of phenomenon.
